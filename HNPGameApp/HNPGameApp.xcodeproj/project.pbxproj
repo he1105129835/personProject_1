@@ -1,0 +1,705 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		111127A324A9DF2B00EA0AE2 /* HNPYueZhanVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 111127A124A9DF2B00EA0AE2 /* HNPYueZhanVC.m */; };
+		111127A424A9DF2B00EA0AE2 /* HNPYueZhanVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 111127A224A9DF2B00EA0AE2 /* HNPYueZhanVC.xib */; };
+		1152B8BC24A9EAA5002A888E /* HNPGameIconCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1152B8BA24A9EAA5002A888E /* HNPGameIconCell.m */; };
+		1152B8BD24A9EAA5002A888E /* HNPGameIconCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1152B8BB24A9EAA5002A888E /* HNPGameIconCell.xib */; };
+		1152B8C124A9EAC3002A888E /* HNPWangBaCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1152B8BF24A9EAC3002A888E /* HNPWangBaCell.m */; };
+		1152B8C224A9EAC3002A888E /* HNPWangBaCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1152B8C024A9EAC3002A888E /* HNPWangBaCell.xib */; };
+		1152B8C624A9EADC002A888E /* HNPBottomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1152B8C424A9EADC002A888E /* HNPBottomCell.m */; };
+		1152B8C724A9EADC002A888E /* HNPBottomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1152B8C524A9EADC002A888E /* HNPBottomCell.xib */; };
+		1152B8CB24A9F42F002A888E /* HNPXuanzePlaceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1152B8C924A9F42F002A888E /* HNPXuanzePlaceCell.m */; };
+		1152B8CC24A9F42F002A888E /* HNPXuanzePlaceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1152B8CA24A9F42F002A888E /* HNPXuanzePlaceCell.xib */; };
+		115A140424A9CC82003AB70F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 115A140324A9CC82003AB70F /* AppDelegate.m */; };
+		115A140724A9CC82003AB70F /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 115A140624A9CC82003AB70F /* SceneDelegate.m */; };
+		115A140A24A9CC82003AB70F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 115A140924A9CC82003AB70F /* ViewController.m */; };
+		115A140D24A9CC82003AB70F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 115A140B24A9CC82003AB70F /* Main.storyboard */; };
+		115A140F24A9CC84003AB70F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 115A140E24A9CC84003AB70F /* Assets.xcassets */; };
+		115A141224A9CC84003AB70F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 115A141024A9CC84003AB70F /* LaunchScreen.storyboard */; };
+		115A141524A9CC84003AB70F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 115A141424A9CC84003AB70F /* main.m */; };
+		115A143424A9D856003AB70F /* HNPFirstPageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 115A143224A9D856003AB70F /* HNPFirstPageVC.m */; };
+		115A143524A9D856003AB70F /* HNPFirstPageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 115A143324A9D856003AB70F /* HNPFirstPageVC.xib */; };
+		115A143924A9D875003AB70F /* HNPZixunVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 115A143724A9D875003AB70F /* HNPZixunVC.m */; };
+		115A143A24A9D875003AB70F /* HNPZixunVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 115A143824A9D875003AB70F /* HNPZixunVC.xib */; };
+		115A144324A9D8B7003AB70F /* HNPPaiMingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 115A144124A9D8B7003AB70F /* HNPPaiMingVC.m */; };
+		115A144424A9D8B7003AB70F /* HNPPaiMingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 115A144224A9D8B7003AB70F /* HNPPaiMingVC.xib */; };
+		115A144824A9D8CF003AB70F /* HNPMyPersonVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 115A144624A9D8CF003AB70F /* HNPMyPersonVC.m */; };
+		115A144924A9D8CF003AB70F /* HNPMyPersonVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 115A144724A9D8CF003AB70F /* HNPMyPersonVC.xib */; };
+		115A144D24A9D8E9003AB70F /* HNPMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 115A144B24A9D8E9003AB70F /* HNPMainVC.m */; };
+		115A144E24A9D8E9003AB70F /* HNPMainVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 115A144C24A9D8E9003AB70F /* HNPMainVC.xib */; };
+		88C507C600A88562FAB40848 /* libPods-HNPGameApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 56E4FEBFC0B5B0300CE72373 /* libPods-HNPGameApp.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		111127A024A9DF2B00EA0AE2 /* HNPYueZhanVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPYueZhanVC.h; sourceTree = "<group>"; };
+		111127A124A9DF2B00EA0AE2 /* HNPYueZhanVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPYueZhanVC.m; sourceTree = "<group>"; };
+		111127A224A9DF2B00EA0AE2 /* HNPYueZhanVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HNPYueZhanVC.xib; sourceTree = "<group>"; };
+		1152B8B924A9EAA5002A888E /* HNPGameIconCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPGameIconCell.h; sourceTree = "<group>"; };
+		1152B8BA24A9EAA5002A888E /* HNPGameIconCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPGameIconCell.m; sourceTree = "<group>"; };
+		1152B8BB24A9EAA5002A888E /* HNPGameIconCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HNPGameIconCell.xib; sourceTree = "<group>"; };
+		1152B8BE24A9EAC3002A888E /* HNPWangBaCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPWangBaCell.h; sourceTree = "<group>"; };
+		1152B8BF24A9EAC3002A888E /* HNPWangBaCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPWangBaCell.m; sourceTree = "<group>"; };
+		1152B8C024A9EAC3002A888E /* HNPWangBaCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HNPWangBaCell.xib; sourceTree = "<group>"; };
+		1152B8C324A9EADC002A888E /* HNPBottomCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPBottomCell.h; sourceTree = "<group>"; };
+		1152B8C424A9EADC002A888E /* HNPBottomCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPBottomCell.m; sourceTree = "<group>"; };
+		1152B8C524A9EADC002A888E /* HNPBottomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HNPBottomCell.xib; sourceTree = "<group>"; };
+		1152B8C824A9F42F002A888E /* HNPXuanzePlaceCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPXuanzePlaceCell.h; sourceTree = "<group>"; };
+		1152B8C924A9F42F002A888E /* HNPXuanzePlaceCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPXuanzePlaceCell.m; sourceTree = "<group>"; };
+		1152B8CA24A9F42F002A888E /* HNPXuanzePlaceCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HNPXuanzePlaceCell.xib; sourceTree = "<group>"; };
+		115A13FF24A9CC82003AB70F /* HNPGameApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HNPGameApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		115A140224A9CC82003AB70F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		115A140324A9CC82003AB70F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		115A140524A9CC82003AB70F /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		115A140624A9CC82003AB70F /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		115A140824A9CC82003AB70F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		115A140924A9CC82003AB70F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		115A140C24A9CC82003AB70F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		115A140E24A9CC84003AB70F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		115A141124A9CC84003AB70F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		115A141324A9CC84003AB70F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		115A141424A9CC84003AB70F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		115A143124A9D856003AB70F /* HNPFirstPageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPFirstPageVC.h; sourceTree = "<group>"; };
+		115A143224A9D856003AB70F /* HNPFirstPageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPFirstPageVC.m; sourceTree = "<group>"; };
+		115A143324A9D856003AB70F /* HNPFirstPageVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HNPFirstPageVC.xib; sourceTree = "<group>"; };
+		115A143624A9D875003AB70F /* HNPZixunVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPZixunVC.h; sourceTree = "<group>"; };
+		115A143724A9D875003AB70F /* HNPZixunVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPZixunVC.m; sourceTree = "<group>"; };
+		115A143824A9D875003AB70F /* HNPZixunVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HNPZixunVC.xib; sourceTree = "<group>"; };
+		115A144024A9D8B7003AB70F /* HNPPaiMingVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPPaiMingVC.h; sourceTree = "<group>"; };
+		115A144124A9D8B7003AB70F /* HNPPaiMingVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPPaiMingVC.m; sourceTree = "<group>"; };
+		115A144224A9D8B7003AB70F /* HNPPaiMingVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HNPPaiMingVC.xib; sourceTree = "<group>"; };
+		115A144524A9D8CF003AB70F /* HNPMyPersonVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPMyPersonVC.h; sourceTree = "<group>"; };
+		115A144624A9D8CF003AB70F /* HNPMyPersonVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPMyPersonVC.m; sourceTree = "<group>"; };
+		115A144724A9D8CF003AB70F /* HNPMyPersonVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HNPMyPersonVC.xib; sourceTree = "<group>"; };
+		115A144A24A9D8E9003AB70F /* HNPMainVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPMainVC.h; sourceTree = "<group>"; };
+		115A144B24A9D8E9003AB70F /* HNPMainVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPMainVC.m; sourceTree = "<group>"; };
+		115A144C24A9D8E9003AB70F /* HNPMainVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HNPMainVC.xib; sourceTree = "<group>"; };
+		4DEA675D800AD226071C2A12 /* Pods-HNPGameApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HNPGameApp.release.xcconfig"; path = "Target Support Files/Pods-HNPGameApp/Pods-HNPGameApp.release.xcconfig"; sourceTree = "<group>"; };
+		56E4FEBFC0B5B0300CE72373 /* libPods-HNPGameApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HNPGameApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F2B817DDD1F0B4D97364592 /* Pods-HNPGameApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HNPGameApp.debug.xcconfig"; path = "Target Support Files/Pods-HNPGameApp/Pods-HNPGameApp.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		115A13FC24A9CC82003AB70F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88C507C600A88562FAB40848 /* libPods-HNPGameApp.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1111279C24A9DEFD00EA0AE2 /* YueZhan(约战) */ = {
+			isa = PBXGroup;
+			children = (
+				1111279D24A9DEFD00EA0AE2 /* Controller */,
+				1111279E24A9DEFD00EA0AE2 /* Model */,
+				1111279F24A9DEFD00EA0AE2 /* View */,
+			);
+			path = "YueZhan(约战)";
+			sourceTree = "<group>";
+		};
+		1111279D24A9DEFD00EA0AE2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				111127A024A9DF2B00EA0AE2 /* HNPYueZhanVC.h */,
+				111127A124A9DF2B00EA0AE2 /* HNPYueZhanVC.m */,
+				111127A224A9DF2B00EA0AE2 /* HNPYueZhanVC.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1111279E24A9DEFD00EA0AE2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1111279F24A9DEFD00EA0AE2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		115A13F624A9CC82003AB70F = {
+			isa = PBXGroup;
+			children = (
+				115A140124A9CC82003AB70F /* HNPGameApp */,
+				115A140024A9CC82003AB70F /* Products */,
+				F9D182721FAAD7C93A351C80 /* Pods */,
+				FC21DD7885A6EB148C202BBE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		115A140024A9CC82003AB70F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				115A13FF24A9CC82003AB70F /* HNPGameApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		115A140124A9CC82003AB70F /* HNPGameApp */ = {
+			isa = PBXGroup;
+			children = (
+				115A141B24A9D499003AB70F /* Classes */,
+				115A140224A9CC82003AB70F /* AppDelegate.h */,
+				115A140324A9CC82003AB70F /* AppDelegate.m */,
+				115A140524A9CC82003AB70F /* SceneDelegate.h */,
+				115A140624A9CC82003AB70F /* SceneDelegate.m */,
+				115A140824A9CC82003AB70F /* ViewController.h */,
+				115A140924A9CC82003AB70F /* ViewController.m */,
+				115A140B24A9CC82003AB70F /* Main.storyboard */,
+				115A140E24A9CC84003AB70F /* Assets.xcassets */,
+				115A141024A9CC84003AB70F /* LaunchScreen.storyboard */,
+				115A141324A9CC84003AB70F /* Info.plist */,
+				115A141424A9CC84003AB70F /* main.m */,
+			);
+			path = HNPGameApp;
+			sourceTree = "<group>";
+		};
+		115A141B24A9D499003AB70F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1111279C24A9DEFD00EA0AE2 /* YueZhan(约战) */,
+				115A142424A9D499003AB70F /* FirstPage(首页) */,
+				115A142C24A9D499003AB70F /* Zixun(资讯) */,
+				115A142024A9D499003AB70F /* PaiMIng(排名) */,
+				115A141C24A9D499003AB70F /* MyPerson(我的) */,
+				115A143024A9D509003AB70F /* Other */,
+				115A142824A9D499003AB70F /* Main(主控制器) */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		115A141C24A9D499003AB70F /* MyPerson(我的) */ = {
+			isa = PBXGroup;
+			children = (
+				115A141D24A9D499003AB70F /* Controller */,
+				115A141E24A9D499003AB70F /* Model */,
+				115A141F24A9D499003AB70F /* View */,
+			);
+			path = "MyPerson(我的)";
+			sourceTree = "<group>";
+		};
+		115A141D24A9D499003AB70F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				115A144524A9D8CF003AB70F /* HNPMyPersonVC.h */,
+				115A144624A9D8CF003AB70F /* HNPMyPersonVC.m */,
+				115A144724A9D8CF003AB70F /* HNPMyPersonVC.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		115A141E24A9D499003AB70F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		115A141F24A9D499003AB70F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		115A142024A9D499003AB70F /* PaiMIng(排名) */ = {
+			isa = PBXGroup;
+			children = (
+				115A142124A9D499003AB70F /* Controller */,
+				115A142224A9D499003AB70F /* Model */,
+				115A142324A9D499003AB70F /* View */,
+			);
+			path = "PaiMIng(排名)";
+			sourceTree = "<group>";
+		};
+		115A142124A9D499003AB70F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				115A144024A9D8B7003AB70F /* HNPPaiMingVC.h */,
+				115A144124A9D8B7003AB70F /* HNPPaiMingVC.m */,
+				115A144224A9D8B7003AB70F /* HNPPaiMingVC.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		115A142224A9D499003AB70F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		115A142324A9D499003AB70F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		115A142424A9D499003AB70F /* FirstPage(首页) */ = {
+			isa = PBXGroup;
+			children = (
+				115A142524A9D499003AB70F /* Controller */,
+				115A142624A9D499003AB70F /* Model */,
+				115A142724A9D499003AB70F /* View */,
+			);
+			path = "FirstPage(首页)";
+			sourceTree = "<group>";
+		};
+		115A142524A9D499003AB70F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				115A143124A9D856003AB70F /* HNPFirstPageVC.h */,
+				115A143224A9D856003AB70F /* HNPFirstPageVC.m */,
+				115A143324A9D856003AB70F /* HNPFirstPageVC.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		115A142624A9D499003AB70F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		115A142724A9D499003AB70F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1152B8B924A9EAA5002A888E /* HNPGameIconCell.h */,
+				1152B8BA24A9EAA5002A888E /* HNPGameIconCell.m */,
+				1152B8BB24A9EAA5002A888E /* HNPGameIconCell.xib */,
+				1152B8C824A9F42F002A888E /* HNPXuanzePlaceCell.h */,
+				1152B8C924A9F42F002A888E /* HNPXuanzePlaceCell.m */,
+				1152B8CA24A9F42F002A888E /* HNPXuanzePlaceCell.xib */,
+				1152B8BE24A9EAC3002A888E /* HNPWangBaCell.h */,
+				1152B8BF24A9EAC3002A888E /* HNPWangBaCell.m */,
+				1152B8C024A9EAC3002A888E /* HNPWangBaCell.xib */,
+				1152B8C324A9EADC002A888E /* HNPBottomCell.h */,
+				1152B8C424A9EADC002A888E /* HNPBottomCell.m */,
+				1152B8C524A9EADC002A888E /* HNPBottomCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		115A142824A9D499003AB70F /* Main(主控制器) */ = {
+			isa = PBXGroup;
+			children = (
+				115A142924A9D499003AB70F /* Controller */,
+				115A142A24A9D499003AB70F /* Model */,
+				115A142B24A9D499003AB70F /* View */,
+			);
+			path = "Main(主控制器)";
+			sourceTree = "<group>";
+		};
+		115A142924A9D499003AB70F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				115A144A24A9D8E9003AB70F /* HNPMainVC.h */,
+				115A144B24A9D8E9003AB70F /* HNPMainVC.m */,
+				115A144C24A9D8E9003AB70F /* HNPMainVC.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		115A142A24A9D499003AB70F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		115A142B24A9D499003AB70F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		115A142C24A9D499003AB70F /* Zixun(资讯) */ = {
+			isa = PBXGroup;
+			children = (
+				115A142D24A9D499003AB70F /* Controller */,
+				115A142E24A9D499003AB70F /* Model */,
+				115A142F24A9D499003AB70F /* View */,
+			);
+			path = "Zixun(资讯)";
+			sourceTree = "<group>";
+		};
+		115A142D24A9D499003AB70F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				115A143624A9D875003AB70F /* HNPZixunVC.h */,
+				115A143724A9D875003AB70F /* HNPZixunVC.m */,
+				115A143824A9D875003AB70F /* HNPZixunVC.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		115A142E24A9D499003AB70F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		115A142F24A9D499003AB70F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		115A143024A9D509003AB70F /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		F9D182721FAAD7C93A351C80 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7F2B817DDD1F0B4D97364592 /* Pods-HNPGameApp.debug.xcconfig */,
+				4DEA675D800AD226071C2A12 /* Pods-HNPGameApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FC21DD7885A6EB148C202BBE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				56E4FEBFC0B5B0300CE72373 /* libPods-HNPGameApp.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		115A13FE24A9CC82003AB70F /* HNPGameApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 115A141824A9CC84003AB70F /* Build configuration list for PBXNativeTarget "HNPGameApp" */;
+			buildPhases = (
+				F9D4E0BA8334877A95A2E3D0 /* [CP] Check Pods Manifest.lock */,
+				115A13FB24A9CC82003AB70F /* Sources */,
+				115A13FC24A9CC82003AB70F /* Frameworks */,
+				115A13FD24A9CC82003AB70F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HNPGameApp;
+			productName = HNPGameApp;
+			productReference = 115A13FF24A9CC82003AB70F /* HNPGameApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		115A13F724A9CC82003AB70F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = HNP;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "何南平";
+				TargetAttributes = {
+					115A13FE24A9CC82003AB70F = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = 115A13FA24A9CC82003AB70F /* Build configuration list for PBXProject "HNPGameApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 115A13F624A9CC82003AB70F;
+			productRefGroup = 115A140024A9CC82003AB70F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				115A13FE24A9CC82003AB70F /* HNPGameApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		115A13FD24A9CC82003AB70F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				115A141224A9CC84003AB70F /* LaunchScreen.storyboard in Resources */,
+				1152B8BD24A9EAA5002A888E /* HNPGameIconCell.xib in Resources */,
+				115A140F24A9CC84003AB70F /* Assets.xcassets in Resources */,
+				1152B8C224A9EAC3002A888E /* HNPWangBaCell.xib in Resources */,
+				115A144E24A9D8E9003AB70F /* HNPMainVC.xib in Resources */,
+				1152B8C724A9EADC002A888E /* HNPBottomCell.xib in Resources */,
+				1152B8CC24A9F42F002A888E /* HNPXuanzePlaceCell.xib in Resources */,
+				115A144924A9D8CF003AB70F /* HNPMyPersonVC.xib in Resources */,
+				111127A424A9DF2B00EA0AE2 /* HNPYueZhanVC.xib in Resources */,
+				115A140D24A9CC82003AB70F /* Main.storyboard in Resources */,
+				115A144424A9D8B7003AB70F /* HNPPaiMingVC.xib in Resources */,
+				115A143524A9D856003AB70F /* HNPFirstPageVC.xib in Resources */,
+				115A143A24A9D875003AB70F /* HNPZixunVC.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F9D4E0BA8334877A95A2E3D0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HNPGameApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		115A13FB24A9CC82003AB70F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1152B8C124A9EAC3002A888E /* HNPWangBaCell.m in Sources */,
+				1152B8BC24A9EAA5002A888E /* HNPGameIconCell.m in Sources */,
+				115A140A24A9CC82003AB70F /* ViewController.m in Sources */,
+				115A144D24A9D8E9003AB70F /* HNPMainVC.m in Sources */,
+				115A143424A9D856003AB70F /* HNPFirstPageVC.m in Sources */,
+				115A140424A9CC82003AB70F /* AppDelegate.m in Sources */,
+				1152B8C624A9EADC002A888E /* HNPBottomCell.m in Sources */,
+				111127A324A9DF2B00EA0AE2 /* HNPYueZhanVC.m in Sources */,
+				115A141524A9CC84003AB70F /* main.m in Sources */,
+				115A143924A9D875003AB70F /* HNPZixunVC.m in Sources */,
+				115A140724A9CC82003AB70F /* SceneDelegate.m in Sources */,
+				115A144824A9D8CF003AB70F /* HNPMyPersonVC.m in Sources */,
+				115A144324A9D8B7003AB70F /* HNPPaiMingVC.m in Sources */,
+				1152B8CB24A9F42F002A888E /* HNPXuanzePlaceCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		115A140B24A9CC82003AB70F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				115A140C24A9CC82003AB70F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		115A141024A9CC84003AB70F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				115A141124A9CC84003AB70F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		115A141624A9CC84003AB70F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		115A141724A9CC84003AB70F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		115A141924A9CC84003AB70F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F2B817DDD1F0B4D97364592 /* Pods-HNPGameApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HNPGameApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sc.www.HNPGameApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		115A141A24A9CC84003AB70F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DEA675D800AD226071C2A12 /* Pods-HNPGameApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HNPGameApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sc.www.HNPGameApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		115A13FA24A9CC82003AB70F /* Build configuration list for PBXProject "HNPGameApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				115A141624A9CC84003AB70F /* Debug */,
+				115A141724A9CC84003AB70F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		115A141824A9CC84003AB70F /* Build configuration list for PBXNativeTarget "HNPGameApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				115A141924A9CC84003AB70F /* Debug */,
+				115A141A24A9CC84003AB70F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 115A13F724A9CC82003AB70F /* Project object */;
+}

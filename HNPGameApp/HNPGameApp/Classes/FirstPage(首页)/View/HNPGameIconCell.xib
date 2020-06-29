@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="GameIconCellID" rowHeight="4" id="KGk-i7-Jjw" customClass="HNPGameIconCell">
+            <rect key="frame" x="0.0" y="0.0" width="470" height="317"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="470" height="317"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AeT-YA-kwN">
+                        <rect key="frame" x="11" y="8" width="79" height="29"/>
+                        <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="79" id="KaI-2n-FGt"/>
+                            <constraint firstAttribute="height" constant="29" id="McQ-hl-XIm"/>
+                        </constraints>
+                        <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="5" maxY="0.0"/>
+                        <state key="normal" title="成都" image="ic_dingweiCD" backgroundImage="pic_dingweiCD"/>
+                    </button>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pic_guanggao" translatesAutoresizingMaskIntoConstraints="NO" id="NaY-Rj-d8Z">
+                        <rect key="frame" x="300" y="13" width="159" height="27.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="159" id="MAF-b1-2tt"/>
+                            <constraint firstAttribute="height" constant="27.5" id="Spa-Dx-0Mc"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="llo-36-Bnk">
+                        <rect key="frame" x="11" y="56" width="220" height="121.5"/>
+                        <state key="normal" backgroundImage="pic_wangzhe"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qed-Pi-cYv">
+                        <rect key="frame" x="239.5" y="56" width="219.5" height="121.5"/>
+                        <state key="normal" backgroundImage="pic_LOL"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9VI-1t-vqx">
+                        <rect key="frame" x="11" y="188" width="220" height="121"/>
+                        <state key="normal" backgroundImage="pic_shouwang"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iSb-SJ-jOM">
+                        <rect key="frame" x="239.5" y="188" width="219.5" height="121"/>
+                        <state key="normal" backgroundImage="pic_juedi"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="AeT-YA-kwN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="11" id="0CQ-xZ-Ryx"/>
+                    <constraint firstAttribute="trailing" secondItem="Qed-Pi-cYv" secondAttribute="trailing" constant="11" id="34p-87-C4s"/>
+                    <constraint firstAttribute="bottom" secondItem="9VI-1t-vqx" secondAttribute="bottom" constant="8" id="A0i-C8-NjH"/>
+                    <constraint firstItem="Qed-Pi-cYv" firstAttribute="leading" secondItem="llo-36-Bnk" secondAttribute="trailing" constant="8.5" id="Eql-32-MF9"/>
+                    <constraint firstItem="iSb-SJ-jOM" firstAttribute="trailing" secondItem="Qed-Pi-cYv" secondAttribute="trailing" id="Gfm-83-1xy"/>
+                    <constraint firstItem="9VI-1t-vqx" firstAttribute="top" secondItem="llo-36-Bnk" secondAttribute="bottom" constant="10.5" id="KgS-hM-bG9"/>
+                    <constraint firstItem="9VI-1t-vqx" firstAttribute="leading" secondItem="llo-36-Bnk" secondAttribute="leading" id="NqK-he-J9B"/>
+                    <constraint firstItem="Qed-Pi-cYv" firstAttribute="top" secondItem="llo-36-Bnk" secondAttribute="top" id="T0O-CO-TMx"/>
+                    <constraint firstAttribute="bottom" secondItem="iSb-SJ-jOM" secondAttribute="bottom" constant="8" id="Xva-IC-Ku4"/>
+                    <constraint firstItem="AeT-YA-kwN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Ytd-1b-wpo"/>
+                    <constraint firstAttribute="trailing" secondItem="NaY-Rj-d8Z" secondAttribute="trailing" constant="11" id="a2q-Fx-GnO"/>
+                    <constraint firstItem="llo-36-Bnk" firstAttribute="leading" secondItem="AeT-YA-kwN" secondAttribute="leading" id="bTI-EH-wYT"/>
+                    <constraint firstItem="9VI-1t-vqx" firstAttribute="height" secondItem="llo-36-Bnk" secondAttribute="height" id="gaW-fJ-84f"/>
+                    <constraint firstItem="iSb-SJ-jOM" firstAttribute="height" secondItem="Qed-Pi-cYv" secondAttribute="height" id="hDF-Qw-wrW"/>
+                    <constraint firstItem="iSb-SJ-jOM" firstAttribute="width" secondItem="9VI-1t-vqx" secondAttribute="width" id="lwY-Ic-A6u"/>
+                    <constraint firstItem="iSb-SJ-jOM" firstAttribute="top" secondItem="Qed-Pi-cYv" secondAttribute="bottom" constant="10.5" id="nEs-Zf-odV"/>
+                    <constraint firstItem="Qed-Pi-cYv" firstAttribute="width" secondItem="llo-36-Bnk" secondAttribute="width" id="qPV-mA-djo"/>
+                    <constraint firstItem="llo-36-Bnk" firstAttribute="top" secondItem="AeT-YA-kwN" secondAttribute="bottom" constant="19" id="qZ9-AY-82K"/>
+                    <constraint firstItem="iSb-SJ-jOM" firstAttribute="leading" secondItem="9VI-1t-vqx" secondAttribute="trailing" constant="8.5" id="tMo-eT-h3o"/>
+                    <constraint firstItem="NaY-Rj-d8Z" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="13" id="uLc-V6-2yf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <point key="canvasLocation" x="-64" y="3"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_dingweiCD" width="11" height="14"/>
+        <image name="pic_LOL" width="173" height="70"/>
+        <image name="pic_dingweiCD" width="79" height="29"/>
+        <image name="pic_guanggao" width="159" height="27.5"/>
+        <image name="pic_juedi" width="173" height="70"/>
+        <image name="pic_shouwang" width="173" height="70"/>
+        <image name="pic_wangzhe" width="173" height="70.5"/>
+    </resources>
+</document>
