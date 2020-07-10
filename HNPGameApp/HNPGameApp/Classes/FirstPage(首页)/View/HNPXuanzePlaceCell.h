@@ -8,10 +8,21 @@
 
 #import <UIKit/UIKit.h>
 
-NS_ASSUME_NONNULL_BEGIN
+@class HNPXuanzePlaceCell;
+@protocol HNPHomeXuanzeBtnDetegate <NSObject>
 
-@interface HNPXuanzePlaceCell : UITableViewCell
+-(void)HomeXuzanzeFujinBtnDidClick:(HNPXuanzePlaceCell *)HomeXuanzeCell;
+-(void)HomeXuzanzeHotBtnDidClick:(HNPXuanzePlaceCell *)HomeXuanzeCell;
 
 @end
 
-NS_ASSUME_NONNULL_END
+@interface HNPXuanzePlaceCell : UITableViewCell
+
+@property(nonatomic,weak)id<HNPHomeXuanzeBtnDetegate> delegate;
+@property (weak, nonatomic) IBOutlet UIButton *fujinBtn;
+@property (weak, nonatomic) IBOutlet UIButton *hotBtn;
+
+@end
+
+
+

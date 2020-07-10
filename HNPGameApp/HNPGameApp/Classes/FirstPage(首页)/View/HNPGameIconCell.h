@@ -8,10 +8,23 @@
 
 #import <UIKit/UIKit.h>
 
-NS_ASSUME_NONNULL_BEGIN
+@class HNPGameIconCell;
+@protocol HNPGameIconBtnDelegate <NSObject>
 
-@interface HNPGameIconCell : UITableViewCell
+//点击收藏
+-(void)WZBtnDidClick:(HNPGameIconCell *)IconCell;
+//点击赞
+-(void)LOLBtnDidClick:(HNPGameIconCell *)IconCell;
+//点击关注
+-(void)SWBtnDidClick:(HNPGameIconCell *)IconCell;
+//点击约战
+-(void)PUBGBtnDidClick:(HNPGameIconCell *)IconCell;
 
 @end
 
-NS_ASSUME_NONNULL_END
+
+@interface HNPGameIconCell : UITableViewCell
+
+@property (nonatomic ,weak) id<HNPGameIconBtnDelegate> delegate;
+
+@end

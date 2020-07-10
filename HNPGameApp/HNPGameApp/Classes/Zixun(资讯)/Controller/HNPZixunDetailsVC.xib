@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HNPZixunDetailsVC">
+            <connections>
+                <outlet property="blackView" destination="3X9-6R-zY1" id="vjO-8F-Jg7"/>
+                <outlet property="commentText_F" destination="Tcc-Dw-ozT" id="nyC-tO-YdA"/>
+                <outlet property="tableview" destination="I87-Q1-q5O" id="2uX-We-JQT"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3X9-6R-zY1">
+                    <rect key="frame" x="0.0" y="847" width="414" height="49"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vRR-ee-CcP">
+                            <rect key="frame" x="336.5" y="11" width="54" height="27"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="27" id="UH0-zA-byR"/>
+                                <constraint firstAttribute="width" constant="54" id="aaT-le-oSN"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="btn_fasong"/>
+                            <connections>
+                                <action selector="CommentBtnClick:" destination="-1" eventType="touchUpInside" id="fkk-ef-Riz"/>
+                            </connections>
+                        </button>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="输入你的评论" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tcc-Dw-ozT">
+                            <rect key="frame" x="9.5" y="11" width="294.5" height="27"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="27" id="0Dj-k5-1xE"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" red="0.19215686274509802" green="0.19215686274509802" blue="0.19215686274509802" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="vRR-ee-CcP" firstAttribute="centerY" secondItem="3X9-6R-zY1" secondAttribute="centerY" id="BfJ-tV-gcr"/>
+                        <constraint firstItem="Tcc-Dw-ozT" firstAttribute="leading" secondItem="3X9-6R-zY1" secondAttribute="leading" constant="9.5" id="H1j-4h-YNn"/>
+                        <constraint firstItem="Tcc-Dw-ozT" firstAttribute="centerY" secondItem="vRR-ee-CcP" secondAttribute="centerY" id="STV-cb-OR1"/>
+                        <constraint firstAttribute="height" constant="49" id="Wfk-vH-QCt"/>
+                        <constraint firstAttribute="trailing" secondItem="vRR-ee-CcP" secondAttribute="trailing" constant="23.5" id="cbv-me-UiM"/>
+                        <constraint firstItem="vRR-ee-CcP" firstAttribute="leading" secondItem="Tcc-Dw-ozT" secondAttribute="trailing" constant="32.5" id="hrh-Kg-lZ3"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="I87-Q1-q5O">
+                    <rect key="frame" x="0.0" y="44" width="414" height="803"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </tableView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="3X9-6R-zY1" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="Bpc-uw-eTo"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="3X9-6R-zY1" secondAttribute="trailing" id="MKu-Wk-pis"/>
+                <constraint firstItem="I87-Q1-q5O" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="Mgd-0R-7oY"/>
+                <constraint firstItem="I87-Q1-q5O" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="Q5g-18-xEq"/>
+                <constraint firstItem="3X9-6R-zY1" firstAttribute="top" secondItem="I87-Q1-q5O" secondAttribute="bottom" id="Rqz-8c-Zei"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="I87-Q1-q5O" secondAttribute="trailing" id="d75-rS-IS9"/>
+                <constraint firstAttribute="bottom" secondItem="3X9-6R-zY1" secondAttribute="bottom" id="kBV-ly-gra"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="-1080" y="-137"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn_fasong" width="54" height="27"/>
+    </resources>
+</document>

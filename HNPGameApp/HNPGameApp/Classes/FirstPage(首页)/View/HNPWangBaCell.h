@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HNPDianJingModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface HNPWangBaCell : UITableViewCell
+
+@property (nonatomic ,strong)HNPDianJingModel *DJModel;
 
 @end
 

@@ -4,5 +4,10 @@
 target 'HNPGameApp' do
 
 pod 'MJExtension'
+pod 'FSScrollContentView'
+pod 'SDWebImage'
+pod 'AFNetworking'
+pod 'Mantle'
+pod 'Alamofire'
 
 end

@@ -9,6 +9,35 @@
 /* Begin PBXBuildFile section */
 		111127A324A9DF2B00EA0AE2 /* HNPYueZhanVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 111127A124A9DF2B00EA0AE2 /* HNPYueZhanVC.m */; };
 		111127A424A9DF2B00EA0AE2 /* HNPYueZhanVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 111127A224A9DF2B00EA0AE2 /* HNPYueZhanVC.xib */; };
+		1147C9E424B0232800E7434B /* HNPLoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1147C9E224B0232800E7434B /* HNPLoginVC.m */; };
+		1147C9E524B0232800E7434B /* HNPLoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1147C9E324B0232800E7434B /* HNPLoginVC.xib */; };
+		1147C9E924B04F1100E7434B /* HNPRegisterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1147C9E724B04F1100E7434B /* HNPRegisterVC.m */; };
+		1147C9EA24B04F1100E7434B /* HNPRegisterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1147C9E824B04F1100E7434B /* HNPRegisterVC.xib */; };
+		1147C9FB24B0617700E7434B /* HNPFabuYuezhanVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1147C9F924B0617700E7434B /* HNPFabuYuezhanVC.m */; };
+		1147C9FC24B0617700E7434B /* HNPFabuYuezhanVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1147C9FA24B0617700E7434B /* HNPFabuYuezhanVC.xib */; };
+		1147C9FE24B06F7800E7434B /* teamList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1147C9FD24B06F7800E7434B /* teamList.plist */; };
+		1147CA0024B06F7D00E7434B /* DJClub.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1147C9FF24B06F7D00E7434B /* DJClub.plist */; };
+		1147CA0324B0755700E7434B /* HNPDianJingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1147CA0224B0755700E7434B /* HNPDianJingModel.m */; };
+		114AF4A024AC2E910047B724 /* HNPmoreCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 114AF49E24AC2E910047B724 /* HNPmoreCell.m */; };
+		114AF4A124AC2E910047B724 /* HNPmoreCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 114AF49F24AC2E910047B724 /* HNPmoreCell.xib */; };
+		114AF4A624AC35B80047B724 /* HNPWZController.m in Sources */ = {isa = PBXBuildFile; fileRef = 114AF4A424AC35B80047B724 /* HNPWZController.m */; };
+		114AF4AB24AC35CE0047B724 /* HNPLOLController.m in Sources */ = {isa = PBXBuildFile; fileRef = 114AF4A924AC35CE0047B724 /* HNPLOLController.m */; };
+		114AF4B024AC35E70047B724 /* HNPSWController.m in Sources */ = {isa = PBXBuildFile; fileRef = 114AF4AE24AC35E70047B724 /* HNPSWController.m */; };
+		114AF4B524AC35F20047B724 /* HNPPUBGController.m in Sources */ = {isa = PBXBuildFile; fileRef = 114AF4B324AC35F20047B724 /* HNPPUBGController.m */; };
+		114AF4BA24AC61BE0047B724 /* HNPziXunCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 114AF4B824AC61BE0047B724 /* HNPziXunCell.m */; };
+		114AF4BB24AC61BE0047B724 /* HNPziXunCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 114AF4B924AC61BE0047B724 /* HNPziXunCell.xib */; };
+		114AF4BF24AC79D40047B724 /* HNPPaiMingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 114AF4BD24AC79D40047B724 /* HNPPaiMingCell.m */; };
+		114AF4C024AC79D40047B724 /* HNPPaiMingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 114AF4BE24AC79D40047B724 /* HNPPaiMingCell.xib */; };
+		114AF4C424AC79F40047B724 /* HNPZhanDuiCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 114AF4C224AC79F40047B724 /* HNPZhanDuiCell.m */; };
+		114AF4C524AC79F40047B724 /* HNPZhanDuiCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 114AF4C324AC79F40047B724 /* HNPZhanDuiCell.xib */; };
+		114AF4C924AC7E810047B724 /* HNPPMwzController.m in Sources */ = {isa = PBXBuildFile; fileRef = 114AF4C824AC7E810047B724 /* HNPPMwzController.m */; };
+		114AF4CC24AC80480047B724 /* HNPPMLOLController.m in Sources */ = {isa = PBXBuildFile; fileRef = 114AF4CB24AC80480047B724 /* HNPPMLOLController.m */; };
+		114AF4CF24AC80A00047B724 /* HNPPMswController.m in Sources */ = {isa = PBXBuildFile; fileRef = 114AF4CE24AC80A00047B724 /* HNPPMswController.m */; };
+		114AF4D224AC80B00047B724 /* HNPPMpubgController.m in Sources */ = {isa = PBXBuildFile; fileRef = 114AF4D124AC80B00047B724 /* HNPPMpubgController.m */; };
+		114BEF7224AD75D3004E077E /* HNPMyPersonheaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 114BEF7024AD75D3004E077E /* HNPMyPersonheaderCell.m */; };
+		114BEF7324AD75D3004E077E /* HNPMyPersonheaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 114BEF7124AD75D3004E077E /* HNPMyPersonheaderCell.xib */; };
+		114BEF7724AD75F2004E077E /* HNPMyPersonDetailsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 114BEF7524AD75F2004E077E /* HNPMyPersonDetailsCell.m */; };
+		114BEF7824AD75F2004E077E /* HNPMyPersonDetailsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 114BEF7624AD75F2004E077E /* HNPMyPersonDetailsCell.xib */; };
 		1152B8BC24A9EAA5002A888E /* HNPGameIconCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1152B8BA24A9EAA5002A888E /* HNPGameIconCell.m */; };
 		1152B8BD24A9EAA5002A888E /* HNPGameIconCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1152B8BB24A9EAA5002A888E /* HNPGameIconCell.xib */; };
 		1152B8C124A9EAC3002A888E /* HNPWangBaCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1152B8BF24A9EAC3002A888E /* HNPWangBaCell.m */; };
@@ -17,6 +46,37 @@
 		1152B8C724A9EADC002A888E /* HNPBottomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1152B8C524A9EADC002A888E /* HNPBottomCell.xib */; };
 		1152B8CB24A9F42F002A888E /* HNPXuanzePlaceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1152B8C924A9F42F002A888E /* HNPXuanzePlaceCell.m */; };
 		1152B8CC24A9F42F002A888E /* HNPXuanzePlaceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1152B8CA24A9F42F002A888E /* HNPXuanzePlaceCell.xib */; };
+		1154E18024B2BDC500C42232 /* HNPZixunModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1154E17F24B2BDC500C42232 /* HNPZixunModel.m */; };
+		1154E18324B2BE4C00C42232 /* HNPZixunUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1154E18224B2BE4C00C42232 /* HNPZixunUserModel.m */; };
+		1154E18624B2D47200C42232 /* HNPPaimingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1154E18524B2D47200C42232 /* HNPPaimingModel.m */; };
+		1154E18924B2EDE600C42232 /* HNPPaimingListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1154E18824B2EDE600C42232 /* HNPPaimingListModel.m */; };
+		1154E18C24B321DF00C42232 /* HNPCommentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1154E18B24B321DF00C42232 /* HNPCommentModel.m */; };
+		1155F96324B40EF800F15882 /* HNPCommentListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1155F96224B40EF800F15882 /* HNPCommentListModel.m */; };
+		1155F96624B4157C00F15882 /* HNPMineVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1155F96524B4157C00F15882 /* HNPMineVCViewController.m */; };
+		1155F96D24B41D5900F15882 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 1155F96824B41D5900F15882 /* MBProgressHUD.m */; };
+		1155F96E24B41D5900F15882 /* MBProgressHUD+XMG.m in Sources */ = {isa = PBXBuildFile; fileRef = 1155F96924B41D5900F15882 /* MBProgressHUD+XMG.m */; };
+		1155F96F24B41D5900F15882 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1155F96C24B41D5900F15882 /* MBProgressHUD.bundle */; };
+		1155F97224B43EF200F15882 /* HNPPersonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1155F97124B43EF200F15882 /* HNPPersonModel.m */; };
+		1155F97824B4644100F15882 /* HNPSendCodeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1155F97624B4644100F15882 /* HNPSendCodeVC.m */; };
+		1155F97924B4644100F15882 /* HNPSendCodeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1155F97724B4644100F15882 /* HNPSendCodeVC.xib */; };
+		1158477024AED59900E471BF /* HNPZixunDetailsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1158476E24AED59900E471BF /* HNPZixunDetailsVC.m */; };
+		1158477124AED59900E471BF /* HNPZixunDetailsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1158476F24AED59900E471BF /* HNPZixunDetailsVC.xib */; };
+		1158477524AED5C900E471BF /* HNPZixunDetailsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1158477324AED5C900E471BF /* HNPZixunDetailsCell.m */; };
+		1158477624AED5C900E471BF /* HNPZixunDetailsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1158477424AED5C900E471BF /* HNPZixunDetailsCell.xib */; };
+		1158477A24AED5E300E471BF /* HNPZixunCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1158477824AED5E300E471BF /* HNPZixunCommentCell.m */; };
+		1158477B24AED5E300E471BF /* HNPZixunCommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1158477924AED5E300E471BF /* HNPZixunCommentCell.xib */; };
+		1158479924AF0E1000E471BF /* HNPMyCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1158479824AF0E1000E471BF /* HNPMyCollectionVC.m */; };
+		1158479C24AF0E2E00E471BF /* HNPMyZanVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1158479B24AF0E2E00E471BF /* HNPMyZanVC.m */; };
+		1158479F24AF0E3F00E471BF /* HNPMyFollowVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1158479E24AF0E3F00E471BF /* HNPMyFollowVC.m */; };
+		115847A224AF0E5100E471BF /* HNPMyBattleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 115847A124AF0E5100E471BF /* HNPMyBattleVC.m */; };
+		115847A624AF188400E471BF /* HNPMyCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 115847A424AF188400E471BF /* HNPMyCollectionCell.m */; };
+		115847A724AF188400E471BF /* HNPMyCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 115847A524AF188400E471BF /* HNPMyCollectionCell.xib */; };
+		115847AB24AF189000E471BF /* HNPMyZanCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 115847A924AF189000E471BF /* HNPMyZanCell.m */; };
+		115847AC24AF189000E471BF /* HNPMyZanCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 115847AA24AF189000E471BF /* HNPMyZanCell.xib */; };
+		115847B024AF189F00E471BF /* HNPMyFollowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 115847AE24AF189F00E471BF /* HNPMyFollowCell.m */; };
+		115847B124AF189F00E471BF /* HNPMyFollowCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 115847AF24AF189F00E471BF /* HNPMyFollowCell.xib */; };
+		115847B524AF18AE00E471BF /* HNPMyBattleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 115847B324AF18AE00E471BF /* HNPMyBattleCell.m */; };
+		115847B624AF18AE00E471BF /* HNPMyBattleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 115847B424AF18AE00E471BF /* HNPMyBattleCell.xib */; };
 		115A140424A9CC82003AB70F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 115A140324A9CC82003AB70F /* AppDelegate.m */; };
 		115A140724A9CC82003AB70F /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 115A140624A9CC82003AB70F /* SceneDelegate.m */; };
 		115A140A24A9CC82003AB70F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 115A140924A9CC82003AB70F /* ViewController.m */; };
@@ -34,13 +94,72 @@
 		115A144924A9D8CF003AB70F /* HNPMyPersonVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 115A144724A9D8CF003AB70F /* HNPMyPersonVC.xib */; };
 		115A144D24A9D8E9003AB70F /* HNPMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 115A144B24A9D8E9003AB70F /* HNPMainVC.m */; };
 		115A144E24A9D8E9003AB70F /* HNPMainVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 115A144C24A9D8E9003AB70F /* HNPMainVC.xib */; };
-		88C507C600A88562FAB40848 /* libPods-HNPGameApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 56E4FEBFC0B5B0300CE72373 /* libPods-HNPGameApp.a */; };
+		1187561B24B6E35200D769BA /* HNPEditVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1187561924B6E35200D769BA /* HNPEditVC.m */; };
+		1187561C24B6E35200D769BA /* HNPEditVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1187561A24B6E35200D769BA /* HNPEditVC.xib */; };
+		1187565624B7151300D769BA /* NetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1187565524B7151300D769BA /* NetworkTool.swift */; };
+		11F61E6D24ADA6C500FD6F50 /* HNPYZCreatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F61E6B24ADA6C500FD6F50 /* HNPYZCreatCell.m */; };
+		11F61E6E24ADA6C500FD6F50 /* HNPYZCreatCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11F61E6C24ADA6C500FD6F50 /* HNPYZCreatCell.xib */; };
+		11F61E7224ADA6E300FD6F50 /* HNPYZJiaruCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F61E7024ADA6E300FD6F50 /* HNPYZJiaruCell.m */; };
+		11F61E7324ADA6E300FD6F50 /* HNPYZJiaruCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11F61E7124ADA6E300FD6F50 /* HNPYZJiaruCell.xib */; };
+		11F61E7724ADC55B00FD6F50 /* HNPJubaoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F61E7524ADC55B00FD6F50 /* HNPJubaoVC.m */; };
+		11F61E7824ADC55B00FD6F50 /* HNPJubaoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11F61E7624ADC55B00FD6F50 /* HNPJubaoVC.xib */; };
+		11F61E7B24ADD46F00FD6F50 /* SelectPhotoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F61E7A24ADD46F00FD6F50 /* SelectPhotoManager.m */; };
+		11F61E7F24ADE70000FD6F50 /* HNPDianJingDetailsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F61E7D24ADE70000FD6F50 /* HNPDianJingDetailsVC.m */; };
+		11F61E8024ADE70000FD6F50 /* HNPDianJingDetailsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11F61E7E24ADE70000FD6F50 /* HNPDianJingDetailsVC.xib */; };
+		183F6F267E713EDA0529012E /* libPods-HNPGameApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D5B4E087EEA79F40BC8CF963 /* libPods-HNPGameApp.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		111127A024A9DF2B00EA0AE2 /* HNPYueZhanVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPYueZhanVC.h; sourceTree = "<group>"; };
 		111127A124A9DF2B00EA0AE2 /* HNPYueZhanVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPYueZhanVC.m; sourceTree = "<group>"; };
 		111127A224A9DF2B00EA0AE2 /* HNPYueZhanVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HNPYueZhanVC.xib; sourceTree = "<group>"; };
+		1147C9E124B0232800E7434B /* HNPLoginVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPLoginVC.h; sourceTree = "<group>"; };
+		1147C9E224B0232800E7434B /* HNPLoginVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPLoginVC.m; sourceTree = "<group>"; };
+		1147C9E324B0232800E7434B /* HNPLoginVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HNPLoginVC.xib; sourceTree = "<group>"; };
+		1147C9E624B04F1100E7434B /* HNPRegisterVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPRegisterVC.h; sourceTree = "<group>"; };
+		1147C9E724B04F1100E7434B /* HNPRegisterVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPRegisterVC.m; sourceTree = "<group>"; };
+		1147C9E824B04F1100E7434B /* HNPRegisterVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HNPRegisterVC.xib; sourceTree = "<group>"; };
+		1147C9F824B0617700E7434B /* HNPFabuYuezhanVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPFabuYuezhanVC.h; sourceTree = "<group>"; };
+		1147C9F924B0617700E7434B /* HNPFabuYuezhanVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPFabuYuezhanVC.m; sourceTree = "<group>"; };
+		1147C9FA24B0617700E7434B /* HNPFabuYuezhanVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HNPFabuYuezhanVC.xib; sourceTree = "<group>"; };
+		1147C9FD24B06F7800E7434B /* teamList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = teamList.plist; sourceTree = "<group>"; };
+		1147C9FF24B06F7D00E7434B /* DJClub.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DJClub.plist; sourceTree = "<group>"; };
+		1147CA0124B0755700E7434B /* HNPDianJingModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPDianJingModel.h; sourceTree = "<group>"; };
+		1147CA0224B0755700E7434B /* HNPDianJingModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPDianJingModel.m; sourceTree = "<group>"; };
+		114AF49D24AC2E910047B724 /* HNPmoreCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPmoreCell.h; sourceTree = "<group>"; };
+		114AF49E24AC2E910047B724 /* HNPmoreCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPmoreCell.m; sourceTree = "<group>"; };
+		114AF49F24AC2E910047B724 /* HNPmoreCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HNPmoreCell.xib; sourceTree = "<group>"; };
+		114AF4A324AC35B80047B724 /* HNPWZController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPWZController.h; sourceTree = "<group>"; };
+		114AF4A424AC35B80047B724 /* HNPWZController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPWZController.m; sourceTree = "<group>"; };
+		114AF4A824AC35CE0047B724 /* HNPLOLController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPLOLController.h; sourceTree = "<group>"; };
+		114AF4A924AC35CE0047B724 /* HNPLOLController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPLOLController.m; sourceTree = "<group>"; };
+		114AF4AD24AC35E70047B724 /* HNPSWController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPSWController.h; sourceTree = "<group>"; };
+		114AF4AE24AC35E70047B724 /* HNPSWController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPSWController.m; sourceTree = "<group>"; };
+		114AF4B224AC35F20047B724 /* HNPPUBGController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPPUBGController.h; sourceTree = "<group>"; };
+		114AF4B324AC35F20047B724 /* HNPPUBGController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPPUBGController.m; sourceTree = "<group>"; };
+		114AF4B724AC61BE0047B724 /* HNPziXunCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPziXunCell.h; sourceTree = "<group>"; };
+		114AF4B824AC61BE0047B724 /* HNPziXunCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPziXunCell.m; sourceTree = "<group>"; };
+		114AF4B924AC61BE0047B724 /* HNPziXunCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HNPziXunCell.xib; sourceTree = "<group>"; };
+		114AF4BC24AC79D40047B724 /* HNPPaiMingCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPPaiMingCell.h; sourceTree = "<group>"; };
+		114AF4BD24AC79D40047B724 /* HNPPaiMingCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPPaiMingCell.m; sourceTree = "<group>"; };
+		114AF4BE24AC79D40047B724 /* HNPPaiMingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HNPPaiMingCell.xib; sourceTree = "<group>"; };
+		114AF4C124AC79F40047B724 /* HNPZhanDuiCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPZhanDuiCell.h; sourceTree = "<group>"; };
+		114AF4C224AC79F40047B724 /* HNPZhanDuiCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPZhanDuiCell.m; sourceTree = "<group>"; };
+		114AF4C324AC79F40047B724 /* HNPZhanDuiCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HNPZhanDuiCell.xib; sourceTree = "<group>"; };
+		114AF4C724AC7E810047B724 /* HNPPMwzController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPPMwzController.h; sourceTree = "<group>"; };
+		114AF4C824AC7E810047B724 /* HNPPMwzController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPPMwzController.m; sourceTree = "<group>"; };
+		114AF4CA24AC80480047B724 /* HNPPMLOLController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPPMLOLController.h; sourceTree = "<group>"; };
+		114AF4CB24AC80480047B724 /* HNPPMLOLController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPPMLOLController.m; sourceTree = "<group>"; };
+		114AF4CD24AC80A00047B724 /* HNPPMswController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPPMswController.h; sourceTree = "<group>"; };
+		114AF4CE24AC80A00047B724 /* HNPPMswController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPPMswController.m; sourceTree = "<group>"; };
+		114AF4D024AC80B00047B724 /* HNPPMpubgController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPPMpubgController.h; sourceTree = "<group>"; };
+		114AF4D124AC80B00047B724 /* HNPPMpubgController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPPMpubgController.m; sourceTree = "<group>"; };
+		114BEF6F24AD75D3004E077E /* HNPMyPersonheaderCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPMyPersonheaderCell.h; sourceTree = "<group>"; };
+		114BEF7024AD75D3004E077E /* HNPMyPersonheaderCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPMyPersonheaderCell.m; sourceTree = "<group>"; };
+		114BEF7124AD75D3004E077E /* HNPMyPersonheaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HNPMyPersonheaderCell.xib; sourceTree = "<group>"; };
+		114BEF7424AD75F2004E077E /* HNPMyPersonDetailsCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPMyPersonDetailsCell.h; sourceTree = "<group>"; };
+		114BEF7524AD75F2004E077E /* HNPMyPersonDetailsCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPMyPersonDetailsCell.m; sourceTree = "<group>"; };
+		114BEF7624AD75F2004E077E /* HNPMyPersonDetailsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HNPMyPersonDetailsCell.xib; sourceTree = "<group>"; };
 		1152B8B924A9EAA5002A888E /* HNPGameIconCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPGameIconCell.h; sourceTree = "<group>"; };
 		1152B8BA24A9EAA5002A888E /* HNPGameIconCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPGameIconCell.m; sourceTree = "<group>"; };
 		1152B8BB24A9EAA5002A888E /* HNPGameIconCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HNPGameIconCell.xib; sourceTree = "<group>"; };
@@ -53,6 +172,60 @@
 		1152B8C824A9F42F002A888E /* HNPXuanzePlaceCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPXuanzePlaceCell.h; sourceTree = "<group>"; };
 		1152B8C924A9F42F002A888E /* HNPXuanzePlaceCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPXuanzePlaceCell.m; sourceTree = "<group>"; };
 		1152B8CA24A9F42F002A888E /* HNPXuanzePlaceCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HNPXuanzePlaceCell.xib; sourceTree = "<group>"; };
+		1154E17E24B2BDC500C42232 /* HNPZixunModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPZixunModel.h; sourceTree = "<group>"; };
+		1154E17F24B2BDC500C42232 /* HNPZixunModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPZixunModel.m; sourceTree = "<group>"; };
+		1154E18124B2BE4C00C42232 /* HNPZixunUserModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPZixunUserModel.h; sourceTree = "<group>"; };
+		1154E18224B2BE4C00C42232 /* HNPZixunUserModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPZixunUserModel.m; sourceTree = "<group>"; };
+		1154E18424B2D47200C42232 /* HNPPaimingModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPPaimingModel.h; sourceTree = "<group>"; };
+		1154E18524B2D47200C42232 /* HNPPaimingModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPPaimingModel.m; sourceTree = "<group>"; };
+		1154E18724B2EDE600C42232 /* HNPPaimingListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPPaimingListModel.h; sourceTree = "<group>"; };
+		1154E18824B2EDE600C42232 /* HNPPaimingListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPPaimingListModel.m; sourceTree = "<group>"; };
+		1154E18A24B321DF00C42232 /* HNPCommentModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPCommentModel.h; sourceTree = "<group>"; };
+		1154E18B24B321DF00C42232 /* HNPCommentModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPCommentModel.m; sourceTree = "<group>"; };
+		1155F96124B40EF800F15882 /* HNPCommentListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPCommentListModel.h; sourceTree = "<group>"; };
+		1155F96224B40EF800F15882 /* HNPCommentListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPCommentListModel.m; sourceTree = "<group>"; };
+		1155F96424B4157C00F15882 /* HNPMineVCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPMineVCViewController.h; sourceTree = "<group>"; };
+		1155F96524B4157C00F15882 /* HNPMineVCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPMineVCViewController.m; sourceTree = "<group>"; };
+		1155F96824B41D5900F15882 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		1155F96924B41D5900F15882 /* MBProgressHUD+XMG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+XMG.m"; sourceTree = "<group>"; };
+		1155F96A24B41D5900F15882 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		1155F96B24B41D5900F15882 /* MBProgressHUD+XMG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+XMG.h"; sourceTree = "<group>"; };
+		1155F96C24B41D5900F15882 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
+		1155F97024B43EF200F15882 /* HNPPersonModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPPersonModel.h; sourceTree = "<group>"; };
+		1155F97124B43EF200F15882 /* HNPPersonModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPPersonModel.m; sourceTree = "<group>"; };
+		1155F97424B4451900F15882 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		1155F97524B4644100F15882 /* HNPSendCodeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPSendCodeVC.h; sourceTree = "<group>"; };
+		1155F97624B4644100F15882 /* HNPSendCodeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPSendCodeVC.m; sourceTree = "<group>"; };
+		1155F97724B4644100F15882 /* HNPSendCodeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HNPSendCodeVC.xib; sourceTree = "<group>"; };
+		1158476D24AED59900E471BF /* HNPZixunDetailsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPZixunDetailsVC.h; sourceTree = "<group>"; };
+		1158476E24AED59900E471BF /* HNPZixunDetailsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPZixunDetailsVC.m; sourceTree = "<group>"; };
+		1158476F24AED59900E471BF /* HNPZixunDetailsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HNPZixunDetailsVC.xib; sourceTree = "<group>"; };
+		1158477224AED5C900E471BF /* HNPZixunDetailsCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPZixunDetailsCell.h; sourceTree = "<group>"; };
+		1158477324AED5C900E471BF /* HNPZixunDetailsCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPZixunDetailsCell.m; sourceTree = "<group>"; };
+		1158477424AED5C900E471BF /* HNPZixunDetailsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HNPZixunDetailsCell.xib; sourceTree = "<group>"; };
+		1158477724AED5E300E471BF /* HNPZixunCommentCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPZixunCommentCell.h; sourceTree = "<group>"; };
+		1158477824AED5E300E471BF /* HNPZixunCommentCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPZixunCommentCell.m; sourceTree = "<group>"; };
+		1158477924AED5E300E471BF /* HNPZixunCommentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HNPZixunCommentCell.xib; sourceTree = "<group>"; };
+		1158479724AF0E1000E471BF /* HNPMyCollectionVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPMyCollectionVC.h; sourceTree = "<group>"; };
+		1158479824AF0E1000E471BF /* HNPMyCollectionVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPMyCollectionVC.m; sourceTree = "<group>"; };
+		1158479A24AF0E2E00E471BF /* HNPMyZanVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPMyZanVC.h; sourceTree = "<group>"; };
+		1158479B24AF0E2E00E471BF /* HNPMyZanVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPMyZanVC.m; sourceTree = "<group>"; };
+		1158479D24AF0E3F00E471BF /* HNPMyFollowVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPMyFollowVC.h; sourceTree = "<group>"; };
+		1158479E24AF0E3F00E471BF /* HNPMyFollowVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPMyFollowVC.m; sourceTree = "<group>"; };
+		115847A024AF0E5100E471BF /* HNPMyBattleVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPMyBattleVC.h; sourceTree = "<group>"; };
+		115847A124AF0E5100E471BF /* HNPMyBattleVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPMyBattleVC.m; sourceTree = "<group>"; };
+		115847A324AF188300E471BF /* HNPMyCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPMyCollectionCell.h; sourceTree = "<group>"; };
+		115847A424AF188400E471BF /* HNPMyCollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPMyCollectionCell.m; sourceTree = "<group>"; };
+		115847A524AF188400E471BF /* HNPMyCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HNPMyCollectionCell.xib; sourceTree = "<group>"; };
+		115847A824AF189000E471BF /* HNPMyZanCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPMyZanCell.h; sourceTree = "<group>"; };
+		115847A924AF189000E471BF /* HNPMyZanCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPMyZanCell.m; sourceTree = "<group>"; };
+		115847AA24AF189000E471BF /* HNPMyZanCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HNPMyZanCell.xib; sourceTree = "<group>"; };
+		115847AD24AF189F00E471BF /* HNPMyFollowCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPMyFollowCell.h; sourceTree = "<group>"; };
+		115847AE24AF189F00E471BF /* HNPMyFollowCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPMyFollowCell.m; sourceTree = "<group>"; };
+		115847AF24AF189F00E471BF /* HNPMyFollowCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HNPMyFollowCell.xib; sourceTree = "<group>"; };
+		115847B224AF18AE00E471BF /* HNPMyBattleCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPMyBattleCell.h; sourceTree = "<group>"; };
+		115847B324AF18AE00E471BF /* HNPMyBattleCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPMyBattleCell.m; sourceTree = "<group>"; };
+		115847B424AF18AE00E471BF /* HNPMyBattleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HNPMyBattleCell.xib; sourceTree = "<group>"; };
 		115A13FF24A9CC82003AB70F /* HNPGameApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HNPGameApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		115A140224A9CC82003AB70F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		115A140324A9CC82003AB70F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -80,9 +253,28 @@
 		115A144A24A9D8E9003AB70F /* HNPMainVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPMainVC.h; sourceTree = "<group>"; };
 		115A144B24A9D8E9003AB70F /* HNPMainVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPMainVC.m; sourceTree = "<group>"; };
 		115A144C24A9D8E9003AB70F /* HNPMainVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HNPMainVC.xib; sourceTree = "<group>"; };
-		4DEA675D800AD226071C2A12 /* Pods-HNPGameApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HNPGameApp.release.xcconfig"; path = "Target Support Files/Pods-HNPGameApp/Pods-HNPGameApp.release.xcconfig"; sourceTree = "<group>"; };
-		56E4FEBFC0B5B0300CE72373 /* libPods-HNPGameApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HNPGameApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7F2B817DDD1F0B4D97364592 /* Pods-HNPGameApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HNPGameApp.debug.xcconfig"; path = "Target Support Files/Pods-HNPGameApp/Pods-HNPGameApp.debug.xcconfig"; sourceTree = "<group>"; };
+		1187561824B6E35200D769BA /* HNPEditVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPEditVC.h; sourceTree = "<group>"; };
+		1187561924B6E35200D769BA /* HNPEditVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPEditVC.m; sourceTree = "<group>"; };
+		1187561A24B6E35200D769BA /* HNPEditVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HNPEditVC.xib; sourceTree = "<group>"; };
+		1187565524B7151300D769BA /* NetworkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTool.swift; sourceTree = "<group>"; };
+		1187565724B7153800D769BA /* HNPGameApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HNPGameApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		11F61E6A24ADA6C500FD6F50 /* HNPYZCreatCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPYZCreatCell.h; sourceTree = "<group>"; };
+		11F61E6B24ADA6C500FD6F50 /* HNPYZCreatCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPYZCreatCell.m; sourceTree = "<group>"; };
+		11F61E6C24ADA6C500FD6F50 /* HNPYZCreatCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HNPYZCreatCell.xib; sourceTree = "<group>"; };
+		11F61E6F24ADA6E300FD6F50 /* HNPYZJiaruCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPYZJiaruCell.h; sourceTree = "<group>"; };
+		11F61E7024ADA6E300FD6F50 /* HNPYZJiaruCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPYZJiaruCell.m; sourceTree = "<group>"; };
+		11F61E7124ADA6E300FD6F50 /* HNPYZJiaruCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HNPYZJiaruCell.xib; sourceTree = "<group>"; };
+		11F61E7424ADC55B00FD6F50 /* HNPJubaoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPJubaoVC.h; sourceTree = "<group>"; };
+		11F61E7524ADC55B00FD6F50 /* HNPJubaoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPJubaoVC.m; sourceTree = "<group>"; };
+		11F61E7624ADC55B00FD6F50 /* HNPJubaoVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HNPJubaoVC.xib; sourceTree = "<group>"; };
+		11F61E7924ADD46E00FD6F50 /* SelectPhotoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectPhotoManager.h; sourceTree = "<group>"; };
+		11F61E7A24ADD46F00FD6F50 /* SelectPhotoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectPhotoManager.m; sourceTree = "<group>"; };
+		11F61E7C24ADE70000FD6F50 /* HNPDianJingDetailsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPDianJingDetailsVC.h; sourceTree = "<group>"; };
+		11F61E7D24ADE70000FD6F50 /* HNPDianJingDetailsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPDianJingDetailsVC.m; sourceTree = "<group>"; };
+		11F61E7E24ADE70000FD6F50 /* HNPDianJingDetailsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HNPDianJingDetailsVC.xib; sourceTree = "<group>"; };
+		5AB00BAEE6F698A8F2DFD8F5 /* Pods-HNPGameApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HNPGameApp.debug.xcconfig"; path = "Target Support Files/Pods-HNPGameApp/Pods-HNPGameApp.debug.xcconfig"; sourceTree = "<group>"; };
+		A06C08E7851D36D620ADE4CA /* Pods-HNPGameApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HNPGameApp.release.xcconfig"; path = "Target Support Files/Pods-HNPGameApp/Pods-HNPGameApp.release.xcconfig"; sourceTree = "<group>"; };
+		D5B4E087EEA79F40BC8CF963 /* libPods-HNPGameApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HNPGameApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +282,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88C507C600A88562FAB40848 /* libPods-HNPGameApp.a in Frameworks */,
+				183F6F267E713EDA0529012E /* libPods-HNPGameApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,9 +302,9 @@
 		1111279D24A9DEFD00EA0AE2 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				111127A024A9DF2B00EA0AE2 /* HNPYueZhanVC.h */,
-				111127A124A9DF2B00EA0AE2 /* HNPYueZhanVC.m */,
-				111127A224A9DF2B00EA0AE2 /* HNPYueZhanVC.xib */,
+				1147C9F824B0617700E7434B /* HNPFabuYuezhanVC.h */,
+				1147C9F924B0617700E7434B /* HNPFabuYuezhanVC.m */,
+				1147C9FA24B0617700E7434B /* HNPFabuYuezhanVC.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -127,6 +319,179 @@
 		1111279F24A9DEFD00EA0AE2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				11F61E6A24ADA6C500FD6F50 /* HNPYZCreatCell.h */,
+				11F61E6B24ADA6C500FD6F50 /* HNPYZCreatCell.m */,
+				11F61E6C24ADA6C500FD6F50 /* HNPYZCreatCell.xib */,
+				11F61E6F24ADA6E300FD6F50 /* HNPYZJiaruCell.h */,
+				11F61E7024ADA6E300FD6F50 /* HNPYZJiaruCell.m */,
+				11F61E7124ADA6E300FD6F50 /* HNPYZJiaruCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		114AF4A224AC358A0047B724 /* childController */ = {
+			isa = PBXGroup;
+			children = (
+				114AF4A324AC35B80047B724 /* HNPWZController.h */,
+				114AF4A424AC35B80047B724 /* HNPWZController.m */,
+				114AF4A824AC35CE0047B724 /* HNPLOLController.h */,
+				114AF4A924AC35CE0047B724 /* HNPLOLController.m */,
+				114AF4AD24AC35E70047B724 /* HNPSWController.h */,
+				114AF4AE24AC35E70047B724 /* HNPSWController.m */,
+				114AF4B224AC35F20047B724 /* HNPPUBGController.h */,
+				114AF4B324AC35F20047B724 /* HNPPUBGController.m */,
+			);
+			path = childController;
+			sourceTree = "<group>";
+		};
+		114AF4C624AC7E4C0047B724 /* childController */ = {
+			isa = PBXGroup;
+			children = (
+				114AF4C724AC7E810047B724 /* HNPPMwzController.h */,
+				114AF4C824AC7E810047B724 /* HNPPMwzController.m */,
+				114AF4CA24AC80480047B724 /* HNPPMLOLController.h */,
+				114AF4CB24AC80480047B724 /* HNPPMLOLController.m */,
+				114AF4CD24AC80A00047B724 /* HNPPMswController.h */,
+				114AF4CE24AC80A00047B724 /* HNPPMswController.m */,
+				114AF4D024AC80B00047B724 /* HNPPMpubgController.h */,
+				114AF4D124AC80B00047B724 /* HNPPMpubgController.m */,
+			);
+			path = childController;
+			sourceTree = "<group>";
+		};
+		1155F96724B41D5900F15882 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				1155F96824B41D5900F15882 /* MBProgressHUD.m */,
+				1155F96924B41D5900F15882 /* MBProgressHUD+XMG.m */,
+				1155F96A24B41D5900F15882 /* MBProgressHUD.h */,
+				1155F96B24B41D5900F15882 /* MBProgressHUD+XMG.h */,
+				1155F96C24B41D5900F15882 /* MBProgressHUD.bundle */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		1158477C24AF0D5100E471BF /* Login(登录) */ = {
+			isa = PBXGroup;
+			children = (
+				1158477D24AF0D5100E471BF /* Controller */,
+				1158477E24AF0D5100E471BF /* Model */,
+				1158477F24AF0D5100E471BF /* View */,
+			);
+			path = "Login(登录)";
+			sourceTree = "<group>";
+		};
+		1158477D24AF0D5100E471BF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1147C9E124B0232800E7434B /* HNPLoginVC.h */,
+				1147C9E224B0232800E7434B /* HNPLoginVC.m */,
+				1147C9E324B0232800E7434B /* HNPLoginVC.xib */,
+				1147C9E624B04F1100E7434B /* HNPRegisterVC.h */,
+				1147C9E724B04F1100E7434B /* HNPRegisterVC.m */,
+				1147C9E824B04F1100E7434B /* HNPRegisterVC.xib */,
+				1155F97524B4644100F15882 /* HNPSendCodeVC.h */,
+				1155F97624B4644100F15882 /* HNPSendCodeVC.m */,
+				1155F97724B4644100F15882 /* HNPSendCodeVC.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1158477E24AF0D5100E471BF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1158477F24AF0D5100E471BF /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1158478024AF0D5700E471BF /* Mymessage(我的副本) */ = {
+			isa = PBXGroup;
+			children = (
+				1158478124AF0D5700E471BF /* Controller */,
+				1158478224AF0D5700E471BF /* Model */,
+				1158478324AF0D5700E471BF /* View */,
+			);
+			path = "Mymessage(我的副本)";
+			sourceTree = "<group>";
+		};
+		1158478124AF0D5700E471BF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1158479724AF0E1000E471BF /* HNPMyCollectionVC.h */,
+				1158479824AF0E1000E471BF /* HNPMyCollectionVC.m */,
+				1158479A24AF0E2E00E471BF /* HNPMyZanVC.h */,
+				1158479B24AF0E2E00E471BF /* HNPMyZanVC.m */,
+				1158479D24AF0E3F00E471BF /* HNPMyFollowVC.h */,
+				1158479E24AF0E3F00E471BF /* HNPMyFollowVC.m */,
+				115847A024AF0E5100E471BF /* HNPMyBattleVC.h */,
+				115847A124AF0E5100E471BF /* HNPMyBattleVC.m */,
+				1187561824B6E35200D769BA /* HNPEditVC.h */,
+				1187561924B6E35200D769BA /* HNPEditVC.m */,
+				1187561A24B6E35200D769BA /* HNPEditVC.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1158478224AF0D5700E471BF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1158478324AF0D5700E471BF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				115847A324AF188300E471BF /* HNPMyCollectionCell.h */,
+				115847A424AF188400E471BF /* HNPMyCollectionCell.m */,
+				115847A524AF188400E471BF /* HNPMyCollectionCell.xib */,
+				115847A824AF189000E471BF /* HNPMyZanCell.h */,
+				115847A924AF189000E471BF /* HNPMyZanCell.m */,
+				115847AA24AF189000E471BF /* HNPMyZanCell.xib */,
+				115847AD24AF189F00E471BF /* HNPMyFollowCell.h */,
+				115847AE24AF189F00E471BF /* HNPMyFollowCell.m */,
+				115847AF24AF189F00E471BF /* HNPMyFollowCell.xib */,
+				115847B224AF18AE00E471BF /* HNPMyBattleCell.h */,
+				115847B324AF18AE00E471BF /* HNPMyBattleCell.m */,
+				115847B424AF18AE00E471BF /* HNPMyBattleCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1158478424AF0D5C00E471BF /* Myset(我的设置) */ = {
+			isa = PBXGroup;
+			children = (
+				1158478524AF0D5C00E471BF /* Controller */,
+				1158478924AF0D5C00E471BF /* Model */,
+				1158478A24AF0D5C00E471BF /* View */,
+			);
+			path = "Myset(我的设置)";
+			sourceTree = "<group>";
+		};
+		1158478524AF0D5C00E471BF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1158478924AF0D5C00E471BF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1158478A24AF0D5C00E471BF /* View */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -137,7 +502,7 @@
 				115A140124A9CC82003AB70F /* HNPGameApp */,
 				115A140024A9CC82003AB70F /* Products */,
 				F9D182721FAAD7C93A351C80 /* Pods */,
-				FC21DD7885A6EB148C202BBE /* Frameworks */,
+				E38BC42453ACCED9A690ECBC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -163,7 +528,10 @@
 				115A140E24A9CC84003AB70F /* Assets.xcassets */,
 				115A141024A9CC84003AB70F /* LaunchScreen.storyboard */,
 				115A141324A9CC84003AB70F /* Info.plist */,
+				1147C9FD24B06F7800E7434B /* teamList.plist */,
+				1147C9FF24B06F7D00E7434B /* DJClub.plist */,
 				115A141424A9CC84003AB70F /* main.m */,
+				1155F97424B4451900F15882 /* PrefixHeader.pch */,
 			);
 			path = HNPGameApp;
 			sourceTree = "<group>";
@@ -171,11 +539,14 @@
 		115A141B24A9D499003AB70F /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				1111279C24A9DEFD00EA0AE2 /* YueZhan(约战) */,
 				115A142424A9D499003AB70F /* FirstPage(首页) */,
 				115A142C24A9D499003AB70F /* Zixun(资讯) */,
+				1111279C24A9DEFD00EA0AE2 /* YueZhan(约战) */,
 				115A142024A9D499003AB70F /* PaiMIng(排名) */,
+				1158477C24AF0D5100E471BF /* Login(登录) */,
 				115A141C24A9D499003AB70F /* MyPerson(我的) */,
+				1158478024AF0D5700E471BF /* Mymessage(我的副本) */,
+				1158478424AF0D5C00E471BF /* Myset(我的设置) */,
 				115A143024A9D509003AB70F /* Other */,
 				115A142824A9D499003AB70F /* Main(主控制器) */,
 			);
@@ -198,6 +569,8 @@
 				115A144524A9D8CF003AB70F /* HNPMyPersonVC.h */,
 				115A144624A9D8CF003AB70F /* HNPMyPersonVC.m */,
 				115A144724A9D8CF003AB70F /* HNPMyPersonVC.xib */,
+				1155F96424B4157C00F15882 /* HNPMineVCViewController.h */,
+				1155F96524B4157C00F15882 /* HNPMineVCViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -205,6 +578,8 @@
 		115A141E24A9D499003AB70F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1155F97024B43EF200F15882 /* HNPPersonModel.h */,
+				1155F97124B43EF200F15882 /* HNPPersonModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -212,6 +587,12 @@
 		115A141F24A9D499003AB70F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				114BEF6F24AD75D3004E077E /* HNPMyPersonheaderCell.h */,
+				114BEF7024AD75D3004E077E /* HNPMyPersonheaderCell.m */,
+				114BEF7124AD75D3004E077E /* HNPMyPersonheaderCell.xib */,
+				114BEF7424AD75F2004E077E /* HNPMyPersonDetailsCell.h */,
+				114BEF7524AD75F2004E077E /* HNPMyPersonDetailsCell.m */,
+				114BEF7624AD75F2004E077E /* HNPMyPersonDetailsCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -220,6 +601,7 @@
 			isa = PBXGroup;
 			children = (
 				115A142124A9D499003AB70F /* Controller */,
+				114AF4C624AC7E4C0047B724 /* childController */,
 				115A142224A9D499003AB70F /* Model */,
 				115A142324A9D499003AB70F /* View */,
 			);
@@ -239,6 +621,10 @@
 		115A142224A9D499003AB70F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1154E18424B2D47200C42232 /* HNPPaimingModel.h */,
+				1154E18524B2D47200C42232 /* HNPPaimingModel.m */,
+				1154E18724B2EDE600C42232 /* HNPPaimingListModel.h */,
+				1154E18824B2EDE600C42232 /* HNPPaimingListModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -246,6 +632,12 @@
 		115A142324A9D499003AB70F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				114AF4C124AC79F40047B724 /* HNPZhanDuiCell.h */,
+				114AF4C224AC79F40047B724 /* HNPZhanDuiCell.m */,
+				114AF4C324AC79F40047B724 /* HNPZhanDuiCell.xib */,
+				114AF4BC24AC79D40047B724 /* HNPPaiMingCell.h */,
+				114AF4BD24AC79D40047B724 /* HNPPaiMingCell.m */,
+				114AF4BE24AC79D40047B724 /* HNPPaiMingCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -266,6 +658,17 @@
 				115A143124A9D856003AB70F /* HNPFirstPageVC.h */,
 				115A143224A9D856003AB70F /* HNPFirstPageVC.m */,
 				115A143324A9D856003AB70F /* HNPFirstPageVC.xib */,
+				11F61E7C24ADE70000FD6F50 /* HNPDianJingDetailsVC.h */,
+				11F61E7D24ADE70000FD6F50 /* HNPDianJingDetailsVC.m */,
+				11F61E7E24ADE70000FD6F50 /* HNPDianJingDetailsVC.xib */,
+				111127A024A9DF2B00EA0AE2 /* HNPYueZhanVC.h */,
+				111127A124A9DF2B00EA0AE2 /* HNPYueZhanVC.m */,
+				111127A224A9DF2B00EA0AE2 /* HNPYueZhanVC.xib */,
+				11F61E7424ADC55B00FD6F50 /* HNPJubaoVC.h */,
+				11F61E7524ADC55B00FD6F50 /* HNPJubaoVC.m */,
+				11F61E7624ADC55B00FD6F50 /* HNPJubaoVC.xib */,
+				11F61E7924ADD46E00FD6F50 /* SelectPhotoManager.h */,
+				11F61E7A24ADD46F00FD6F50 /* SelectPhotoManager.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -273,6 +676,8 @@
 		115A142624A9D499003AB70F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1147CA0124B0755700E7434B /* HNPDianJingModel.h */,
+				1147CA0224B0755700E7434B /* HNPDianJingModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -289,6 +694,9 @@
 				1152B8BE24A9EAC3002A888E /* HNPWangBaCell.h */,
 				1152B8BF24A9EAC3002A888E /* HNPWangBaCell.m */,
 				1152B8C024A9EAC3002A888E /* HNPWangBaCell.xib */,
+				114AF49D24AC2E910047B724 /* HNPmoreCell.h */,
+				114AF49E24AC2E910047B724 /* HNPmoreCell.m */,
+				114AF49F24AC2E910047B724 /* HNPmoreCell.xib */,
 				1152B8C324A9EADC002A888E /* HNPBottomCell.h */,
 				1152B8C424A9EADC002A888E /* HNPBottomCell.m */,
 				1152B8C524A9EADC002A888E /* HNPBottomCell.xib */,
@@ -334,6 +742,7 @@
 			isa = PBXGroup;
 			children = (
 				115A142D24A9D499003AB70F /* Controller */,
+				114AF4A224AC358A0047B724 /* childController */,
 				115A142E24A9D499003AB70F /* Model */,
 				115A142F24A9D499003AB70F /* View */,
 			);
@@ -346,6 +755,9 @@
 				115A143624A9D875003AB70F /* HNPZixunVC.h */,
 				115A143724A9D875003AB70F /* HNPZixunVC.m */,
 				115A143824A9D875003AB70F /* HNPZixunVC.xib */,
+				1158476D24AED59900E471BF /* HNPZixunDetailsVC.h */,
+				1158476E24AED59900E471BF /* HNPZixunDetailsVC.m */,
+				1158476F24AED59900E471BF /* HNPZixunDetailsVC.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -353,6 +765,14 @@
 		115A142E24A9D499003AB70F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1154E17E24B2BDC500C42232 /* HNPZixunModel.h */,
+				1154E17F24B2BDC500C42232 /* HNPZixunModel.m */,
+				1154E18124B2BE4C00C42232 /* HNPZixunUserModel.h */,
+				1154E18224B2BE4C00C42232 /* HNPZixunUserModel.m */,
+				1154E18A24B321DF00C42232 /* HNPCommentModel.h */,
+				1154E18B24B321DF00C42232 /* HNPCommentModel.m */,
+				1155F96124B40EF800F15882 /* HNPCommentListModel.h */,
+				1155F96224B40EF800F15882 /* HNPCommentListModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -360,6 +780,15 @@
 		115A142F24A9D499003AB70F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				114AF4B724AC61BE0047B724 /* HNPziXunCell.h */,
+				114AF4B824AC61BE0047B724 /* HNPziXunCell.m */,
+				114AF4B924AC61BE0047B724 /* HNPziXunCell.xib */,
+				1158477224AED5C900E471BF /* HNPZixunDetailsCell.h */,
+				1158477324AED5C900E471BF /* HNPZixunDetailsCell.m */,
+				1158477424AED5C900E471BF /* HNPZixunDetailsCell.xib */,
+				1158477724AED5E300E471BF /* HNPZixunCommentCell.h */,
+				1158477824AED5E300E471BF /* HNPZixunCommentCell.m */,
+				1158477924AED5E300E471BF /* HNPZixunCommentCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -367,25 +796,28 @@
 		115A143024A9D509003AB70F /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				1187565724B7153800D769BA /* HNPGameApp-Bridging-Header.h */,
+				1187565524B7151300D769BA /* NetworkTool.swift */,
+				1155F96724B41D5900F15882 /* MBProgressHUD */,
 			);
 			path = Other;
+			sourceTree = "<group>";
+		};
+		E38BC42453ACCED9A690ECBC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D5B4E087EEA79F40BC8CF963 /* libPods-HNPGameApp.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		F9D182721FAAD7C93A351C80 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				7F2B817DDD1F0B4D97364592 /* Pods-HNPGameApp.debug.xcconfig */,
-				4DEA675D800AD226071C2A12 /* Pods-HNPGameApp.release.xcconfig */,
+				5AB00BAEE6F698A8F2DFD8F5 /* Pods-HNPGameApp.debug.xcconfig */,
+				A06C08E7851D36D620ADE4CA /* Pods-HNPGameApp.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		FC21DD7885A6EB148C202BBE /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				56E4FEBFC0B5B0300CE72373 /* libPods-HNPGameApp.a */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -395,7 +827,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 115A141824A9CC84003AB70F /* Build configuration list for PBXNativeTarget "HNPGameApp" */;
 			buildPhases = (
-				F9D4E0BA8334877A95A2E3D0 /* [CP] Check Pods Manifest.lock */,
+				7EB623E6504A0B84E3EC861A /* [CP] Check Pods Manifest.lock */,
 				115A13FB24A9CC82003AB70F /* Sources */,
 				115A13FC24A9CC82003AB70F /* Frameworks */,
 				115A13FD24A9CC82003AB70F /* Resources */,
@@ -421,6 +853,7 @@
 				TargetAttributes = {
 					115A13FE24A9CC82003AB70F = {
 						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
 					};
 				};
 			};
@@ -447,18 +880,43 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11F61E7324ADA6E300FD6F50 /* HNPYZJiaruCell.xib in Resources */,
+				1158477124AED59900E471BF /* HNPZixunDetailsVC.xib in Resources */,
 				115A141224A9CC84003AB70F /* LaunchScreen.storyboard in Resources */,
 				1152B8BD24A9EAA5002A888E /* HNPGameIconCell.xib in Resources */,
+				114BEF7824AD75F2004E077E /* HNPMyPersonDetailsCell.xib in Resources */,
+				1155F96F24B41D5900F15882 /* MBProgressHUD.bundle in Resources */,
+				1155F97924B4644100F15882 /* HNPSendCodeVC.xib in Resources */,
 				115A140F24A9CC84003AB70F /* Assets.xcassets in Resources */,
+				1147C9EA24B04F1100E7434B /* HNPRegisterVC.xib in Resources */,
+				1147C9FC24B0617700E7434B /* HNPFabuYuezhanVC.xib in Resources */,
 				1152B8C224A9EAC3002A888E /* HNPWangBaCell.xib in Resources */,
+				11F61E8024ADE70000FD6F50 /* HNPDianJingDetailsVC.xib in Resources */,
+				1147CA0024B06F7D00E7434B /* DJClub.plist in Resources */,
+				1147C9E524B0232800E7434B /* HNPLoginVC.xib in Resources */,
+				114AF4C024AC79D40047B724 /* HNPPaiMingCell.xib in Resources */,
+				114AF4BB24AC61BE0047B724 /* HNPziXunCell.xib in Resources */,
 				115A144E24A9D8E9003AB70F /* HNPMainVC.xib in Resources */,
 				1152B8C724A9EADC002A888E /* HNPBottomCell.xib in Resources */,
+				114AF4C524AC79F40047B724 /* HNPZhanDuiCell.xib in Resources */,
+				114BEF7324AD75D3004E077E /* HNPMyPersonheaderCell.xib in Resources */,
 				1152B8CC24A9F42F002A888E /* HNPXuanzePlaceCell.xib in Resources */,
+				114AF4A124AC2E910047B724 /* HNPmoreCell.xib in Resources */,
 				115A144924A9D8CF003AB70F /* HNPMyPersonVC.xib in Resources */,
 				111127A424A9DF2B00EA0AE2 /* HNPYueZhanVC.xib in Resources */,
+				1147C9FE24B06F7800E7434B /* teamList.plist in Resources */,
+				115847B124AF189F00E471BF /* HNPMyFollowCell.xib in Resources */,
+				115847AC24AF189000E471BF /* HNPMyZanCell.xib in Resources */,
 				115A140D24A9CC82003AB70F /* Main.storyboard in Resources */,
+				11F61E6E24ADA6C500FD6F50 /* HNPYZCreatCell.xib in Resources */,
+				11F61E7824ADC55B00FD6F50 /* HNPJubaoVC.xib in Resources */,
 				115A144424A9D8B7003AB70F /* HNPPaiMingVC.xib in Resources */,
+				1158477B24AED5E300E471BF /* HNPZixunCommentCell.xib in Resources */,
+				1158477624AED5C900E471BF /* HNPZixunDetailsCell.xib in Resources */,
 				115A143524A9D856003AB70F /* HNPFirstPageVC.xib in Resources */,
+				115847A724AF188400E471BF /* HNPMyCollectionCell.xib in Resources */,
+				1187561C24B6E35200D769BA /* HNPEditVC.xib in Resources */,
+				115847B624AF18AE00E471BF /* HNPMyBattleCell.xib in Resources */,
 				115A143A24A9D875003AB70F /* HNPZixunVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -466,7 +924,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		F9D4E0BA8334877A95A2E3D0 /* [CP] Check Pods Manifest.lock */ = {
+		7EB623E6504A0B84E3EC861A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -495,20 +953,67 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				114BEF7724AD75F2004E077E /* HNPMyPersonDetailsCell.m in Sources */,
+				11F61E7724ADC55B00FD6F50 /* HNPJubaoVC.m in Sources */,
+				1154E18324B2BE4C00C42232 /* HNPZixunUserModel.m in Sources */,
+				1158479F24AF0E3F00E471BF /* HNPMyFollowVC.m in Sources */,
+				1155F97824B4644100F15882 /* HNPSendCodeVC.m in Sources */,
+				1155F96E24B41D5900F15882 /* MBProgressHUD+XMG.m in Sources */,
+				114AF4AB24AC35CE0047B724 /* HNPLOLController.m in Sources */,
 				1152B8C124A9EAC3002A888E /* HNPWangBaCell.m in Sources */,
+				1187565624B7151300D769BA /* NetworkTool.swift in Sources */,
+				115847A624AF188400E471BF /* HNPMyCollectionCell.m in Sources */,
 				1152B8BC24A9EAA5002A888E /* HNPGameIconCell.m in Sources */,
+				1155F97224B43EF200F15882 /* HNPPersonModel.m in Sources */,
+				114AF4D224AC80B00047B724 /* HNPPMpubgController.m in Sources */,
+				1147CA0324B0755700E7434B /* HNPDianJingModel.m in Sources */,
+				115847B524AF18AE00E471BF /* HNPMyBattleCell.m in Sources */,
 				115A140A24A9CC82003AB70F /* ViewController.m in Sources */,
 				115A144D24A9D8E9003AB70F /* HNPMainVC.m in Sources */,
+				11F61E7224ADA6E300FD6F50 /* HNPYZJiaruCell.m in Sources */,
+				114AF4CC24AC80480047B724 /* HNPPMLOLController.m in Sources */,
+				1155F96624B4157C00F15882 /* HNPMineVCViewController.m in Sources */,
 				115A143424A9D856003AB70F /* HNPFirstPageVC.m in Sources */,
+				1147C9FB24B0617700E7434B /* HNPFabuYuezhanVC.m in Sources */,
 				115A140424A9CC82003AB70F /* AppDelegate.m in Sources */,
+				1154E18024B2BDC500C42232 /* HNPZixunModel.m in Sources */,
 				1152B8C624A9EADC002A888E /* HNPBottomCell.m in Sources */,
+				114AF4A624AC35B80047B724 /* HNPWZController.m in Sources */,
+				1147C9E424B0232800E7434B /* HNPLoginVC.m in Sources */,
+				114AF4CF24AC80A00047B724 /* HNPPMswController.m in Sources */,
+				1158477024AED59900E471BF /* HNPZixunDetailsVC.m in Sources */,
 				111127A324A9DF2B00EA0AE2 /* HNPYueZhanVC.m in Sources */,
 				115A141524A9CC84003AB70F /* main.m in Sources */,
 				115A143924A9D875003AB70F /* HNPZixunVC.m in Sources */,
 				115A140724A9CC82003AB70F /* SceneDelegate.m in Sources */,
+				11F61E6D24ADA6C500FD6F50 /* HNPYZCreatCell.m in Sources */,
+				11F61E7B24ADD46F00FD6F50 /* SelectPhotoManager.m in Sources */,
 				115A144824A9D8CF003AB70F /* HNPMyPersonVC.m in Sources */,
+				1154E18624B2D47200C42232 /* HNPPaimingModel.m in Sources */,
+				1154E18924B2EDE600C42232 /* HNPPaimingListModel.m in Sources */,
+				114AF4C424AC79F40047B724 /* HNPZhanDuiCell.m in Sources */,
+				115847AB24AF189000E471BF /* HNPMyZanCell.m in Sources */,
+				114AF4C924AC7E810047B724 /* HNPPMwzController.m in Sources */,
+				1155F96324B40EF800F15882 /* HNPCommentListModel.m in Sources */,
 				115A144324A9D8B7003AB70F /* HNPPaiMingVC.m in Sources */,
+				1154E18C24B321DF00C42232 /* HNPCommentModel.m in Sources */,
 				1152B8CB24A9F42F002A888E /* HNPXuanzePlaceCell.m in Sources */,
+				11F61E7F24ADE70000FD6F50 /* HNPDianJingDetailsVC.m in Sources */,
+				115847B024AF189F00E471BF /* HNPMyFollowCell.m in Sources */,
+				114AF4B524AC35F20047B724 /* HNPPUBGController.m in Sources */,
+				1187561B24B6E35200D769BA /* HNPEditVC.m in Sources */,
+				1158479C24AF0E2E00E471BF /* HNPMyZanVC.m in Sources */,
+				1147C9E924B04F1100E7434B /* HNPRegisterVC.m in Sources */,
+				114AF4BA24AC61BE0047B724 /* HNPziXunCell.m in Sources */,
+				115847A224AF0E5100E471BF /* HNPMyBattleVC.m in Sources */,
+				1158477524AED5C900E471BF /* HNPZixunDetailsCell.m in Sources */,
+				1158477A24AED5E300E471BF /* HNPZixunCommentCell.m in Sources */,
+				114BEF7224AD75D3004E077E /* HNPMyPersonheaderCell.m in Sources */,
+				114AF4B024AC35E70047B724 /* HNPSWController.m in Sources */,
+				114AF4BF24AC79D40047B724 /* HNPPaiMingCell.m in Sources */,
+				114AF4A024AC2E910047B724 /* HNPmoreCell.m in Sources */,
+				1158479924AF0E1000E471BF /* HNPMyCollectionVC.m in Sources */,
+				1155F96D24B41D5900F15882 /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -646,10 +1151,14 @@
 		};
 		115A141924A9CC84003AB70F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7F2B817DDD1F0B4D97364592 /* Pods-HNPGameApp.debug.xcconfig */;
+			baseConfigurationReference = 5AB00BAEE6F698A8F2DFD8F5 /* Pods-HNPGameApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				ENABLE_BITCODE = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = HNPGameApp/PrefixHeader.pch;
 				INFOPLIST_FILE = HNPGameApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -657,16 +1166,24 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sc.www.HNPGameApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HNPGameApp/Classes/Other/HNPGameApp-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "HNPGameApp-Swift.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		115A141A24A9CC84003AB70F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4DEA675D800AD226071C2A12 /* Pods-HNPGameApp.release.xcconfig */;
+			baseConfigurationReference = A06C08E7851D36D620ADE4CA /* Pods-HNPGameApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				ENABLE_BITCODE = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = HNPGameApp/PrefixHeader.pch;
 				INFOPLIST_FILE = HNPGameApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -674,6 +1191,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sc.www.HNPGameApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HNPGameApp/Classes/Other/HNPGameApp-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "HNPGameApp-Swift.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

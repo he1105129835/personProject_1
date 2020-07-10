@@ -7,10 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <FSScrollContentView.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface HNPZixunVC : UIViewController
+
+@property (nonatomic ,strong)FSPageContentView *pageContentView;
+//顶部控制器的标题
+@property (nonatomic ,strong)FSSegmentTitleView *titleView;
+
+@property(nonatomic,assign)Boolean flag;
 
 @end
 

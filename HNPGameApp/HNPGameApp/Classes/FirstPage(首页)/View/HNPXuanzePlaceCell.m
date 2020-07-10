@@ -8,17 +8,36 @@
 
 #import "HNPXuanzePlaceCell.h"
 
+@interface HNPXuanzePlaceCell ()
+
+
+
+@end
+
 @implementation HNPXuanzePlaceCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    // Initialization code
+    self.fujinBtn.selected = YES;
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
 
-    // Configure the view for the selected state
+- (IBAction)fujinBtnClick:(UIButton *)sender {
+    self.fujinBtn.selected = YES;
+    self.hotBtn.selected = NO;
+    if ([self.delegate respondsToSelector:@selector(HomeXuzanzeFujinBtnDidClick:)]) {
+        [self.delegate HomeXuzanzeFujinBtnDidClick:self];
+    }
 }
+- (IBAction)hotBtnClick:(UIButton *)sender {
+    self.hotBtn.selected = YES;
+    self.fujinBtn.selected = NO;
+    if ([self.delegate respondsToSelector:@selector(HomeXuzanzeHotBtnDidClick:)]) {
+        [self.delegate HomeXuzanzeHotBtnDidClick:self];
+    }
+}
+
+
+
 
 @end

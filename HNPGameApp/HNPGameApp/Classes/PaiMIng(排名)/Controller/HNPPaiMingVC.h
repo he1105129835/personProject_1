@@ -7,10 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <FSScrollContentView.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface HNPPaiMingVC : UIViewController
+
+//顶部控制器的标题
+@property (nonatomic ,strong)FSSegmentTitleView *titleView;
 
 @end
 

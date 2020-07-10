@@ -15,10 +15,26 @@
     // Initialization code
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
+- (IBAction)wzBtn:(id)sender {
+    if ([self.delegate respondsToSelector:@selector(WZBtnDidClick:)]) {
+        [self.delegate WZBtnDidClick:self];
+    }
 }
+- (IBAction)lolBtn:(id)sender {
+    if ([self.delegate respondsToSelector:@selector(LOLBtnDidClick:)]) {
+        [self.delegate LOLBtnDidClick:self];
+    }
+}
+- (IBAction)swBtn:(id)sender {
+    if ([self.delegate respondsToSelector:@selector(SWBtnDidClick:)]) {
+        [self.delegate SWBtnDidClick:self];
+    }
+}
+- (IBAction)pubgBtn:(id)sender {
+    if ([self.delegate respondsToSelector:@selector(PUBGBtnDidClick:)]) {
+        [self.delegate PUBGBtnDidClick:self];
+    }
+}
+
 
 @end

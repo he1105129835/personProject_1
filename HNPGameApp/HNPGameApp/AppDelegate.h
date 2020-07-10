@@ -11,6 +11,8 @@
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (nonatomic ,strong)UIWindow *window;
+@property(nonatomic,assign)Boolean login;
+@property(nonatomic,strong)HNPPersonModel *mineUserInfoModel;
 
 @end
 

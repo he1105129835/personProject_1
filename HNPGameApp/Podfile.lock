@@ -1,16 +1,54 @@
 PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - Alamofire (4.9.1)
+  - FSScrollContentView (1.0.9)
+  - Mantle (2.1.1):
+    - Mantle/extobjc (= 2.1.1)
+  - Mantle/extobjc (2.1.1)
   - MJExtension (3.2.1)
+  - SDWebImage (5.8.1):
+    - SDWebImage/Core (= 5.8.1)
+  - SDWebImage/Core (5.8.1)
 
 DEPENDENCIES:
+  - AFNetworking
+  - Alamofire
+  - FSScrollContentView
+  - Mantle
   - MJExtension
+  - SDWebImage
 
 SPEC REPOS:
   trunk:
+    - AFNetworking
+    - Alamofire
+    - FSScrollContentView
+    - Mantle
     - MJExtension
+    - SDWebImage
 
 SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  FSScrollContentView: 2fdda268eb8f1a1d4aefd470bf70702dbc346d50
+  Mantle: 35238ae6f2e2b2d474fa7b67fee82a59fea71915
   MJExtension: 635f2c663dcb1bf76fa4b715b2570a5710aec545
+  SDWebImage: e3eae2eda88578db0685a0c88597fdadd9433f05
 
-PODFILE CHECKSUM: 24cb719c05d2e036690727dc4b02fc966cec3d75
+PODFILE CHECKSUM: 09667d25e2167b43e4a9e0eeca9d922744fc4c64
 
 COCOAPODS: 1.9.3

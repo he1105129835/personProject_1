@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="myFollowCellID" rowHeight="64" id="KGk-i7-Jjw" customClass="HNPMyFollowCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pic_wangka" translatesAutoresizingMaskIntoConstraints="NO" id="hM1-oa-zg9">
+                        <rect key="frame" x="20" y="10" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="K4M-t9-VDo"/>
+                            <constraint firstAttribute="width" constant="40" id="meu-l8-ZxG"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的关注用户昵称" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qBQ-bu-hgk">
+                        <rect key="frame" x="67.5" y="10" width="114.5" height="13"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="13" id="asI-m1-4dE"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="动态123" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0U0-MX-BDg">
+                        <rect key="frame" x="67.5" y="31" width="38" height="9.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="9.5" id="ex4-BR-KL8"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="粉丝456" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="43d-9d-WhJ">
+                        <rect key="frame" x="115.5" y="31" width="40" height="9.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="9.5" id="ESQ-Xh-QqD"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="heI-jA-6k6">
+                        <rect key="frame" x="277" y="16" width="76" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="28" id="6QV-C6-oPd"/>
+                            <constraint firstAttribute="width" constant="76" id="mhQ-Ge-VBf"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="btn_buzaiguanzhu"/>
+                        <connections>
+                            <action selector="QxMyFollowBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="2NQ-KG-Wh2"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="hM1-oa-zg9" secondAttribute="bottom" constant="10" id="1Fg-bP-hfh"/>
+                    <constraint firstItem="qBQ-bu-hgk" firstAttribute="top" secondItem="hM1-oa-zg9" secondAttribute="top" id="Fmg-Xy-rEd"/>
+                    <constraint firstItem="hM1-oa-zg9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="JnG-5H-Tm9"/>
+                    <constraint firstItem="qBQ-bu-hgk" firstAttribute="leading" secondItem="hM1-oa-zg9" secondAttribute="trailing" constant="7.5" id="Oyw-b3-NaK"/>
+                    <constraint firstItem="hM1-oa-zg9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="RKo-mU-acp"/>
+                    <constraint firstItem="heI-jA-6k6" firstAttribute="centerY" secondItem="hM1-oa-zg9" secondAttribute="centerY" id="bhU-j1-0dz"/>
+                    <constraint firstItem="0U0-MX-BDg" firstAttribute="leading" secondItem="qBQ-bu-hgk" secondAttribute="leading" id="geV-ls-MJi"/>
+                    <constraint firstAttribute="trailing" secondItem="heI-jA-6k6" secondAttribute="trailing" constant="22" id="jP0-vQ-K8g"/>
+                    <constraint firstItem="43d-9d-WhJ" firstAttribute="leading" secondItem="0U0-MX-BDg" secondAttribute="trailing" constant="10" id="l8w-pI-vbw"/>
+                    <constraint firstItem="43d-9d-WhJ" firstAttribute="top" secondItem="0U0-MX-BDg" secondAttribute="top" id="mva-jK-77Z"/>
+                    <constraint firstItem="0U0-MX-BDg" firstAttribute="top" secondItem="qBQ-bu-hgk" secondAttribute="bottom" constant="8" id="v8g-Kb-Zp0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <point key="canvasLocation" x="-530" y="80"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="btn_buzaiguanzhu" width="76" height="28"/>
+        <image name="pic_wangka" width="355" height="120"/>
+    </resources>
+</document>

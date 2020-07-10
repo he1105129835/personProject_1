@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="zixunCommentCellID" rowHeight="253" id="KGk-i7-Jjw" customClass="HNPZixunCommentCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="253"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="253"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pic_shouwang" translatesAutoresizingMaskIntoConstraints="NO" id="rDH-fa-ETj">
+                        <rect key="frame" x="22.5" y="13.5" width="35" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="35" id="Ejx-GM-p1F"/>
+                            <constraint firstAttribute="height" constant="35" id="PTn-kT-iXd"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <real key="value" value="17.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="评论用户昵称" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VJk-1O-eoG">
+                        <rect key="frame" x="62.5" y="13.5" width="74" height="11.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="11.5" id="wP6-ls-2R0"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="18：18" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KVC-GK-fUO">
+                        <rect key="frame" x="62.5" y="33.5" width="33" height="8"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="8" id="E5r-aa-uV7"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LPL夏季赛常规赛的征程即将到来，希望各大队伍打出更好的表现" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbD-Mt-nAB">
+                        <rect key="frame" x="22.5" y="63.5" width="275" height="174.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="rDH-fa-ETj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="22.5" id="3wc-Gl-SV9"/>
+                    <constraint firstItem="VJk-1O-eoG" firstAttribute="top" secondItem="rDH-fa-ETj" secondAttribute="top" id="AOn-UY-TBv"/>
+                    <constraint firstAttribute="trailing" secondItem="dbD-Mt-nAB" secondAttribute="trailing" constant="22.5" id="An9-eA-MAM"/>
+                    <constraint firstItem="KVC-GK-fUO" firstAttribute="top" secondItem="VJk-1O-eoG" secondAttribute="bottom" constant="8.5" id="I9V-Zl-inX"/>
+                    <constraint firstAttribute="bottom" secondItem="dbD-Mt-nAB" secondAttribute="bottom" constant="15" id="JKM-ev-AEb"/>
+                    <constraint firstItem="dbD-Mt-nAB" firstAttribute="leading" secondItem="rDH-fa-ETj" secondAttribute="leading" id="UKa-gK-uFq"/>
+                    <constraint firstItem="KVC-GK-fUO" firstAttribute="leading" secondItem="VJk-1O-eoG" secondAttribute="leading" id="d0n-Ap-Dai"/>
+                    <constraint firstItem="dbD-Mt-nAB" firstAttribute="top" secondItem="rDH-fa-ETj" secondAttribute="bottom" constant="15" id="diF-OX-mf3"/>
+                    <constraint firstItem="rDH-fa-ETj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="13.5" id="gWs-NS-Pdr"/>
+                    <constraint firstItem="VJk-1O-eoG" firstAttribute="leading" secondItem="rDH-fa-ETj" secondAttribute="trailing" constant="5" id="v5T-cP-FzN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="CommentContent" destination="dbD-Mt-nAB" id="tpm-a4-ets"/>
+                <outlet property="CommentHeader" destination="rDH-fa-ETj" id="lfb-Ml-dyV"/>
+                <outlet property="CommentNickName" destination="VJk-1O-eoG" id="Lnd-LE-Tbk"/>
+                <outlet property="CommentPublishTime" destination="KVC-GK-fUO" id="Az0-5v-yBs"/>
+            </connections>
+            <point key="canvasLocation" x="-155" y="122"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="pic_shouwang" width="173" height="70"/>
+    </resources>
+</document>
