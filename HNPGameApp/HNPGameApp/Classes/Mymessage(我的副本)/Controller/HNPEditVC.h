@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface HNPEditVC : UIViewController
 
+@property(nonatomic,assign)Boolean login;
+
 @end
 
 NS_ASSUME_NONNULL_END

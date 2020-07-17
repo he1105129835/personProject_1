@@ -38,8 +38,8 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="动态123" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0U0-MX-BDg">
-                        <rect key="frame" x="67.5" y="31" width="38" height="9.5"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="动态 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0U0-MX-BDg">
+                        <rect key="frame" x="67.5" y="31" width="30" height="9.5"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="9.5" id="ex4-BR-KL8"/>
                         </constraints>
@@ -47,8 +47,8 @@
                         <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="粉丝456" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="43d-9d-WhJ">
-                        <rect key="frame" x="115.5" y="31" width="40" height="9.5"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="粉丝 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="43d-9d-WhJ">
+                        <rect key="frame" x="107.5" y="31" width="30" height="9.5"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="9.5" id="ESQ-Xh-QqD"/>
                         </constraints>
@@ -83,7 +83,11 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
-            <point key="canvasLocation" x="-530" y="80"/>
+            <connections>
+                <outlet property="followHead" destination="hM1-oa-zg9" id="UGh-pA-alp"/>
+                <outlet property="followNickname" destination="qBQ-bu-hgk" id="8Rf-cx-LgP"/>
+            </connections>
+            <point key="canvasLocation" x="-85" y="9"/>
         </tableViewCell>
     </objects>
     <resources>

@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface HNPLoginVC : UIViewController
 
+@property(nonatomic,assign)Boolean loginType;
+
 @end
 
 NS_ASSUME_NONNULL_END

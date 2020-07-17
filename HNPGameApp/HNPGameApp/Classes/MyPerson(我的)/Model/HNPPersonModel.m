@@ -21,6 +21,8 @@
     model.signature = dict[@"signature"];
     model.talkCount = dict[@"talkCount"];
     model.userId = dict[@"id"];
+    model.sex = dict[@"sex"];
+    model.collectionCount = dict[@"collectionCount"];
     
     return model;
     

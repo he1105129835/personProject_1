@@ -26,5 +26,6 @@
 @interface HNPMyPersonheaderCell : UITableViewCell
 
 @property (nonatomic ,weak) id<HNPMyPersonBtnDelegate> delegate;
+@property(nonatomic,strong)HNPPersonModel *personMdoel;
 
 @end

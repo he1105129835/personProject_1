@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HNPBattleTeamModel.h"
 
 @class HNPMyBattleCell;
 @protocol HNPDeleteBtnDelegate <NSObject>
@@ -19,5 +20,6 @@
 @interface HNPMyBattleCell : UITableViewCell
 
 @property (nonatomic ,weak) id<HNPDeleteBtnDelegate> delegate;
+@property (nonatomic,strong)HNPBattleTeamModel *battleTeamM;
 
 @end

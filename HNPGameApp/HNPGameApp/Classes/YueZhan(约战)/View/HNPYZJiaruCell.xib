@@ -50,21 +50,13 @@
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SXF-MD-yxw">
-                        <rect key="frame" x="287.5" y="69" width="45" height="45"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="45" id="1QZ-ME-p0u"/>
-                            <constraint firstAttribute="height" constant="45" id="uXC-Ni-SlF"/>
-                        </constraints>
-                        <state key="normal" backgroundImage="btn_tianjiazhandui"/>
-                    </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="点击加入" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Vf-br-Ecp">
                         <rect key="frame" x="279.5" y="124" width="61.5" height="18"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <color key="textColor" red="0.0" green="0.68954724073410034" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="比赛" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WVh-im-IKu">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="友方" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WVh-im-IKu">
                         <rect key="frame" x="297.5" y="147" width="25" height="14.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <color key="textColor" red="0.0" green="0.68954724073410034" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -129,12 +121,22 @@
                             <action selector="jubaoBtn:" destination="n4K-Zs-9pY" eventType="touchUpInside" id="ybp-zI-FGg"/>
                         </connections>
                     </button>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0rO-gc-7XI">
+                        <rect key="frame" x="287.5" y="69" width="45" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="45" id="ODe-IY-vFB"/>
+                            <constraint firstAttribute="height" constant="45" id="opa-C6-TOa"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
                 <constraints>
                     <constraint firstItem="pQa-OR-Coq" firstAttribute="centerY" secondItem="wtk-np-jgw" secondAttribute="centerY" id="0zr-i7-5mz"/>
                     <constraint firstItem="S1V-jd-qKd" firstAttribute="centerX" secondItem="baz-yX-efl" secondAttribute="centerX" id="67q-Y4-gFf"/>
                     <constraint firstItem="yP3-Vt-qzn" firstAttribute="top" secondItem="ipe-Ny-dSm" secondAttribute="bottom" constant="10" id="6pX-s2-FxG"/>
+                    <constraint firstItem="WVh-im-IKu" firstAttribute="centerX" secondItem="9Vf-br-Ecp" secondAttribute="centerX" id="CAU-6t-Mnq"/>
+                    <constraint firstItem="9Vf-br-Ecp" firstAttribute="top" secondItem="0rO-gc-7XI" secondAttribute="bottom" constant="10" id="D2j-h9-7Pn"/>
                     <constraint firstItem="uKO-2O-WdF" firstAttribute="top" secondItem="Z1h-3o-Jw0" secondAttribute="bottom" constant="10" id="DK9-Xd-b9L"/>
+                    <constraint firstItem="WVh-im-IKu" firstAttribute="top" secondItem="9Vf-br-Ecp" secondAttribute="bottom" constant="5" id="DuQ-3I-MSZ"/>
                     <constraint firstItem="pQa-OR-Coq" firstAttribute="leading" secondItem="wtk-np-jgw" secondAttribute="trailing" constant="5" id="F0h-pn-Ekb"/>
                     <constraint firstItem="yP3-Vt-qzn" firstAttribute="centerX" secondItem="ipe-Ny-dSm" secondAttribute="centerX" id="GmN-4I-Ha8"/>
                     <constraint firstItem="5pl-vW-jKs" firstAttribute="centerX" secondItem="yP3-Vt-qzn" secondAttribute="centerX" id="Khy-TP-GsC"/>
@@ -142,7 +144,7 @@
                     <constraint firstItem="uKO-2O-WdF" firstAttribute="centerX" secondItem="Z1h-3o-Jw0" secondAttribute="centerX" id="N0M-NA-QHx"/>
                     <constraint firstItem="S1V-jd-qKd" firstAttribute="centerX" secondItem="ipe-Ny-dSm" secondAttribute="centerX" id="PWW-dm-QgR"/>
                     <constraint firstItem="baz-yX-efl" firstAttribute="leading" secondItem="H9j-4c-7f1" secondAttribute="leading" constant="10" id="Qjh-sj-HRE"/>
-                    <constraint firstItem="SXF-MD-yxw" firstAttribute="top" secondItem="baz-yX-efl" secondAttribute="bottom" constant="25" id="Tva-W1-1Eo"/>
+                    <constraint firstAttribute="trailing" secondItem="0rO-gc-7XI" secondAttribute="trailing" constant="42.5" id="T4M-8e-kd7"/>
                     <constraint firstItem="wtk-np-jgw" firstAttribute="centerX" secondItem="uKO-2O-WdF" secondAttribute="centerX" id="V3i-Gk-ZHD"/>
                     <constraint firstItem="S1V-jd-qKd" firstAttribute="centerX" secondItem="J6N-E9-rwn" secondAttribute="centerX" id="YB9-h6-jly"/>
                     <constraint firstItem="J6N-E9-rwn" firstAttribute="top" secondItem="baz-yX-efl" secondAttribute="top" constant="7" id="ZGV-B9-Xr7"/>
@@ -152,29 +154,29 @@
                     <constraint firstItem="bBI-k5-oOp" firstAttribute="centerY" secondItem="wtk-np-jgw" secondAttribute="centerY" id="cac-iJ-feq"/>
                     <constraint firstAttribute="trailing" secondItem="Rxt-Sb-gly" secondAttribute="trailing" id="eUI-Ru-naN"/>
                     <constraint firstItem="wtk-np-jgw" firstAttribute="top" secondItem="uKO-2O-WdF" secondAttribute="bottom" constant="5" id="fKy-bc-NSS"/>
+                    <constraint firstItem="9Vf-br-Ecp" firstAttribute="centerX" secondItem="0rO-gc-7XI" secondAttribute="centerX" id="fiq-2S-e9u"/>
                     <constraint firstItem="5pl-vW-jKs" firstAttribute="top" secondItem="yP3-Vt-qzn" secondAttribute="bottom" constant="5" id="jB7-Q4-qt5"/>
                     <constraint firstItem="wtk-np-jgw" firstAttribute="leading" secondItem="bBI-k5-oOp" secondAttribute="trailing" constant="5" id="jml-15-8bx"/>
+                    <constraint firstItem="0rO-gc-7XI" firstAttribute="top" secondItem="baz-yX-efl" secondAttribute="bottom" constant="25" id="keA-1c-b4t"/>
                     <constraint firstItem="ipe-Ny-dSm" firstAttribute="top" secondItem="S1V-jd-qKd" secondAttribute="bottom" constant="2.5" id="mvi-Ig-oII"/>
-                    <constraint firstItem="9Vf-br-Ecp" firstAttribute="centerX" secondItem="SXF-MD-yxw" secondAttribute="centerX" id="o2G-Mn-ocW"/>
-                    <constraint firstItem="9Vf-br-Ecp" firstAttribute="top" secondItem="SXF-MD-yxw" secondAttribute="bottom" constant="10" id="pE3-lA-bBZ"/>
                     <constraint firstItem="baz-yX-efl" firstAttribute="top" secondItem="H9j-4c-7f1" secondAttribute="top" constant="10" id="qJU-jx-z93"/>
                     <constraint firstItem="S1V-jd-qKd" firstAttribute="top" secondItem="baz-yX-efl" secondAttribute="bottom" constant="10" id="roz-ly-fkY"/>
-                    <constraint firstItem="WVh-im-IKu" firstAttribute="centerX" secondItem="9Vf-br-Ecp" secondAttribute="centerX" id="sGg-ZP-w6H"/>
                     <constraint firstItem="Z1h-3o-Jw0" firstAttribute="leading" secondItem="H9j-4c-7f1" secondAttribute="leading" constant="42.5" id="vEl-KD-hPA"/>
-                    <constraint firstItem="WVh-im-IKu" firstAttribute="top" secondItem="9Vf-br-Ecp" secondAttribute="bottom" constant="5" id="vKl-Hu-CbH"/>
-                    <constraint firstAttribute="trailing" secondItem="SXF-MD-yxw" secondAttribute="trailing" constant="42.5" id="yRf-h3-U3r"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="b1c-RB-tCp"/>
             <connections>
                 <outlet property="blueImageView" destination="baz-yX-efl" id="ZJy-Pa-3PC"/>
+                <outlet property="jiaruImageView_1" destination="Z1h-3o-Jw0" id="ymY-XG-0kH"/>
+                <outlet property="jiaruImageView_2" destination="0rO-gc-7XI" id="c2d-gc-3Wa"/>
+                <outlet property="jiaruNameLable_1" destination="uKO-2O-WdF" id="sSy-cG-3Yo"/>
+                <outlet property="jiaruNameLable_2" destination="9Vf-br-Ecp" id="1dS-rl-gpi"/>
             </connections>
-            <point key="canvasLocation" x="-585" y="9"/>
+            <point key="canvasLocation" x="-612" y="14"/>
         </tableViewCell>
     </objects>
     <resources>
         <image name="btn_bukeshenqing" width="91" height="29"/>
-        <image name="btn_tianjiazhandui" width="45" height="45"/>
         <image name="dianjingguan box" width="374.5" height="128.5"/>
         <image name="dingbu" width="153" height="84"/>
         <image name="pic_juedi" width="173" height="70"/>

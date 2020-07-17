@@ -10,6 +10,8 @@
 #import "HNPRegisterVC.h"
 #import "HNPMyPersonVC.h"
 #import "HNPPersonModel.h"
+#import "AppDelegate.h"
+#import "HNPResetPasswordVC.h"
 
 @interface HNPLoginVC ()
 @property (weak, nonatomic) IBOutlet UITextField *count_F;
@@ -70,7 +72,7 @@
     [loginPar setObject:self.count_F.text forKey:@"phone"];
     [loginPar setObject:self.password_F.text forKey:@"password"];
     [loginPar setObject:@"1" forKey:@"type"];
-    [loginPar setObject:@"futures" forKey:@"project"];
+    [loginPar setObject:@"game" forKey:@"project"];
     [loginPar setObject:@"000000" forKey:@"code"];
     
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
@@ -80,14 +82,26 @@
         NSDictionary *dict = data[@"data"];
         if ([success isEqualToString:@"1"]) {
             [MBProgressHUD showMessage:@"登录成功..."];
-            HNPPersonModel *perModel = [HNPPersonModel HNPPersonModelWithDict:dict];
+            AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+            appDelegate.mineUserInfoModel = [HNPPersonModel HNPPersonModelWithDict:dict];
             dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             [MBProgressHUD hideHUD];
-                NSString *path = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents/user.plist"];
-                NSDictionary *tempDict = [perModel mj_keyValues];
-                [tempDict writeToFile:path atomically:YES];
-                [[NSNotificationCenter defaultCenter] postNotificationName:@"LoginSuccess" object:self];
-//                NSLog(@"%@",NSHomeDirectory());
+                if (self.loginType == YES) {
+                    NSString *path = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents/user.plist"];
+                    NSDictionary *tempDict = [appDelegate.mineUserInfoModel mj_keyValues];
+                    [tempDict writeToFile:path atomically:YES];
+                    [[NSNotificationCenter defaultCenter] postNotificationName:@"LoginSuccess" object:self];
+                    NSLog(@"%@",NSHomeDirectory());
+                }else{
+                    NSString *path = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents/user.plist"];
+                    NSDictionary *tempDict = [appDelegate.mineUserInfoModel mj_keyValues];
+                                       [tempDict writeToFile:path atomically:YES];
+                    [[NSNotificationCenter defaultCenter] postNotificationName:@"LoginSuccess" object:self];
+                    NSLog(@"%@",NSHomeDirectory());
+                    [self dismissViewControllerAnimated:YES completion:nil];
+                    
+                }
+                
             
                                    
         });
@@ -102,6 +116,10 @@
     }];
 }
 
+- (IBAction)resetPasswordBtnClick:(UIButton *)sender {
+    HNPResetPasswordVC *resetVC = [HNPResetPasswordVC new];
+    [self presentViewController:resetVC animated:YES completion:nil];
+}
 
 
 @end

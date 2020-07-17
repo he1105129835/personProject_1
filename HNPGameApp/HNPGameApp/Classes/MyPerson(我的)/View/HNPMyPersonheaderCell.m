@@ -11,6 +11,10 @@
 @interface HNPMyPersonheaderCell ()
 
 @property (weak, nonatomic) IBOutlet UIImageView *HeaderImageView;
+@property (weak, nonatomic) IBOutlet UILabel *collentionCount;
+@property (weak, nonatomic) IBOutlet UILabel *zanCount;
+@property (weak, nonatomic) IBOutlet UILabel *followCount;
+@property (weak, nonatomic) IBOutlet UILabel *battleCount;
 
 
 @end
@@ -20,6 +24,19 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     self.HeaderImageView.layer.cornerRadius = 30;
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(selector) name:@"editHeader" object:nil];
+}
+
+
+
+-(void)selector{
+    [self.HeaderImageView sd_setImageWithURL:[NSURL URLWithString:self.personMdoel.head] placeholderImage:[UIImage imageNamed:@"jiazaishibai"]];
+    
+}
+
+- (void)setPersonMdoel:(HNPPersonModel *)personMdoel{
+    _personMdoel = personMdoel;
+    [self.HeaderImageView sd_setImageWithURL:[NSURL URLWithString:self.personMdoel.head] placeholderImage:[UIImage imageNamed:@"jiazaishibai"]];
 }
 
 - (IBAction)collectionBtn:(id)sender {

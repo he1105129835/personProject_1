@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HNPFollowGdModel.h"
 
 @class HNPMyFollowCell;
 @protocol HNPQXFollowBtnDelegate <NSObject>
@@ -19,6 +20,7 @@
 @interface HNPMyFollowCell : UITableViewCell
 
 @property (nonatomic ,weak) id<HNPQXFollowBtnDelegate> delegate;
+@property (nonatomic,strong)HNPFollowGdModel *followGdM;
 
 @end
 

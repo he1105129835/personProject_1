@@ -9,6 +9,21 @@
 /* Begin PBXBuildFile section */
 		111127A324A9DF2B00EA0AE2 /* HNPYueZhanVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 111127A124A9DF2B00EA0AE2 /* HNPYueZhanVC.m */; };
 		111127A424A9DF2B00EA0AE2 /* HNPYueZhanVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 111127A224A9DF2B00EA0AE2 /* HNPYueZhanVC.xib */; };
+		113F3E9424C04DA000FEDAC2 /* HNPZanGdModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 113F3E9324C04DA000FEDAC2 /* HNPZanGdModel.m */; };
+		113F3E9724C04DAD00FEDAC2 /* HNPZanGdModelArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 113F3E9624C04DAD00FEDAC2 /* HNPZanGdModelArray.m */; };
+		114189EF24BD9E84004FEE39 /* HNPMySetTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 114189EE24BD9E84004FEE39 /* HNPMySetTextField.m */; };
+		114189FD24BDA8E6004FEE39 /* HNPTeamOneVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 114189FB24BDA8E6004FEE39 /* HNPTeamOneVC.m */; };
+		114189FE24BDA8E6004FEE39 /* HNPTeamOneVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 114189FC24BDA8E6004FEE39 /* HNPTeamOneVC.xib */; };
+		11418A0224BDA8F2004FEE39 /* HNPTeamTwoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 11418A0024BDA8F2004FEE39 /* HNPTeamTwoVC.m */; };
+		11418A0324BDA8F2004FEE39 /* HNPTeamTwoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11418A0124BDA8F2004FEE39 /* HNPTeamTwoVC.xib */; };
+		11418A0724BDAA7F004FEE39 /* HNPTeamCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 11418A0524BDAA7F004FEE39 /* HNPTeamCell.m */; };
+		11418A0824BDAA7F004FEE39 /* HNPTeamCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11418A0624BDAA7F004FEE39 /* HNPTeamCell.xib */; };
+		1142DDF624C143D40051E8AB /* HNPResetPasswordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1142DDF424C143D40051E8AB /* HNPResetPasswordVC.m */; };
+		1142DDF724C143D40051E8AB /* HNPResetPasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1142DDF524C143D40051E8AB /* HNPResetPasswordVC.xib */; };
+		1146E84F24B8079B00EE8DEC /* HNPEditNickNameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E84E24B8079B00EE8DEC /* HNPEditNickNameView.m */; };
+		1146E85124B807A700EE8DEC /* HNPEditNickNameView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1146E85024B807A700EE8DEC /* HNPEditNickNameView.xib */; };
+		1146E85424B835AF00EE8DEC /* HNPNickNameVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E85324B835AF00EE8DEC /* HNPNickNameVC.m */; };
+		1146E85624B835C100EE8DEC /* HNPNickNameVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1146E85524B835C100EE8DEC /* HNPNickNameVC.xib */; };
 		1147C9E424B0232800E7434B /* HNPLoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1147C9E224B0232800E7434B /* HNPLoginVC.m */; };
 		1147C9E524B0232800E7434B /* HNPLoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1147C9E324B0232800E7434B /* HNPLoginVC.xib */; };
 		1147C9E924B04F1100E7434B /* HNPRegisterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1147C9E724B04F1100E7434B /* HNPRegisterVC.m */; };
@@ -94,9 +109,14 @@
 		115A144924A9D8CF003AB70F /* HNPMyPersonVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 115A144724A9D8CF003AB70F /* HNPMyPersonVC.xib */; };
 		115A144D24A9D8E9003AB70F /* HNPMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 115A144B24A9D8E9003AB70F /* HNPMainVC.m */; };
 		115A144E24A9D8E9003AB70F /* HNPMainVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 115A144C24A9D8E9003AB70F /* HNPMainVC.xib */; };
+		115E6CF824BEF8A6006F6A39 /* HNPBattleTeamModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 115E6CF724BEF8A6006F6A39 /* HNPBattleTeamModel.m */; };
+		115E6CFB24BF0166006F6A39 /* HNPBattleTeamModelArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 115E6CFA24BF0166006F6A39 /* HNPBattleTeamModelArray.m */; };
 		1187561B24B6E35200D769BA /* HNPEditVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1187561924B6E35200D769BA /* HNPEditVC.m */; };
 		1187561C24B6E35200D769BA /* HNPEditVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1187561A24B6E35200D769BA /* HNPEditVC.xib */; };
 		1187565624B7151300D769BA /* NetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1187565524B7151300D769BA /* NetworkTool.swift */; };
+		118B7C9C24C001DA0055E49E /* HNPTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 118B7C9B24C001DA0055E49E /* HNPTabBar.m */; };
+		118B7C9F24C029550055E49E /* HNPFollowGdModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 118B7C9E24C029550055E49E /* HNPFollowGdModel.m */; };
+		118B7CA224C0296C0055E49E /* HNPFollowGdModelArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 118B7CA124C0296C0055E49E /* HNPFollowGdModelArray.m */; };
 		11F61E6D24ADA6C500FD6F50 /* HNPYZCreatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F61E6B24ADA6C500FD6F50 /* HNPYZCreatCell.m */; };
 		11F61E6E24ADA6C500FD6F50 /* HNPYZCreatCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11F61E6C24ADA6C500FD6F50 /* HNPYZCreatCell.xib */; };
 		11F61E7224ADA6E300FD6F50 /* HNPYZJiaruCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F61E7024ADA6E300FD6F50 /* HNPYZJiaruCell.m */; };
@@ -106,13 +126,37 @@
 		11F61E7B24ADD46F00FD6F50 /* SelectPhotoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F61E7A24ADD46F00FD6F50 /* SelectPhotoManager.m */; };
 		11F61E7F24ADE70000FD6F50 /* HNPDianJingDetailsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F61E7D24ADE70000FD6F50 /* HNPDianJingDetailsVC.m */; };
 		11F61E8024ADE70000FD6F50 /* HNPDianJingDetailsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11F61E7E24ADE70000FD6F50 /* HNPDianJingDetailsVC.xib */; };
-		183F6F267E713EDA0529012E /* libPods-HNPGameApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D5B4E087EEA79F40BC8CF963 /* libPods-HNPGameApp.a */; };
+		DEE3F56D95299E28A06C14ED /* libPods-HNPGameApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B875D79692C4E569C3253A1A /* libPods-HNPGameApp.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		111127A024A9DF2B00EA0AE2 /* HNPYueZhanVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPYueZhanVC.h; sourceTree = "<group>"; };
 		111127A124A9DF2B00EA0AE2 /* HNPYueZhanVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPYueZhanVC.m; sourceTree = "<group>"; };
 		111127A224A9DF2B00EA0AE2 /* HNPYueZhanVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HNPYueZhanVC.xib; sourceTree = "<group>"; };
+		113F3E9224C04DA000FEDAC2 /* HNPZanGdModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPZanGdModel.h; sourceTree = "<group>"; };
+		113F3E9324C04DA000FEDAC2 /* HNPZanGdModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPZanGdModel.m; sourceTree = "<group>"; };
+		113F3E9524C04DAD00FEDAC2 /* HNPZanGdModelArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPZanGdModelArray.h; sourceTree = "<group>"; };
+		113F3E9624C04DAD00FEDAC2 /* HNPZanGdModelArray.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPZanGdModelArray.m; sourceTree = "<group>"; };
+		114189ED24BD9E84004FEE39 /* HNPMySetTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPMySetTextField.h; sourceTree = "<group>"; };
+		114189EE24BD9E84004FEE39 /* HNPMySetTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPMySetTextField.m; sourceTree = "<group>"; };
+		114189FA24BDA8E6004FEE39 /* HNPTeamOneVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPTeamOneVC.h; sourceTree = "<group>"; };
+		114189FB24BDA8E6004FEE39 /* HNPTeamOneVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPTeamOneVC.m; sourceTree = "<group>"; };
+		114189FC24BDA8E6004FEE39 /* HNPTeamOneVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HNPTeamOneVC.xib; sourceTree = "<group>"; };
+		114189FF24BDA8F2004FEE39 /* HNPTeamTwoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPTeamTwoVC.h; sourceTree = "<group>"; };
+		11418A0024BDA8F2004FEE39 /* HNPTeamTwoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPTeamTwoVC.m; sourceTree = "<group>"; };
+		11418A0124BDA8F2004FEE39 /* HNPTeamTwoVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HNPTeamTwoVC.xib; sourceTree = "<group>"; };
+		11418A0424BDAA7F004FEE39 /* HNPTeamCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPTeamCell.h; sourceTree = "<group>"; };
+		11418A0524BDAA7F004FEE39 /* HNPTeamCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPTeamCell.m; sourceTree = "<group>"; };
+		11418A0624BDAA7F004FEE39 /* HNPTeamCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HNPTeamCell.xib; sourceTree = "<group>"; };
+		1142DDF324C143D40051E8AB /* HNPResetPasswordVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPResetPasswordVC.h; sourceTree = "<group>"; };
+		1142DDF424C143D40051E8AB /* HNPResetPasswordVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPResetPasswordVC.m; sourceTree = "<group>"; };
+		1142DDF524C143D40051E8AB /* HNPResetPasswordVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HNPResetPasswordVC.xib; sourceTree = "<group>"; };
+		1146E84D24B8079B00EE8DEC /* HNPEditNickNameView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPEditNickNameView.h; sourceTree = "<group>"; };
+		1146E84E24B8079B00EE8DEC /* HNPEditNickNameView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPEditNickNameView.m; sourceTree = "<group>"; };
+		1146E85024B807A700EE8DEC /* HNPEditNickNameView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HNPEditNickNameView.xib; sourceTree = "<group>"; };
+		1146E85224B835AF00EE8DEC /* HNPNickNameVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPNickNameVC.h; sourceTree = "<group>"; };
+		1146E85324B835AF00EE8DEC /* HNPNickNameVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPNickNameVC.m; sourceTree = "<group>"; };
+		1146E85524B835C100EE8DEC /* HNPNickNameVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HNPNickNameVC.xib; sourceTree = "<group>"; };
 		1147C9E124B0232800E7434B /* HNPLoginVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPLoginVC.h; sourceTree = "<group>"; };
 		1147C9E224B0232800E7434B /* HNPLoginVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPLoginVC.m; sourceTree = "<group>"; };
 		1147C9E324B0232800E7434B /* HNPLoginVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HNPLoginVC.xib; sourceTree = "<group>"; };
@@ -253,11 +297,21 @@
 		115A144A24A9D8E9003AB70F /* HNPMainVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPMainVC.h; sourceTree = "<group>"; };
 		115A144B24A9D8E9003AB70F /* HNPMainVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPMainVC.m; sourceTree = "<group>"; };
 		115A144C24A9D8E9003AB70F /* HNPMainVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HNPMainVC.xib; sourceTree = "<group>"; };
+		115E6CF624BEF8A6006F6A39 /* HNPBattleTeamModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPBattleTeamModel.h; sourceTree = "<group>"; };
+		115E6CF724BEF8A6006F6A39 /* HNPBattleTeamModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPBattleTeamModel.m; sourceTree = "<group>"; };
+		115E6CF924BF0166006F6A39 /* HNPBattleTeamModelArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPBattleTeamModelArray.h; sourceTree = "<group>"; };
+		115E6CFA24BF0166006F6A39 /* HNPBattleTeamModelArray.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPBattleTeamModelArray.m; sourceTree = "<group>"; };
 		1187561824B6E35200D769BA /* HNPEditVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPEditVC.h; sourceTree = "<group>"; };
 		1187561924B6E35200D769BA /* HNPEditVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPEditVC.m; sourceTree = "<group>"; };
 		1187561A24B6E35200D769BA /* HNPEditVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HNPEditVC.xib; sourceTree = "<group>"; };
 		1187565524B7151300D769BA /* NetworkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTool.swift; sourceTree = "<group>"; };
 		1187565724B7153800D769BA /* HNPGameApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HNPGameApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		118B7C9A24C001DA0055E49E /* HNPTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPTabBar.h; sourceTree = "<group>"; };
+		118B7C9B24C001DA0055E49E /* HNPTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPTabBar.m; sourceTree = "<group>"; };
+		118B7C9D24C029550055E49E /* HNPFollowGdModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPFollowGdModel.h; sourceTree = "<group>"; };
+		118B7C9E24C029550055E49E /* HNPFollowGdModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPFollowGdModel.m; sourceTree = "<group>"; };
+		118B7CA024C0296C0055E49E /* HNPFollowGdModelArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPFollowGdModelArray.h; sourceTree = "<group>"; };
+		118B7CA124C0296C0055E49E /* HNPFollowGdModelArray.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPFollowGdModelArray.m; sourceTree = "<group>"; };
 		11F61E6A24ADA6C500FD6F50 /* HNPYZCreatCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPYZCreatCell.h; sourceTree = "<group>"; };
 		11F61E6B24ADA6C500FD6F50 /* HNPYZCreatCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPYZCreatCell.m; sourceTree = "<group>"; };
 		11F61E6C24ADA6C500FD6F50 /* HNPYZCreatCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HNPYZCreatCell.xib; sourceTree = "<group>"; };
@@ -272,9 +326,9 @@
 		11F61E7C24ADE70000FD6F50 /* HNPDianJingDetailsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPDianJingDetailsVC.h; sourceTree = "<group>"; };
 		11F61E7D24ADE70000FD6F50 /* HNPDianJingDetailsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPDianJingDetailsVC.m; sourceTree = "<group>"; };
 		11F61E7E24ADE70000FD6F50 /* HNPDianJingDetailsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HNPDianJingDetailsVC.xib; sourceTree = "<group>"; };
-		5AB00BAEE6F698A8F2DFD8F5 /* Pods-HNPGameApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HNPGameApp.debug.xcconfig"; path = "Target Support Files/Pods-HNPGameApp/Pods-HNPGameApp.debug.xcconfig"; sourceTree = "<group>"; };
-		A06C08E7851D36D620ADE4CA /* Pods-HNPGameApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HNPGameApp.release.xcconfig"; path = "Target Support Files/Pods-HNPGameApp/Pods-HNPGameApp.release.xcconfig"; sourceTree = "<group>"; };
-		D5B4E087EEA79F40BC8CF963 /* libPods-HNPGameApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HNPGameApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B875D79692C4E569C3253A1A /* libPods-HNPGameApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HNPGameApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCA98D760EEB00490E1EF509 /* Pods-HNPGameApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HNPGameApp.debug.xcconfig"; path = "Target Support Files/Pods-HNPGameApp/Pods-HNPGameApp.debug.xcconfig"; sourceTree = "<group>"; };
+		E6EB183DC80DF3A63C0E8159 /* Pods-HNPGameApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HNPGameApp.release.xcconfig"; path = "Target Support Files/Pods-HNPGameApp/Pods-HNPGameApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -282,7 +336,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				183F6F267E713EDA0529012E /* libPods-HNPGameApp.a in Frameworks */,
+				DEE3F56D95299E28A06C14ED /* libPods-HNPGameApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +359,12 @@
 				1147C9F824B0617700E7434B /* HNPFabuYuezhanVC.h */,
 				1147C9F924B0617700E7434B /* HNPFabuYuezhanVC.m */,
 				1147C9FA24B0617700E7434B /* HNPFabuYuezhanVC.xib */,
+				114189FA24BDA8E6004FEE39 /* HNPTeamOneVC.h */,
+				114189FB24BDA8E6004FEE39 /* HNPTeamOneVC.m */,
+				114189FC24BDA8E6004FEE39 /* HNPTeamOneVC.xib */,
+				114189FF24BDA8F2004FEE39 /* HNPTeamTwoVC.h */,
+				11418A0024BDA8F2004FEE39 /* HNPTeamTwoVC.m */,
+				11418A0124BDA8F2004FEE39 /* HNPTeamTwoVC.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -312,6 +372,10 @@
 		1111279E24A9DEFD00EA0AE2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				115E6CF624BEF8A6006F6A39 /* HNPBattleTeamModel.h */,
+				115E6CF724BEF8A6006F6A39 /* HNPBattleTeamModel.m */,
+				115E6CF924BF0166006F6A39 /* HNPBattleTeamModelArray.h */,
+				115E6CFA24BF0166006F6A39 /* HNPBattleTeamModelArray.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -325,8 +389,20 @@
 				11F61E6F24ADA6E300FD6F50 /* HNPYZJiaruCell.h */,
 				11F61E7024ADA6E300FD6F50 /* HNPYZJiaruCell.m */,
 				11F61E7124ADA6E300FD6F50 /* HNPYZJiaruCell.xib */,
+				11418A0424BDAA7F004FEE39 /* HNPTeamCell.h */,
+				11418A0524BDAA7F004FEE39 /* HNPTeamCell.m */,
+				11418A0624BDAA7F004FEE39 /* HNPTeamCell.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		114189EC24BD9E62004FEE39 /* MySetTextField */ = {
+			isa = PBXGroup;
+			children = (
+				114189ED24BD9E84004FEE39 /* HNPMySetTextField.h */,
+				114189EE24BD9E84004FEE39 /* HNPMySetTextField.m */,
+			);
+			path = MySetTextField;
 			sourceTree = "<group>";
 		};
 		114AF4A224AC358A0047B724 /* childController */ = {
@@ -393,6 +469,9 @@
 				1155F97524B4644100F15882 /* HNPSendCodeVC.h */,
 				1155F97624B4644100F15882 /* HNPSendCodeVC.m */,
 				1155F97724B4644100F15882 /* HNPSendCodeVC.xib */,
+				1142DDF324C143D40051E8AB /* HNPResetPasswordVC.h */,
+				1142DDF424C143D40051E8AB /* HNPResetPasswordVC.m */,
+				1142DDF524C143D40051E8AB /* HNPResetPasswordVC.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -461,6 +540,12 @@
 				115847B224AF18AE00E471BF /* HNPMyBattleCell.h */,
 				115847B324AF18AE00E471BF /* HNPMyBattleCell.m */,
 				115847B424AF18AE00E471BF /* HNPMyBattleCell.xib */,
+				1146E84D24B8079B00EE8DEC /* HNPEditNickNameView.h */,
+				1146E84E24B8079B00EE8DEC /* HNPEditNickNameView.m */,
+				1146E85024B807A700EE8DEC /* HNPEditNickNameView.xib */,
+				1146E85224B835AF00EE8DEC /* HNPNickNameVC.h */,
+				1146E85324B835AF00EE8DEC /* HNPNickNameVC.m */,
+				1146E85524B835C100EE8DEC /* HNPNickNameVC.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -502,7 +587,7 @@
 				115A140124A9CC82003AB70F /* HNPGameApp */,
 				115A140024A9CC82003AB70F /* Products */,
 				F9D182721FAAD7C93A351C80 /* Pods */,
-				E38BC42453ACCED9A690ECBC /* Frameworks */,
+				96E3B53E37DA47A9A7808282 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -522,14 +607,10 @@
 				115A140324A9CC82003AB70F /* AppDelegate.m */,
 				115A140524A9CC82003AB70F /* SceneDelegate.h */,
 				115A140624A9CC82003AB70F /* SceneDelegate.m */,
-				115A140824A9CC82003AB70F /* ViewController.h */,
-				115A140924A9CC82003AB70F /* ViewController.m */,
 				115A140B24A9CC82003AB70F /* Main.storyboard */,
 				115A140E24A9CC84003AB70F /* Assets.xcassets */,
 				115A141024A9CC84003AB70F /* LaunchScreen.storyboard */,
 				115A141324A9CC84003AB70F /* Info.plist */,
-				1147C9FD24B06F7800E7434B /* teamList.plist */,
-				1147C9FF24B06F7D00E7434B /* DJClub.plist */,
 				115A141424A9CC84003AB70F /* main.m */,
 				1155F97424B4451900F15882 /* PrefixHeader.pch */,
 			);
@@ -720,6 +801,8 @@
 				115A144A24A9D8E9003AB70F /* HNPMainVC.h */,
 				115A144B24A9D8E9003AB70F /* HNPMainVC.m */,
 				115A144C24A9D8E9003AB70F /* HNPMainVC.xib */,
+				118B7C9A24C001DA0055E49E /* HNPTabBar.h */,
+				118B7C9B24C001DA0055E49E /* HNPTabBar.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -773,6 +856,14 @@
 				1154E18B24B321DF00C42232 /* HNPCommentModel.m */,
 				1155F96124B40EF800F15882 /* HNPCommentListModel.h */,
 				1155F96224B40EF800F15882 /* HNPCommentListModel.m */,
+				118B7C9D24C029550055E49E /* HNPFollowGdModel.h */,
+				118B7C9E24C029550055E49E /* HNPFollowGdModel.m */,
+				118B7CA024C0296C0055E49E /* HNPFollowGdModelArray.h */,
+				118B7CA124C0296C0055E49E /* HNPFollowGdModelArray.m */,
+				113F3E9224C04DA000FEDAC2 /* HNPZanGdModel.h */,
+				113F3E9324C04DA000FEDAC2 /* HNPZanGdModel.m */,
+				113F3E9524C04DAD00FEDAC2 /* HNPZanGdModelArray.h */,
+				113F3E9624C04DAD00FEDAC2 /* HNPZanGdModelArray.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -796,6 +887,11 @@
 		115A143024A9D509003AB70F /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				114189EC24BD9E62004FEE39 /* MySetTextField */,
+				115A140824A9CC82003AB70F /* ViewController.h */,
+				115A140924A9CC82003AB70F /* ViewController.m */,
+				1147C9FD24B06F7800E7434B /* teamList.plist */,
+				1147C9FF24B06F7D00E7434B /* DJClub.plist */,
 				1187565724B7153800D769BA /* HNPGameApp-Bridging-Header.h */,
 				1187565524B7151300D769BA /* NetworkTool.swift */,
 				1155F96724B41D5900F15882 /* MBProgressHUD */,
@@ -803,10 +899,10 @@
 			path = Other;
 			sourceTree = "<group>";
 		};
-		E38BC42453ACCED9A690ECBC /* Frameworks */ = {
+		96E3B53E37DA47A9A7808282 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D5B4E087EEA79F40BC8CF963 /* libPods-HNPGameApp.a */,
+				B875D79692C4E569C3253A1A /* libPods-HNPGameApp.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -814,8 +910,8 @@
 		F9D182721FAAD7C93A351C80 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				5AB00BAEE6F698A8F2DFD8F5 /* Pods-HNPGameApp.debug.xcconfig */,
-				A06C08E7851D36D620ADE4CA /* Pods-HNPGameApp.release.xcconfig */,
+				DCA98D760EEB00490E1EF509 /* Pods-HNPGameApp.debug.xcconfig */,
+				E6EB183DC80DF3A63C0E8159 /* Pods-HNPGameApp.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -827,7 +923,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 115A141824A9CC84003AB70F /* Build configuration list for PBXNativeTarget "HNPGameApp" */;
 			buildPhases = (
-				7EB623E6504A0B84E3EC861A /* [CP] Check Pods Manifest.lock */,
+				1A311F9D460E2822F4B7A5EA /* [CP] Check Pods Manifest.lock */,
 				115A13FB24A9CC82003AB70F /* Sources */,
 				115A13FC24A9CC82003AB70F /* Frameworks */,
 				115A13FD24A9CC82003AB70F /* Resources */,
@@ -881,7 +977,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				11F61E7324ADA6E300FD6F50 /* HNPYZJiaruCell.xib in Resources */,
+				114189FE24BDA8E6004FEE39 /* HNPTeamOneVC.xib in Resources */,
 				1158477124AED59900E471BF /* HNPZixunDetailsVC.xib in Resources */,
+				11418A0824BDAA7F004FEE39 /* HNPTeamCell.xib in Resources */,
+				1142DDF724C143D40051E8AB /* HNPResetPasswordVC.xib in Resources */,
 				115A141224A9CC84003AB70F /* LaunchScreen.storyboard in Resources */,
 				1152B8BD24A9EAA5002A888E /* HNPGameIconCell.xib in Resources */,
 				114BEF7824AD75F2004E077E /* HNPMyPersonDetailsCell.xib in Resources */,
@@ -901,6 +1000,7 @@
 				114AF4C524AC79F40047B724 /* HNPZhanDuiCell.xib in Resources */,
 				114BEF7324AD75D3004E077E /* HNPMyPersonheaderCell.xib in Resources */,
 				1152B8CC24A9F42F002A888E /* HNPXuanzePlaceCell.xib in Resources */,
+				1146E85124B807A700EE8DEC /* HNPEditNickNameView.xib in Resources */,
 				114AF4A124AC2E910047B724 /* HNPmoreCell.xib in Resources */,
 				115A144924A9D8CF003AB70F /* HNPMyPersonVC.xib in Resources */,
 				111127A424A9DF2B00EA0AE2 /* HNPYueZhanVC.xib in Resources */,
@@ -910,10 +1010,12 @@
 				115A140D24A9CC82003AB70F /* Main.storyboard in Resources */,
 				11F61E6E24ADA6C500FD6F50 /* HNPYZCreatCell.xib in Resources */,
 				11F61E7824ADC55B00FD6F50 /* HNPJubaoVC.xib in Resources */,
+				1146E85624B835C100EE8DEC /* HNPNickNameVC.xib in Resources */,
 				115A144424A9D8B7003AB70F /* HNPPaiMingVC.xib in Resources */,
 				1158477B24AED5E300E471BF /* HNPZixunCommentCell.xib in Resources */,
 				1158477624AED5C900E471BF /* HNPZixunDetailsCell.xib in Resources */,
 				115A143524A9D856003AB70F /* HNPFirstPageVC.xib in Resources */,
+				11418A0324BDA8F2004FEE39 /* HNPTeamTwoVC.xib in Resources */,
 				115847A724AF188400E471BF /* HNPMyCollectionCell.xib in Resources */,
 				1187561C24B6E35200D769BA /* HNPEditVC.xib in Resources */,
 				115847B624AF18AE00E471BF /* HNPMyBattleCell.xib in Resources */,
@@ -924,7 +1026,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		7EB623E6504A0B84E3EC861A /* [CP] Check Pods Manifest.lock */ = {
+		1A311F9D460E2822F4B7A5EA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -960,6 +1062,8 @@
 				1155F97824B4644100F15882 /* HNPSendCodeVC.m in Sources */,
 				1155F96E24B41D5900F15882 /* MBProgressHUD+XMG.m in Sources */,
 				114AF4AB24AC35CE0047B724 /* HNPLOLController.m in Sources */,
+				1146E84F24B8079B00EE8DEC /* HNPEditNickNameView.m in Sources */,
+				118B7C9F24C029550055E49E /* HNPFollowGdModel.m in Sources */,
 				1152B8C124A9EAC3002A888E /* HNPWangBaCell.m in Sources */,
 				1187565624B7151300D769BA /* NetworkTool.swift in Sources */,
 				115847A624AF188400E471BF /* HNPMyCollectionCell.m in Sources */,
@@ -967,8 +1071,12 @@
 				1155F97224B43EF200F15882 /* HNPPersonModel.m in Sources */,
 				114AF4D224AC80B00047B724 /* HNPPMpubgController.m in Sources */,
 				1147CA0324B0755700E7434B /* HNPDianJingModel.m in Sources */,
+				114189EF24BD9E84004FEE39 /* HNPMySetTextField.m in Sources */,
+				1146E85424B835AF00EE8DEC /* HNPNickNameVC.m in Sources */,
 				115847B524AF18AE00E471BF /* HNPMyBattleCell.m in Sources */,
 				115A140A24A9CC82003AB70F /* ViewController.m in Sources */,
+				115E6CFB24BF0166006F6A39 /* HNPBattleTeamModelArray.m in Sources */,
+				11418A0224BDA8F2004FEE39 /* HNPTeamTwoVC.m in Sources */,
 				115A144D24A9D8E9003AB70F /* HNPMainVC.m in Sources */,
 				11F61E7224ADA6E300FD6F50 /* HNPYZJiaruCell.m in Sources */,
 				114AF4CC24AC80480047B724 /* HNPPMLOLController.m in Sources */,
@@ -976,6 +1084,8 @@
 				115A143424A9D856003AB70F /* HNPFirstPageVC.m in Sources */,
 				1147C9FB24B0617700E7434B /* HNPFabuYuezhanVC.m in Sources */,
 				115A140424A9CC82003AB70F /* AppDelegate.m in Sources */,
+				1142DDF624C143D40051E8AB /* HNPResetPasswordVC.m in Sources */,
+				113F3E9724C04DAD00FEDAC2 /* HNPZanGdModelArray.m in Sources */,
 				1154E18024B2BDC500C42232 /* HNPZixunModel.m in Sources */,
 				1152B8C624A9EADC002A888E /* HNPBottomCell.m in Sources */,
 				114AF4A624AC35B80047B724 /* HNPWZController.m in Sources */,
@@ -996,7 +1106,10 @@
 				114AF4C924AC7E810047B724 /* HNPPMwzController.m in Sources */,
 				1155F96324B40EF800F15882 /* HNPCommentListModel.m in Sources */,
 				115A144324A9D8B7003AB70F /* HNPPaiMingVC.m in Sources */,
+				11418A0724BDAA7F004FEE39 /* HNPTeamCell.m in Sources */,
 				1154E18C24B321DF00C42232 /* HNPCommentModel.m in Sources */,
+				115E6CF824BEF8A6006F6A39 /* HNPBattleTeamModel.m in Sources */,
+				114189FD24BDA8E6004FEE39 /* HNPTeamOneVC.m in Sources */,
 				1152B8CB24A9F42F002A888E /* HNPXuanzePlaceCell.m in Sources */,
 				11F61E7F24ADE70000FD6F50 /* HNPDianJingDetailsVC.m in Sources */,
 				115847B024AF189F00E471BF /* HNPMyFollowCell.m in Sources */,
@@ -1005,11 +1118,14 @@
 				1158479C24AF0E2E00E471BF /* HNPMyZanVC.m in Sources */,
 				1147C9E924B04F1100E7434B /* HNPRegisterVC.m in Sources */,
 				114AF4BA24AC61BE0047B724 /* HNPziXunCell.m in Sources */,
+				118B7C9C24C001DA0055E49E /* HNPTabBar.m in Sources */,
+				118B7CA224C0296C0055E49E /* HNPFollowGdModelArray.m in Sources */,
 				115847A224AF0E5100E471BF /* HNPMyBattleVC.m in Sources */,
 				1158477524AED5C900E471BF /* HNPZixunDetailsCell.m in Sources */,
 				1158477A24AED5E300E471BF /* HNPZixunCommentCell.m in Sources */,
 				114BEF7224AD75D3004E077E /* HNPMyPersonheaderCell.m in Sources */,
 				114AF4B024AC35E70047B724 /* HNPSWController.m in Sources */,
+				113F3E9424C04DA000FEDAC2 /* HNPZanGdModel.m in Sources */,
 				114AF4BF24AC79D40047B724 /* HNPPaiMingCell.m in Sources */,
 				114AF4A024AC2E910047B724 /* HNPmoreCell.m in Sources */,
 				1158479924AF0E1000E471BF /* HNPMyCollectionVC.m in Sources */,
@@ -1151,7 +1267,7 @@
 		};
 		115A141924A9CC84003AB70F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5AB00BAEE6F698A8F2DFD8F5 /* Pods-HNPGameApp.debug.xcconfig */;
+			baseConfigurationReference = DCA98D760EEB00490E1EF509 /* Pods-HNPGameApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -1176,7 +1292,7 @@
 		};
 		115A141A24A9CC84003AB70F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A06C08E7851D36D620ADE4CA /* Pods-HNPGameApp.release.xcconfig */;
+			baseConfigurationReference = E6EB183DC80DF3A63C0E8159 /* Pods-HNPGameApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

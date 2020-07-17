@@ -12,6 +12,7 @@
                 <outlet property="DJDetailsAddressLable" destination="qrB-gQ-Wvc" id="fNm-yQ-PfX"/>
                 <outlet property="DJDetailsImageView" destination="wDj-dE-3mi" id="5Ul-9N-hvN"/>
                 <outlet property="DJDetailsWangbaName" destination="btL-CD-bag" id="1zk-cm-HGR"/>
+                <outlet property="collectionBtn" destination="FdB-mz-2H8" id="EXj-tK-DyP"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="xignxing_1" destination="1Av-M7-sdV" id="OtA-fU-3OV"/>
                 <outlet property="xignxing_2" destination="IwD-Zj-dzQ" id="se4-Ov-giz"/>
@@ -110,16 +111,16 @@
                     <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FdB-mz-2H8">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FdB-mz-2H8">
                     <rect key="frame" x="35" y="303.5" width="344" height="58.5"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="58.5" id="Iim-4E-LJD"/>
                     </constraints>
                     <state key="normal" backgroundImage="btn_shoucang"/>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nGe-JS-oTv">
-                    <rect key="frame" x="35" y="362" width="344" height="58.5"/>
-                    <state key="normal" backgroundImage="btn_yishoucang"/>
+                    <state key="selected" backgroundImage="btn_yishoucang"/>
+                    <connections>
+                        <action selector="collectionBtn:" destination="-1" eventType="touchUpInside" id="vqr-oe-lwM"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -129,7 +130,6 @@
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="iVG-rm-drD" secondAttribute="trailing" constant="20" id="2w2-PD-wUg"/>
                 <constraint firstItem="iVG-rm-drD" firstAttribute="leading" secondItem="qrB-gQ-Wvc" secondAttribute="trailing" constant="30" id="5Zv-oa-Z5l"/>
                 <constraint firstItem="TEz-Rb-DS8" firstAttribute="trailing" secondItem="wDj-dE-3mi" secondAttribute="trailing" id="5he-aq-wRg"/>
-                <constraint firstItem="nGe-JS-oTv" firstAttribute="height" secondItem="FdB-mz-2H8" secondAttribute="height" id="8we-T8-VwQ"/>
                 <constraint firstItem="J8w-Uw-sfC" firstAttribute="leading" secondItem="1Av-M7-sdV" secondAttribute="leading" id="9xV-J8-vvv"/>
                 <constraint firstAttribute="trailing" secondItem="wDj-dE-3mi" secondAttribute="trailing" constant="10" id="Ewl-XT-Ucr"/>
                 <constraint firstItem="ATn-Lq-NTf" firstAttribute="leading" secondItem="1Av-M7-sdV" secondAttribute="leading" id="GRc-L6-bHq"/>
@@ -139,7 +139,6 @@
                 <constraint firstItem="wDj-dE-3mi" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="JFb-Lz-b0N"/>
                 <constraint firstItem="ATn-Lq-NTf" firstAttribute="trailing" secondItem="TEz-Rb-DS8" secondAttribute="trailing" id="M6m-f9-nEZ"/>
                 <constraint firstItem="IwD-Zj-dzQ" firstAttribute="top" secondItem="1Av-M7-sdV" secondAttribute="top" id="RfQ-BW-K7t"/>
-                <constraint firstItem="nGe-JS-oTv" firstAttribute="trailing" secondItem="FdB-mz-2H8" secondAttribute="trailing" id="WUM-dy-sb3"/>
                 <constraint firstItem="FdB-mz-2H8" firstAttribute="top" secondItem="iVG-rm-drD" secondAttribute="bottom" constant="25" id="Wbh-b6-Bhe"/>
                 <constraint firstItem="TGo-FA-9mm" firstAttribute="top" secondItem="IwD-Zj-dzQ" secondAttribute="top" id="YHM-8r-eNf"/>
                 <constraint firstItem="x7e-hD-fRN" firstAttribute="top" secondItem="Kst-kE-h8z" secondAttribute="top" id="YJp-Om-Osa"/>
@@ -152,16 +151,14 @@
                 <constraint firstItem="1Av-M7-sdV" firstAttribute="leading" secondItem="btL-CD-bag" secondAttribute="leading" id="nU2-zQ-6Yz"/>
                 <constraint firstItem="qrB-gQ-Wvc" firstAttribute="leading" secondItem="J8w-Uw-sfC" secondAttribute="leading" id="oIe-71-jL5"/>
                 <constraint firstItem="iVG-rm-drD" firstAttribute="top" secondItem="J8w-Uw-sfC" secondAttribute="top" id="p04-ZR-zAR"/>
-                <constraint firstItem="nGe-JS-oTv" firstAttribute="top" secondItem="FdB-mz-2H8" secondAttribute="bottom" id="qf8-sX-xmP"/>
                 <constraint firstItem="Kst-kE-h8z" firstAttribute="leading" secondItem="TGo-FA-9mm" secondAttribute="trailing" constant="5" id="rgS-gT-Qlx"/>
                 <constraint firstItem="btL-CD-bag" firstAttribute="top" secondItem="wDj-dE-3mi" secondAttribute="bottom" constant="15" id="uEm-Xu-9Ui"/>
                 <constraint firstItem="ATn-Lq-NTf" firstAttribute="top" secondItem="1Av-M7-sdV" secondAttribute="bottom" constant="15" id="ub2-M1-Zng"/>
                 <constraint firstItem="FdB-mz-2H8" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="35" id="xZa-mO-Cm3"/>
-                <constraint firstItem="nGe-JS-oTv" firstAttribute="leading" secondItem="FdB-mz-2H8" secondAttribute="leading" id="zT9-YQ-XfC"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
-            <point key="canvasLocation" x="-43" y="88"/>
+            <point key="canvasLocation" x="-571" y="17"/>
         </view>
     </objects>
     <resources>

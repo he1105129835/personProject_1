@@ -93,7 +93,7 @@ static NSString *IDTwo = @"paiMingCellID";
         }];
         _PaimingArray = [HNPPaimingModel mj_objectArrayWithFilename:@"teamList.plist"];
         
-        // 按分数值排序
+//         按分数值排序
         NSSortDescriptor *tempDes = [NSSortDescriptor sortDescriptorWithKey:@"score" ascending:NO];
         NSMutableArray *rankTempArray = [NSMutableArray array];
         for (HNPPaimingModel *temp in _PaimingArray) {
@@ -101,9 +101,9 @@ static NSString *IDTwo = @"paiMingCellID";
             // 计算分数值
             for (HNPPaimingListModel *arr in temp.list) {
                 arr.score = [NSNumber numberWithFloat:([arr.win floatValue] * 2 - [arr.lose floatValue])];
-                
+
                 arr.shenglv = [NSNumber numberWithFloat:[arr.win floatValue]/ ([arr.lose floatValue] + [arr.win floatValue]) * 100];
-                
+
                 [listArray addObject:arr];
             }
 

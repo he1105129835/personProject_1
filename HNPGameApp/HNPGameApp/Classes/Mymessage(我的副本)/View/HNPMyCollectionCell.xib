@@ -35,28 +35,28 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pic_xing" translatesAutoresizingMaskIntoConstraints="NO" id="DxH-lT-ezS">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pic_kongxing" translatesAutoresizingMaskIntoConstraints="NO" id="DxH-lT-ezS">
                         <rect key="frame" x="152" y="47.5" width="15" height="15"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="15" id="TpU-X2-L5n"/>
                             <constraint firstAttribute="width" constant="15" id="b0x-NY-BNH"/>
                         </constraints>
                     </imageView>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pic_xing" translatesAutoresizingMaskIntoConstraints="NO" id="INw-Xb-NuJ">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pic_kongxing" translatesAutoresizingMaskIntoConstraints="NO" id="INw-Xb-NuJ">
                         <rect key="frame" x="172" y="47.5" width="15" height="15"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="15" id="Wp5-A7-pi1"/>
                             <constraint firstAttribute="width" constant="15" id="jBD-by-i4c"/>
                         </constraints>
                     </imageView>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pic_xing" translatesAutoresizingMaskIntoConstraints="NO" id="yzR-kO-HnN">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pic_kongxing" translatesAutoresizingMaskIntoConstraints="NO" id="yzR-kO-HnN">
                         <rect key="frame" x="192" y="47.5" width="15" height="15"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="15" id="bKg-OP-R5A"/>
                             <constraint firstAttribute="height" constant="15" id="oTW-T3-ToB"/>
                         </constraints>
                     </imageView>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pic_xing" translatesAutoresizingMaskIntoConstraints="NO" id="Q87-EI-HWQ">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pic_kongxing" translatesAutoresizingMaskIntoConstraints="NO" id="Q87-EI-HWQ">
                         <rect key="frame" x="212" y="47.5" width="15" height="15"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="15" id="pPA-yk-ljw"/>
@@ -116,7 +116,18 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="hu6-dC-wRN"/>
-            <point key="canvasLocation" x="-453" y="18"/>
+            <connections>
+                <outlet property="collectionAddress" destination="4Ez-Ap-49U" id="ada-oT-icn"/>
+                <outlet property="collectionImageView" destination="Zrb-sp-U1e" id="vnP-04-Pem"/>
+                <outlet property="collectionName" destination="lwX-Sm-Cjr" id="W4r-Ft-a69"/>
+                <outlet property="collectionfollow" destination="C4w-m3-roA" id="tKl-ZM-0ow"/>
+                <outlet property="xingxing_1" destination="DxH-lT-ezS" id="7sr-nZ-fkl"/>
+                <outlet property="xingxing_2" destination="INw-Xb-NuJ" id="lBL-4U-b4B"/>
+                <outlet property="xingxing_3" destination="yzR-kO-HnN" id="iAm-JO-X8T"/>
+                <outlet property="xingxing_4" destination="Q87-EI-HWQ" id="pax-qo-ikM"/>
+                <outlet property="xingxing_5" destination="G3w-vp-JDy" id="R24-WQ-pNG"/>
+            </connections>
+            <point key="canvasLocation" x="53" y="29"/>
         </tableViewCell>
     </objects>
     <resources>
@@ -124,6 +135,5 @@
         <image name="dianjingguan box" width="374.5" height="128.5"/>
         <image name="pic_juedi" width="173" height="70"/>
         <image name="pic_kongxing" width="15" height="15"/>
-        <image name="pic_xing" width="15" height="15"/>
     </resources>
 </document>

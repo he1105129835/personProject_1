@@ -11,6 +11,10 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface HNPYZCreatCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UIImageView *TeamImageView_1;
+@property (weak, nonatomic) IBOutlet UIImageView *TeamIamgeView_2;
+@property (weak, nonatomic) IBOutlet UILabel *TeamName_1;
+@property (weak, nonatomic) IBOutlet UILabel *TeamName_2;
 
 @end
 

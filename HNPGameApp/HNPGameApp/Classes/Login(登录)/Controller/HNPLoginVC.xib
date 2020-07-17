@@ -75,6 +75,9 @@
                     <state key="normal" title="忘记密码？">
                         <color key="titleColor" red="1" green="0.3275684118270874" blue="0.30599963665008545" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
+                    <connections>
+                        <action selector="resetPasswordBtnClick:" destination="-1" eventType="touchUpInside" id="fuK-1e-WrX"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2oj-9j-oil">
                     <rect key="frame" x="44" y="370.5" width="340" height="60"/>

@@ -8,10 +8,14 @@
 
 #import "HNPMyFollowVC.h"
 #import "HNPMyFollowCell.h"
+#import "HNPZixunModel.h"
+#import "HNPFollowGdModelArray.h"
 
 @interface HNPMyFollowVC ()<UITableViewDelegate,UITableViewDataSource,HNPQXFollowBtnDelegate>
 
 @property(nonatomic,strong)UITableView *tableview;
+@property(nonatomic,strong)NSArray *Array;
+@property (strong, nonatomic)HNPFollowGdModelArray *tempGdArray;
 
 @end
 
@@ -29,14 +33,27 @@ static NSString *IDOne = @"myFollowCellID";
     UISwipeGestureRecognizer *swipe = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(swipeView)];
     [self.view addGestureRecognizer:swipe];
 }
+//解档
+-(HNPFollowGdModelArray *)tempGdArray{
+    if (_tempGdArray == nil) {
+        NSString *filePath = [NSTemporaryDirectory() stringByAppendingPathComponent:@"myFollow.data"];
+        if (filePath == nil) {
+                       
+                   } else {
+                       _tempGdArray = [NSKeyedUnarchiver unarchiveObjectWithFile:filePath];
+                   }
+    }
+    return _tempGdArray;
+}
 
 
 #pragma mark - 方法调用
 
+//轻扫返回
 -(void)swipeView{
     [self.navigationController popViewControllerAnimated:YES];
 }
-
+//设置导航栏
 -(void)setNavigation{
     self.navigationController.navigationBar.hidden = NO;
     self.navigationItem.title = @"我的关注";
@@ -44,10 +61,9 @@ static NSString *IDOne = @"myFollowCellID";
     [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
 }
-
+//加载tableView
 -(void)loadTableView{
-    //tableView的显示范围
-    _tableview = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - [UIApplication sharedApplication].statusBarFrame.size.height) style:UITableViewStylePlain];
+    _tableview = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - ([UIApplication sharedApplication].statusBarFrame.size.height) - 44) style:UITableViewStylePlain];
     [self.view addSubview:_tableview];
     _tableview.separatorStyle = UITableViewCellSeparatorStyleNone;
     _tableview.dataSource = self;
@@ -58,14 +74,13 @@ static NSString *IDOne = @"myFollowCellID";
 
 #pragma mark - tableView协议
 
-
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 8;
+    return self.tempGdArray.followGdArray.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     HNPMyFollowCell *myFollowCell = [tableView dequeueReusableCellWithIdentifier:IDOne];
+    myFollowCell.followGdM = self.tempGdArray.followGdArray[indexPath.row];
     myFollowCell.delegate = self;
     return myFollowCell;
 }
@@ -81,13 +96,24 @@ static NSString *IDOne = @"myFollowCellID";
 - (void)MyQxFollowBtnDidClick:(HNPMyFollowCell *)myFollowCell{
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"确定不再关注？" message:nil preferredStyle:UIAlertControllerStyleActionSheet];
     [alertController addAction: [UIAlertAction actionWithTitle: @"确定" style: UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
-        NSLog(@"点击了确定");
+        
+        [self tempGdArray];
+        NSIndexPath *cellIndexPath = [self.tableview indexPathForCell:myFollowCell];
+        [self.tempGdArray.followGdArray removeObjectAtIndex:cellIndexPath.row];
+        [self.tableview deleteRowsAtIndexPaths:@[cellIndexPath] withRowAnimation:UITableViewRowAnimationFade];
+        
+        [self.tableview reloadSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationNone];
+        //归档
+        
+        NSString *filePath = [NSTemporaryDirectory() stringByAppendingPathComponent:@"myFollow.data"];
+        [NSKeyedArchiver archiveRootObject:self.tempGdArray toFile:filePath];
+        
+        
     }]];
     UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
     [alertController addAction:cancelAction];
     [self presentViewController:alertController animated:YES completion:nil];
 }
-
 
 
 @end

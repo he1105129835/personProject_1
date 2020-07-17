@@ -8,10 +8,13 @@
 
 #import "HNPMyBattleVC.h"
 #import "HNPMyBattleCell.h"
+#import "HNPBattleTeamModelArray.h"
 
 @interface HNPMyBattleVC ()<UITableViewDelegate,UITableViewDataSource,HNPDeleteBtnDelegate>
 
 @property(nonatomic,strong)UITableView *tableview;
+@property(nonatomic,strong)HNPPersonModel *mineUserInfoModel;
+@property (strong, nonatomic)HNPBattleTeamModelArray *teamArray;
 
 @end
 
@@ -28,6 +31,28 @@ static NSString *IDOne = @"myBattleCellID";
     [self loadTableView];
     UISwipeGestureRecognizer *swipe = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(swipeView)];
     [self.view addGestureRecognizer:swipe];
+    
+}
+
+-(HNPBattleTeamModelArray *)teamArray{
+    if (_teamArray == nil) {
+        NSString *filePath = [NSTemporaryDirectory() stringByAppendingPathComponent:@"battleTeam.data"];
+        if (filePath == nil) {
+                       
+                   } else {
+                       _teamArray = [NSKeyedUnarchiver unarchiveObjectWithFile:filePath];
+                   }
+    }
+    return _teamArray;
+}
+
+//加载数据
+-(HNPPersonModel *)mineUserInfoModel{
+    if (_mineUserInfoModel == nil) {
+        AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+        _mineUserInfoModel = appDelegate.mineUserInfoModel;
+    }
+    return _mineUserInfoModel;
 }
 
 #pragma mark - 方法调用
@@ -47,7 +72,7 @@ static NSString *IDOne = @"myBattleCellID";
 
 -(void)loadTableView{
     //tableView的显示范围
-    _tableview = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - [UIApplication sharedApplication].statusBarFrame.size.height) style:UITableViewStylePlain];
+    _tableview = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - ([UIApplication sharedApplication].statusBarFrame.size.height) - 44) style:UITableViewStylePlain];
     [self.view addSubview:_tableview];
     _tableview.separatorStyle = UITableViewCellSeparatorStyleNone;
     _tableview.dataSource = self;
@@ -59,11 +84,14 @@ static NSString *IDOne = @"myBattleCellID";
 #pragma mark - tableView协议
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 8;
+//    return self.mineUserInfoModel.fansCount.integerValue;
+    return self.teamArray.modelArray.count;
+    
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     HNPMyBattleCell *myBattleCell = [tableView dequeueReusableCellWithIdentifier:IDOne];
+    myBattleCell.battleTeamM = self.teamArray.modelArray[indexPath.row];
     myBattleCell.delegate = self;
     return myBattleCell;
 }
@@ -77,7 +105,18 @@ static NSString *IDOne = @"myBattleCellID";
 - (void)MyBattleDeleteBtnDidClick:(HNPMyBattleCell *)myBattleDeleteCell{
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"确定取消本场比赛？" message:nil preferredStyle:UIAlertControllerStyleActionSheet];
     [alertController addAction: [UIAlertAction actionWithTitle: @"确定" style: UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
-        NSLog(@"点击了确定");
+        
+        [self teamArray];
+        NSIndexPath *cellIndexPath = [self.tableview indexPathForCell:myBattleDeleteCell];
+        [self.teamArray.modelArray removeObjectAtIndex:cellIndexPath.row];
+        [self.tableview deleteRowsAtIndexPaths:@[cellIndexPath] withRowAnimation:UITableViewRowAnimationFade];
+        
+        [self.tableview reloadSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationNone];
+        //归档
+        
+        NSString *filePath = [NSTemporaryDirectory() stringByAppendingPathComponent:@"battleTeam.data"];
+        [NSKeyedArchiver archiveRootObject:self.teamArray toFile:filePath];
+        
     }]];
     UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
     [alertController addAction:cancelAction];

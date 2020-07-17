@@ -22,11 +22,13 @@
 
 static NSString *IDOne = @"ziXunCellID";
 
+- (void)viewWillAppear:(BOOL)animated{
+    [self WZJson];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self loadTableView];
-    [self WZJson];
 }
 
 -(void)loadTableView{
@@ -72,14 +74,19 @@ static NSString *IDOne = @"ziXunCellID";
             
              NSMutableArray *tempArray = [NSMutableArray new];
                    tempArray = [HNPZixunModel mj_objectArrayWithKeyValuesArray:result[@"data"][@"list"]];
-           NSMutableArray *tempArray_1 = [NSMutableArray array];
-           for (HNPZixunModel *model in tempArray) {
-               NSRange range = [model.content rangeOfString:@"王者荣耀"];
-               if (range.location != NSNotFound) {
-                   [tempArray_1 addObject:model];
+           NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
+           NSArray *dataArray = [userDefault objectForKey:@"userCollectArray"];
+           for (int i = 0; i < dataArray.count; i++) {
+               NSDictionary *ID = dataArray[i];
+               for (int i = 0; i < self.WZArray.count; i++) {
+                   HNPZixunModel *zxModelArrayID = self.WZArray[i];
+                   if ([ID[@"phone"] isEqualToString:zxModelArrayID.user.phone]) {
+                       zxModelArrayID.isFollow = YES;
+                   }
                }
            }
-           self.WZArray = tempArray_1;
+           
+           self.WZArray = tempArray;
            [self.tableview reloadData];
                 
             }

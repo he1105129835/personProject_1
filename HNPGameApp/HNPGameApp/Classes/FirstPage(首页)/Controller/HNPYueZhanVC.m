@@ -49,7 +49,7 @@ static NSString *IDTwo = @"jiaruCellID";
 
 
 
-#pragma mark - 代理方法
+#pragma mark - 加载tableView
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
   return 2;
@@ -59,21 +59,44 @@ static NSString *IDTwo = @"jiaruCellID";
     if (section == 0) {
         return 1;
     }else{
-        return 5;
+        return 3;
     }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.section == 0) {
         HNPYZCreatCell *creatCell = [tableView dequeueReusableCellWithIdentifier:IDOne];
+        if (indexPath.row == 0) {
+            creatCell.TeamImageView_1.image = [UIImage imageNamed:@"EDG"];
+            creatCell.TeamName_1.text = @"EDG";
+            creatCell.TeamIamgeView_2.image = [UIImage imageNamed:@"LNG"];
+            creatCell.TeamName_2.text = @"LNG";
+        }
         return creatCell;
     }else{
         HNPYZJiaruCell *jiaruCell = [tableView dequeueReusableCellWithIdentifier:IDTwo];
         jiaruCell.delegate = self;
+        if (indexPath.row == 0) {
+            jiaruCell.jiaruImageView_1.image = [UIImage imageNamed:@"RNG"];
+            jiaruCell.jiaruNameLable_1.text = @"RNG";
+            jiaruCell.jiaruImageView_2.image = [UIImage imageNamed:@"IG"];
+            jiaruCell.jiaruNameLable_2.text = @"IG";
+        }else if (indexPath.row == 1){
+            jiaruCell.jiaruImageView_1.image = [UIImage imageNamed:@"OMG"];
+            jiaruCell.jiaruNameLable_1.text = @"OMG";
+            jiaruCell.jiaruImageView_2.image = [UIImage imageNamed:@"FPX"];
+            jiaruCell.jiaruNameLable_2.text = @"FPX";
+        }else{
+            jiaruCell.jiaruImageView_1.image = [UIImage imageNamed:@"TES"];
+            jiaruCell.jiaruNameLable_1.text = @"TES";
+            jiaruCell.jiaruImageView_2.image = [UIImage imageNamed:@"BLG"];
+            jiaruCell.jiaruNameLable_2.text = @"BLG";
+        }
         return jiaruCell;
     }
 }
 
+//tableView的表头设置
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
     if (section == 0) {
         UIView *view1 = [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 44)];
@@ -103,6 +126,7 @@ static NSString *IDTwo = @"jiaruCellID";
     [_tableview deselectRowAtIndexPath:indexPath animated:NO];
 }
 
+//举报按钮
 - (void)jubaoBtnDidClick:(HNPYZJiaruCell *)jiaruCell{
     HNPJubaoVC *jubaoVC = [HNPJubaoVC new];
     self.tabBarController.tabBar.hidden = YES;

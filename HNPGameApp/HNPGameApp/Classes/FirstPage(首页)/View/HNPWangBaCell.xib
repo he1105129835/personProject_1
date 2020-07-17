@@ -122,7 +122,7 @@
                 <outlet property="xingxing_4" destination="Pgd-a3-Zwm" id="HdW-D4-Nmv"/>
                 <outlet property="xingxing_5" destination="O8G-Xn-3jO" id="HT1-pN-bN2"/>
             </connections>
-            <point key="canvasLocation" x="-66" y="-27"/>
+            <point key="canvasLocation" x="-386" y="-29"/>
         </tableViewCell>
     </objects>
     <resources>

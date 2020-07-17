@@ -19,8 +19,8 @@
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pic_bisaiweikaishi" translatesAutoresizingMaskIntoConstraints="NO" id="R0l-xP-k48">
                         <rect key="frame" x="0.0" y="0.0" width="427" height="178.5"/>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="创建时间：2020.5.2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A27-UQ-4tf">
-                        <rect key="frame" x="149.5" y="15" width="128.5" height="17"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="游戏名字" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A27-UQ-4tf">
+                        <rect key="frame" x="185" y="15" width="57.5" height="17"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
@@ -46,13 +46,13 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hnH-ZO-LZp">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hnH-ZO-LZp">
                         <rect key="frame" x="237" y="99.5" width="12.5" height="24"/>
                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pic_yijieshu" translatesAutoresizingMaskIntoConstraints="NO" id="xHW-Yd-ccQ">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pic_weikaishi" translatesAutoresizingMaskIntoConstraints="NO" id="xHW-Yd-ccQ">
                         <rect key="frame" x="178.5" y="126.5" width="70" height="17"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="17" id="oJe-C3-mP6"/>
@@ -128,14 +128,14 @@
                         <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pic_bai" translatesAutoresizingMaskIntoConstraints="NO" id="u3h-e9-UgP">
+                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pic_bai" translatesAutoresizingMaskIntoConstraints="NO" id="u3h-e9-UgP">
                         <rect key="frame" x="377" y="130" width="40" height="40"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="40" id="e2I-Gy-QvQ"/>
                             <constraint firstAttribute="height" constant="40" id="jH2-K4-aXd"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="败" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s3S-r9-tw7">
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="败" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s3S-r9-tw7">
                         <rect key="frame" x="387" y="140" width="20" height="20"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="20" id="dvQ-Ri-WZH"/>
@@ -194,20 +194,20 @@
                             <constraint firstAttribute="width" constant="50" id="nNd-tw-OZg"/>
                         </constraints>
                     </view>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yeu-4S-JZZ">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yeu-4S-JZZ">
                         <rect key="frame" x="177.5" y="99.5" width="12.5" height="24"/>
                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pic_sheng" translatesAutoresizingMaskIntoConstraints="NO" id="sVv-Hp-Isa">
+                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pic_sheng" translatesAutoresizingMaskIntoConstraints="NO" id="sVv-Hp-Isa">
                         <rect key="frame" x="10" y="130" width="40" height="40"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="40" id="Hd1-mY-RP8"/>
                             <constraint firstAttribute="width" constant="40" id="RAU-8t-ED2"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="胜" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7gU-wf-Ayz">
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="胜" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7gU-wf-Ayz">
                         <rect key="frame" x="20" y="140" width="20" height="20"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="20" id="25V-nl-iRF"/>
@@ -273,9 +273,15 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
             <connections>
+                <outlet property="battlePublishTimeLable" destination="xRt-cW-gXD" id="llA-e2-oHS"/>
+                <outlet property="battleTeamNameHead_1" destination="uCZ-zy-AcB" id="YLS-Et-2Xn"/>
+                <outlet property="battleTeamNameHead_2" destination="mHK-8F-utS" id="nBe-gu-ufR"/>
+                <outlet property="battleTeamNameLable_1" destination="e54-of-bGc" id="Q3P-vw-PmG"/>
+                <outlet property="battleTeamNameLable_2" destination="1Zm-Ee-b7g" id="ILs-84-pH9"/>
+                <outlet property="gameNameLable" destination="A27-UQ-4tf" id="WJR-Qz-7ql"/>
                 <outlet property="zhankaiView" destination="GEe-WO-laj" id="VWV-MS-85S"/>
             </connections>
-            <point key="canvasLocation" x="-1831" y="-1"/>
+            <point key="canvasLocation" x="-1895" y="-9"/>
         </tableViewCell>
     </objects>
     <resources>
@@ -285,6 +291,6 @@
         <image name="pic_sheng" width="38.5" height="39"/>
         <image name="pic_shouwang" width="173" height="70"/>
         <image name="pic_wangzhe" width="173" height="70.5"/>
-        <image name="pic_yijieshu" width="70" height="17"/>
+        <image name="pic_weikaishi" width="70" height="17"/>
     </resources>
 </document>

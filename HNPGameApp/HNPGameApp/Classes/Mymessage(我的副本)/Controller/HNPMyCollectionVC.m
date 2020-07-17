@@ -12,6 +12,8 @@
 @interface HNPMyCollectionVC ()<UITableViewDelegate,UITableViewDataSource,HNPQXCollectionBtnDelegate>
 
 @property(nonatomic,strong)UITableView *tableview;
+@property(nonatomic,strong)HNPPersonModel *mineUserInfoModel;
+@property(nonatomic,strong)NSArray *DJArray;
 
 @end
 
@@ -28,6 +30,39 @@ static NSString *IDOne = @"myCollectionCellID";
     [self loadTableView];
     UISwipeGestureRecognizer *swipe = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(swipeView)];
     [self.view addGestureRecognizer:swipe];
+}
+
+-(NSArray *)DJArray{
+    
+        if (!_DJArray) {
+            _DJArray = [HNPDianJingModel mj_objectArrayWithFilename:@"DJClub.plist"];
+            
+            NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
+            NSArray *dataArray = [userDefault objectForKey:@"userCollectArray"];
+            NSMutableArray *temp = [NSMutableArray array];
+            for (int i = 0; i < dataArray.count; i++) {
+                NSDictionary *ID = dataArray[i];
+                for (int i = 0; i < _DJArray.count; i++) {
+                    HNPDianJingModel *djModelArrayID = _DJArray[i];
+                    if ([ID[@"userid"] isEqualToString:djModelArrayID.userid]) {
+                        djModelArrayID.isCollect = YES;
+                        [temp addObject:djModelArrayID];
+                    }
+                }
+            }
+            _DJArray = temp;
+            
+        }
+        return _DJArray;
+}
+
+//加载数据
+-(HNPPersonModel *)mineUserInfoModel{
+    if (_mineUserInfoModel == nil) {
+        AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+        _mineUserInfoModel = appDelegate.mineUserInfoModel;
+    }
+    return _mineUserInfoModel;
 }
 
 
@@ -47,7 +82,7 @@ static NSString *IDOne = @"myCollectionCellID";
 
 -(void)loadTableView{
     //tableView的显示范围
-    _tableview = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - [UIApplication sharedApplication].statusBarFrame.size.height) style:UITableViewStylePlain];
+    _tableview = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - ([UIApplication sharedApplication].statusBarFrame.size.height) - 44) style:UITableViewStylePlain];
     [self.view addSubview:_tableview];
     _tableview.separatorStyle = UITableViewCellSeparatorStyleNone;
     _tableview.dataSource = self;
@@ -59,12 +94,13 @@ static NSString *IDOne = @"myCollectionCellID";
 #pragma mark - tableView协议
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 8;
+    return self.DJArray.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     HNPMyCollectionCell *collectionCell = [tableView dequeueReusableCellWithIdentifier:IDOne];
     collectionCell.delegate = self;
+    collectionCell.djModel = self.DJArray[indexPath.row];
     return collectionCell;
 }
 

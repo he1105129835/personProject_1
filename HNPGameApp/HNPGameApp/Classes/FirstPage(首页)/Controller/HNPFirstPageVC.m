@@ -21,6 +21,9 @@
 @property(nonatomic,strong)UITableView *tableview;
 @property(nonatomic,strong)NSArray *DJArray;
 @property(nonatomic,strong)NSArray *HotArray;
+//展开cell数量
+@property(nonatomic,assign)NSInteger cellCount;
+@property(nonatomic,assign)Boolean flag;
 
 @end
 
@@ -44,33 +47,54 @@ BOOL flag_1 = 0;
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self loadTableView];
+    self.cellCount = 0;
+    self.flag = 0;
 }
 
 
 #pragma mark - 数据加载
-
+//附近馆数据加载
 -(NSArray *)DJArray{
-    if (_DJArray == nil) {
         _DJArray = [HNPDianJingModel mj_objectArrayWithFilename:@"DJClub.plist"];
-    }
+        NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
+    //判断是否为收藏电竞馆
+        NSArray *dataArray = [userDefault objectForKey:@"userCollectArray"];
+        for (int i = 0; i < dataArray.count; i++) {
+            NSDictionary *ID = dataArray[i];
+            for (int i = 0; i < _DJArray.count; i++) {
+                HNPDianJingModel *djModelArrayID = _DJArray[i];
+                if ([ID[@"userid"] isEqualToString:djModelArrayID.userid]) {
+                    djModelArrayID.isCollect = YES;
+                }
+            }
+        }
     return _DJArray;
 }
-
 //热门馆数据加载
 -(NSArray *)HotArray{
-    if (_HotArray == nil) {
         _HotArray = [HNPDianJingModel mj_objectArrayWithFilename:@"DJClub.plist"];
         NSSortDescriptor *tempDes = [NSSortDescriptor sortDescriptorWithKey:@"star" ascending:NO];
         NSArray *tempArray = [_HotArray sortedArrayUsingDescriptors:@[tempDes]];
         _HotArray = tempArray;
-    }
+        
+        NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
+        NSArray *dataArray = [userDefault objectForKey:@"userCollectArray"];
+        for (int i = 0; i < dataArray.count; i++) {
+            NSDictionary *ID = dataArray[i];
+            for (int i = 0; i < _HotArray.count; i++) {
+                HNPDianJingModel *djModelArrayID = _HotArray[i];
+                if ([ID[@"userid"] isEqualToString:djModelArrayID.userid]) {
+                    djModelArrayID.isCollect = YES;
+                }
+            }
+        }
     return _HotArray;
 }
 
-#pragma mark - 协议及方法
+#pragma mark - tableView协议及方法
 
+//在view上添加一个tableview
 -(void)loadTableView{
-    //在view上添加一个tableview
     _tableview = [[UITableView alloc]initWithFrame:CGRectMake(0, [UIApplication sharedApplication].statusBarFrame.size.height, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - ([UIApplication sharedApplication].statusBarFrame.size.height)) style:UITableViewStylePlain];
     
     [self.view addSubview:_tableview];
@@ -98,9 +122,9 @@ BOOL flag_1 = 0;
         return 1;
     }else if (section == 1){
         return 1;
-    }else if(section == 2){
-        return 2;
-    }else if (section == 3){
+    }else if(section == 3){
+        return 2 + self.cellCount;
+    }else if (section == 2){
         return 1;
     }else{
         return 1;
@@ -116,7 +140,7 @@ BOOL flag_1 = 0;
                 HNPXuanzePlaceCell *xuanZeCell = [tableView dequeueReusableCellWithIdentifier:IDTwo];
          xuanZeCell.delegate = self;
                 return xuanZeCell;
-     }else if(indexPath.section == 2){
+     }else if(indexPath.section == 3){
          if (flag_1 == 0) {
              HNPWangBaCell *wangBaCell = [tableView dequeueReusableCellWithIdentifier:IDThree];
              wangBaCell.DJModel = self.DJArray[indexPath.row];
@@ -126,7 +150,7 @@ BOOL flag_1 = 0;
              wangBaCell.DJModel = self.HotArray[indexPath.row];
                     return wangBaCell;
          }
-     }else if (indexPath.section == 3){
+     }else if (indexPath.section == 2){
                 HNPmoreCell *moreCell = [tableView dequeueReusableCellWithIdentifier:IDFour];
                 return moreCell;
      }else{
@@ -137,7 +161,8 @@ BOOL flag_1 = 0;
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
-    if (indexPath.section == 2) {
+    if (indexPath.section == 3) {
+        //如果flag_1 == 0;加载附近馆否则加载热门馆
         if (flag_1 == 0) {
             HNPDianJingDetailsVC *DjDetailsVC = [HNPDianJingDetailsVC new];
             DjDetailsVC.DJDetailsModel = self.DJArray[indexPath.row];
@@ -149,11 +174,22 @@ BOOL flag_1 = 0;
             self.tabBarController.tabBar.hidden = YES;
             [self.navigationController pushViewController:DjDetailsVC animated:YES];
         }
+    }else if(indexPath.section == 2){
+        //电竞馆行数的展开
+        self.flag =! self.flag;
+        if (self.flag == 0) {
+            self.cellCount = 0;
+            [self.tableview reloadData];
+        }else{
+            self.cellCount = self.DJArray.count - 2;
+                 [self.tableview reloadData];
+        }
     }else{
+        
     }
 }
 
-#pragma mark - 自定义协议
+#pragma mark - 自定义协议跳转控制器
 
 - (void)WZBtnDidClick:(HNPGameIconCell *)IconCell{
     HNPYueZhanVC *yuezhanVC = [HNPYueZhanVC new];
@@ -177,7 +213,7 @@ BOOL flag_1 = 0;
     [self.navigationController pushViewController:yuezhanVC animated:YES];
 }
 
-//选择热门电竞馆代理
+#pragma mark - 选择电竞馆种类进行刷新代理
 - (void)HomeXuzanzeFujinBtnDidClick:(HNPXuanzePlaceCell *)HomeXuanzeCell{
     flag_1 = 0;
     [self.tableview reloadData];

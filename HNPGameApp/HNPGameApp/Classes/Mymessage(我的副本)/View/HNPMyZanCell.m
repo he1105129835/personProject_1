@@ -12,6 +12,8 @@
 
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *zhidingWidth;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *wangzheWidth;
+@property (weak, nonatomic) IBOutlet UIImageView *picImageView;
+@property (weak, nonatomic) IBOutlet UILabel *contentLable;
 
 
 @end
@@ -25,10 +27,10 @@
     // Initialization code
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
+- (void)setZanGdM:(HNPZanGdModel *)ZanGdM{
+    _ZanGdM = ZanGdM;
+    [self.picImageView sd_setImageWithURL:[NSURL URLWithString:ZanGdM.neirongImageView] placeholderImage:[UIImage imageNamed:@"jiazaishibai"]];
+    self.contentLable.text = ZanGdM.neirongLable;
 }
 
 @end

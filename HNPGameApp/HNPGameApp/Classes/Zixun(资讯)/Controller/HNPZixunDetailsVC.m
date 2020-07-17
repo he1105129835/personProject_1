@@ -13,6 +13,7 @@
 #import "HNPPersonModel.h"
 #import "HNPLoginVC.h"
 #import <Mantle.h>
+#import "HNPZixunModel.h"
 
 @interface HNPZixunDetailsVC ()<UITableViewDelegate,UITableViewDataSource,UIGestureRecognizerDelegate,UITextFieldDelegate>
 
@@ -44,8 +45,9 @@ static NSString *IDTwo = @"zixunCommentCellID";
     
 }
 
-//评论说说
+#pragma mark - 评论说说
 - (IBAction)CommentBtnClick:(UIButton *)sender {
+    //判断是否登录
     [self WhetherToLoginOrNot];
     if (self.login == YES) {
         [self Commentshuoshuo];
@@ -80,7 +82,7 @@ static NSString *IDTwo = @"zixunCommentCellID";
                      [MBProgressHUD hideHUD];
                 [self.view endEditing:YES];
                     self.commentText_F.text = nil;
-                    [self.tableview reloadData];
+                    [self PLJson];
                     });
             }else{
                 [MBProgressHUD hideHUD];
@@ -107,7 +109,7 @@ static NSString *IDTwo = @"zixunCommentCellID";
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
 }
 
-//加载tableView
+#pragma mark - 加载tableView
 -(void)loadTableView{
     _tableview.dataSource = self;
     _tableview.delegate = self;
@@ -131,6 +133,11 @@ static NSString *IDTwo = @"zixunCommentCellID";
     if (indexPath.section == 0) {
         HNPZixunDetailsCell *detailsCell = [tableView dequeueReusableCellWithIdentifier:IDOne];
         detailsCell.DetailsModle = self.zixunDetailsM;
+        if (self.zixunDetailsM.isFollow == NO) {
+            detailsCell.followBtn.selected = NO;
+        }else if(self.zixunDetailsM.isFollow == YES){
+            detailsCell.followBtn.selected = YES;
+        }
         return detailsCell;
     }else{
         HNPZixunCommentCell *commentCell = [tableView dequeueReusableCellWithIdentifier:IDTwo];
@@ -171,7 +178,7 @@ static NSString *IDTwo = @"zixunCommentCellID";
         
 }
 
-//表头设置
+#pragma mark - 表头设置
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
     if (section == 1) {
         UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 28)];
@@ -191,8 +198,7 @@ static NSString *IDTwo = @"zixunCommentCellID";
     }
 }
 
--(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
-{
+-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
     if (section == 0) {
         return 0;
     }else{

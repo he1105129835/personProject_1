@@ -19,7 +19,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    //添加点击方法
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(imagerefresh)];
+    self.YZMImageView.userInteractionEnabled = YES;
+    [self.YZMImageView addGestureRecognizer:tap];
 }
 
 
@@ -27,9 +30,9 @@
 
 #pragma mark - 方法调用
 
-//点击刷新图形验证码
-- (IBAction)refreshBtnClick:(id)sender {
-    self.refreshBtn.hidden = YES;
+
+//刷新验证码
+-(void)imagerefresh{
     NSURL *url = [NSURL URLWithString:@"http://api.yysc.online/system/sendVerify"];
     NSURLSession *session = [NSURLSession sharedSession];
     [[session dataTaskWithURL:url completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
@@ -43,35 +46,69 @@
     }]resume];
 }
 
+//发送验证码
 - (IBAction)DoneBtnClick:(id)sender {
-    NSMutableDictionary *par = [[NSMutableDictionary alloc]init];
-    [par setObject:self.phone forKey:@"phone"];
-    [par setObject:@"1" forKey:@"type"];
-    [par setObject:@"futures" forKey:@"project"];
-    [par setObject:self.text_F.text forKey:@"code"];
-    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-       [manager POST:@"http://api.yysc.online/system/sendCode" parameters:par progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    //根据type值判断进行注册或者重置密码
+    if (self.type == 0) {
+        NSMutableDictionary *par = [[NSMutableDictionary alloc]init];
+        [par setObject:self.phone forKey:@"phone"];
+        [par setObject:@"1" forKey:@"type"];
+        [par setObject:@"game" forKey:@"project"];
+        [par setObject:self.text_F.text forKey:@"code"];
+        AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+           [manager POST:@"http://api.yysc.online/system/sendCode" parameters:par progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+                   
+               NSDictionary *data = responseObject;
+               NSString *success = [NSString stringWithFormat:@"%@",data[@"success"]];
+               NSLog(@"%@",data);
+               if ([success isEqualToString:@"1"]) {
+                   [MBProgressHUD showMessage:@"获取验证码成功..."];
+                   
+                   //延时执行代码
+                   dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                        [MBProgressHUD hideHUD];
+                       [self dismissViewControllerAnimated:YES completion:nil];
+                           
+                       });
+               }else{
+                   [MBProgressHUD hideHUD];
+                   [MBProgressHUD showError:@"验证失败，手机号或验证码不正确。"];
+               }
                
-           NSDictionary *data = responseObject;
-           NSString *success = [NSString stringWithFormat:@"%@",data[@"success"]];
-           NSLog(@"%@",data);
-           if ([success isEqualToString:@"1"]) {
-               [MBProgressHUD showMessage:@"获取验证码成功..."];
+               } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+                   NSLog(@"failure");
+               }];
+    }else if(self.type == 1){
+        NSMutableDictionary *par = [[NSMutableDictionary alloc]init];
+        [par setObject:self.phone forKey:@"phone"];
+        [par setObject:@"3" forKey:@"type"];
+        [par setObject:@"game" forKey:@"project"];
+        [par setObject:self.text_F.text forKey:@"code"];
+        AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+           [manager POST:@"http://api.yysc.online/system/sendCode" parameters:par progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+                   
+               NSDictionary *data = responseObject;
+               NSString *success = [NSString stringWithFormat:@"%@",data[@"success"]];
+               NSLog(@"%@",data);
+               if ([success isEqualToString:@"1"]) {
+                   [MBProgressHUD showMessage:@"获取验证码成功..."];
+                   
+                   //延时执行代码
+                   dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                        [MBProgressHUD hideHUD];
+                       [self dismissViewControllerAnimated:YES completion:nil];
+                           
+                       });
+               }else{
+                   [MBProgressHUD hideHUD];
+                   [MBProgressHUD showError:@"验证失败，手机号或验证码不正确。"];
+               }
                
-               //延时执行代码
-               dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-                    [MBProgressHUD hideHUD];
-                   [self dismissViewControllerAnimated:YES completion:nil];
-                       
-                   });
-           }else{
-               [MBProgressHUD hideHUD];
-               [MBProgressHUD showError:@"验证失败，手机号或验证码不正确。"];
-           }
-           
-           } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-               NSLog(@"failure");
-           }];
+               } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+                   NSLog(@"failure");
+               }];
+    }
+    
 }
 
 //点击屏幕其它地方关闭键盘

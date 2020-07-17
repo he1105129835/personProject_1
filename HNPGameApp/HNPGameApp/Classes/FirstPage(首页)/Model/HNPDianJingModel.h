@@ -18,6 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic,strong) NSString *address;
 @property (nonatomic,strong) NSString *pic;
 @property (nonatomic,strong) NSString *name;
+@property (assign, nonatomic) BOOL isCollect;
 
 @end
 

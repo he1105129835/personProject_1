@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface HNPSendCodeVC : UIViewController
 
 @property(nonatomic,copy)NSString *phone;
+@property(nonatomic,assign)Boolean type;
 
 @end
 

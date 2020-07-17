@@ -41,7 +41,6 @@
     //举报按钮状态
     [self.jubaoBtn setBackgroundImage:[UIImage imageNamed:@"btn_kejubao"] forState:UIControlStateNormal];
     [self.jubaoBtn setBackgroundImage:[UIImage imageNamed:@"btn_bukejubao"] forState:UIControlStateDisabled];
-    self.jubaoBtn.enabled = NO;
     
     
     
@@ -51,6 +50,8 @@
     self.tabBarController.tabBar.hidden = NO;
     [self.navigationController popViewControllerAnimated:YES];
 }
+
+//轻扫图片删除
 -(void)swipeDeleteView{
     self.addImageView.image = nil;
 }
@@ -82,8 +83,14 @@
 }
 
 
-#pragma mark - Navigation
+#pragma mark - 举报按钮
 
+- (IBAction)jubaoBtnClick:(id)sender {
+    [MBProgressHUD showMessage:@"举报成功"];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [MBProgressHUD hideHUD];
+    });
+}
 
 
 @end

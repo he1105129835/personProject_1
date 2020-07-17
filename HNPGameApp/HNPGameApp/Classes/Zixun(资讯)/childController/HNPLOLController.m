@@ -22,10 +22,13 @@
 
 static NSString *IDOne = @"ziXunCellID";
 
+- (void)viewWillAppear:(BOOL)animated{
+    [self WZJson];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self loadTableView];
-    [self WZJson];
 }
 
 -(void)loadTableView{

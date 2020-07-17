@@ -19,6 +19,10 @@
 @interface HNPYZJiaruCell : UITableViewCell
 
 @property (nonatomic ,weak) id<HNPJubaoBtnDelegate> delegate;
+@property (weak, nonatomic) IBOutlet UIImageView *jiaruImageView_1;
+@property (weak, nonatomic) IBOutlet UIImageView *jiaruImageView_2;
+@property (weak, nonatomic) IBOutlet UILabel *jiaruNameLable_1;
+@property (weak, nonatomic) IBOutlet UILabel *jiaruNameLable_2;
 
 @end
 

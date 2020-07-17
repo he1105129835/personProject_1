@@ -8,6 +8,14 @@
 
 #import "HNPMyFollowCell.h"
 
+@interface HNPMyFollowCell ()
+
+@property (weak, nonatomic) IBOutlet UIImageView *followHead;
+@property (weak, nonatomic) IBOutlet UILabel *followNickname;
+
+
+@end
+
 @implementation HNPMyFollowCell
 
 - (void)awakeFromNib {
@@ -15,10 +23,10 @@
     // Initialization code
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
+- (void)setFollowGdM:(HNPFollowGdModel *)followGdM{
+    _followGdM = followGdM;
+    [self.followHead sd_setImageWithURL:[NSURL URLWithString:followGdM.userHead] placeholderImage:[UIImage imageNamed:@"jiazaishibai"]];
+    self.followNickname.text = followGdM.userNickname;
 }
 
 - (IBAction)QxMyFollowBtn:(id)sender {

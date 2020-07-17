@@ -14,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface HNPZixunDetailsCell : UITableViewCell
 
 @property (nonatomic,strong)HNPZixunModel *DetailsModle;
+@property (weak, nonatomic) IBOutlet UIButton *followBtn;
 
 @end
 

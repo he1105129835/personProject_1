@@ -8,10 +8,13 @@
 
 #import "HNPMyZanVC.h"
 #import "HNPMyZanCell.h"
+#import "HNPZanGdModelArray.h"
 
 @interface HNPMyZanVC ()<UITableViewDelegate,UITableViewDataSource>
 
 @property(nonatomic,strong)UITableView *tableview;
+@property(nonatomic,strong)HNPPersonModel *mineUserInfoModel;
+@property (strong, nonatomic)HNPZanGdModelArray *tempZanGdArray;
 
 @end
 
@@ -28,6 +31,27 @@ static NSString *IDOne = @"MyZanCellID";
     [self loadTableView];
     UISwipeGestureRecognizer *swipe = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(swipeView)];
     [self.view addGestureRecognizer:swipe];
+}
+
+-(HNPZanGdModelArray *)tempZanGdArray{
+    if (_tempZanGdArray == nil) {
+        NSString *filePath = [NSTemporaryDirectory() stringByAppendingPathComponent:@"myZan.data"];
+        if (filePath == nil) {
+                       
+                   } else {
+                       _tempZanGdArray = [NSKeyedUnarchiver unarchiveObjectWithFile:filePath];
+                   }
+    }
+    return _tempZanGdArray;
+}
+
+//加载数据
+-(HNPPersonModel *)mineUserInfoModel{
+    if (_mineUserInfoModel == nil) {
+        AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+        _mineUserInfoModel = appDelegate.mineUserInfoModel;
+    }
+    return _mineUserInfoModel;
 }
 
 
@@ -47,7 +71,7 @@ static NSString *IDOne = @"MyZanCellID";
 
 -(void)loadTableView{
     //tableView的显示范围
-    _tableview = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - [UIApplication sharedApplication].statusBarFrame.size.height) style:UITableViewStylePlain];
+    _tableview = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - ([UIApplication sharedApplication].statusBarFrame.size.height) - 44) style:UITableViewStylePlain];
     [self.view addSubview:_tableview];
     _tableview.separatorStyle = UITableViewCellSeparatorStyleNone;
     _tableview.dataSource = self;
@@ -59,11 +83,12 @@ static NSString *IDOne = @"MyZanCellID";
 #pragma mark - tableView协议
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 8;
+    return self.tempZanGdArray.zanGdArray.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     HNPMyZanCell *myZanCell = [tableView dequeueReusableCellWithIdentifier:IDOne];
+    myZanCell.ZanGdM = self.tempZanGdArray.zanGdArray[indexPath.row];
     return myZanCell;
 }
 

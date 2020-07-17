@@ -14,11 +14,15 @@
 #import "HNPMyBattleVC.h"
 #import "HNPLoginVC.h"
 #import "HNPEditVC.h"
+#import "HNPMyPersonheaderCell.h"
+#import "HNPDianJingModel.h"
+#import "HNPResetPasswordVC.h"
 
 
 @interface HNPMyPersonVC ()<UITableViewDelegate,UITableViewDataSource,HNPMyPersonBtnDelegate>
 
 @property(nonatomic,strong)UITableView *tableview;
+@property(nonatomic,strong)HNPPersonModel *mineUserInfoModel;
 
 @end
 
@@ -28,6 +32,7 @@
     self.navigationController.navigationBar.hidden = YES;
     self.tabBarController.tabBar.hidden = NO;
     self.title = @"我的";
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"editHeader" object:nil];
 }
 
 static NSString *IDOne = @"myPensonHeaderCellID";
@@ -36,6 +41,17 @@ static NSString *IDTwo = @"cellID";
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self loadTableView];
+}
+
+
+
+//加载数据
+-(HNPPersonModel *)mineUserInfoModel{
+    if (_mineUserInfoModel == nil) {
+        AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+        _mineUserInfoModel = appDelegate.mineUserInfoModel;
+    }
+    return _mineUserInfoModel;
 }
 
 -(void)loadTableView{
@@ -68,6 +84,7 @@ static NSString *IDTwo = @"cellID";
     if (indexPath.section == 0) {
         HNPMyPersonheaderCell *headerCell = [tableView dequeueReusableCellWithIdentifier:IDOne];
         headerCell.delegate = self;
+        headerCell.personMdoel = self.mineUserInfoModel;
         return headerCell;
     }else{
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:IDTwo];
@@ -119,7 +136,8 @@ static NSString *IDTwo = @"cellID";
             self.tabBarController.tabBar.hidden = YES;
             [self.navigationController pushViewController:editVC animated:YES];
         }else if (indexPath.row == 3){
-//            NSLog(@"点击了第4行");
+            HNPResetPasswordVC *resetVC = [HNPResetPasswordVC new];
+            [self presentViewController:resetVC animated:YES completion:nil];
         }else if (indexPath.row == 4){
 //            NSLog(@"点击了第5行");
         }else if (indexPath.row == 5){
@@ -167,6 +185,8 @@ static NSString *IDTwo = @"cellID";
     self.tabBarController.tabBar.hidden = YES;
     [self.navigationController pushViewController:battleVC animated:YES];
 }
+
+
 
 
 @end

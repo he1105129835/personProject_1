@@ -51,41 +51,46 @@
     
     switch (DJModel.star.intValue) {
         case 0:
+            self.xingxing_1.image = [UIImage imageNamed:@"pic_kongxing"];
+            self.xingxing_2.image = [UIImage imageNamed:@"pic_kongxing"];
+            self.xingxing_3.image = [UIImage imageNamed:@"pic_kongxing"];
+            self.xingxing_4.image = [UIImage imageNamed:@"pic_kongxing"];
+            self.xingxing_5.image = [UIImage imageNamed:@"pic_kongxing"];
             break;
         case 1:
-            _xingxing_1.image = [UIImage imageNamed:@"pic_xing"];
-            _xingxing_2.image = [UIImage imageNamed:@"pic_kongxing"];
-            _xingxing_3.image = [UIImage imageNamed:@"pic_kongxing"];
-            _xingxing_4.image = [UIImage imageNamed:@"pic_kongxing"];
-            _xingxing_5.image = [UIImage imageNamed:@"pic_kongxing"];
+            self.xingxing_1.image = [UIImage imageNamed:@"pic_xing"];
+            self.xingxing_2.image = [UIImage imageNamed:@"pic_kongxing"];
+            self.xingxing_3.image = [UIImage imageNamed:@"pic_kongxing"];
+            self.xingxing_4.image = [UIImage imageNamed:@"pic_kongxing"];
+            self.xingxing_5.image = [UIImage imageNamed:@"pic_kongxing"];
             break;
         case 2:
-            _xingxing_1.image = [UIImage imageNamed:@"pic_xing"];
-            _xingxing_2.image = [UIImage imageNamed:@"pic_xing"];
-            _xingxing_3.image = [UIImage imageNamed:@"pic_kongxing"];
-            _xingxing_4.image = [UIImage imageNamed:@"pic_kongxing"];
-            _xingxing_5.image = [UIImage imageNamed:@"pic_kongxing"];
+            self.xingxing_1.image = [UIImage imageNamed:@"pic_xing"];
+            self.xingxing_2.image = [UIImage imageNamed:@"pic_xing"];
+            self.xingxing_3.image = [UIImage imageNamed:@"pic_kongxing"];
+            self.xingxing_4.image = [UIImage imageNamed:@"pic_kongxing"];
+            self.xingxing_5.image = [UIImage imageNamed:@"pic_kongxing"];
             break;
         case 3:
-            _xingxing_1.image = [UIImage imageNamed:@"pic_xing"];
-            _xingxing_2.image = [UIImage imageNamed:@"pic_xing"];
-            _xingxing_3.image = [UIImage imageNamed:@"pic_xing"];
-            _xingxing_4.image = [UIImage imageNamed:@"pic_kongxing"];
-            _xingxing_5.image = [UIImage imageNamed:@"pic_kongxing"];
+            self.xingxing_1.image = [UIImage imageNamed:@"pic_xing"];
+            self.xingxing_2.image = [UIImage imageNamed:@"pic_xing"];
+            self.xingxing_3.image = [UIImage imageNamed:@"pic_xing"];
+            self.xingxing_4.image = [UIImage imageNamed:@"pic_kongxing"];
+            self.xingxing_5.image = [UIImage imageNamed:@"pic_kongxing"];
             break;
         case 4:
-            _xingxing_1.image = [UIImage imageNamed:@"pic_xing"];
-            _xingxing_2.image = [UIImage imageNamed:@"pic_xing"];
-            _xingxing_3.image = [UIImage imageNamed:@"pic_xing"];
-            _xingxing_4.image = [UIImage imageNamed:@"pic_xing"];
-            _xingxing_5.image = [UIImage imageNamed:@"pic_kongxing"];
+            self.xingxing_1.image = [UIImage imageNamed:@"pic_xing"];
+            self.xingxing_2.image = [UIImage imageNamed:@"pic_xing"];
+            self.xingxing_3.image = [UIImage imageNamed:@"pic_xing"];
+            self.xingxing_4.image = [UIImage imageNamed:@"pic_xing"];
+            self.xingxing_5.image = [UIImage imageNamed:@"pic_kongxing"];
             break;
             case 5:
-            _xingxing_1.image = [UIImage imageNamed:@"pic_xing"];
-            _xingxing_2.image = [UIImage imageNamed:@"pic_xing"];
-            _xingxing_3.image = [UIImage imageNamed:@"pic_xing"];
-            _xingxing_4.image = [UIImage imageNamed:@"pic_xing"];
-            _xingxing_5.image = [UIImage imageNamed:@"pic_xing"];
+            self.xingxing_1.image = [UIImage imageNamed:@"pic_xing"];
+            self.xingxing_2.image = [UIImage imageNamed:@"pic_xing"];
+            self.xingxing_3.image = [UIImage imageNamed:@"pic_xing"];
+            self.xingxing_4.image = [UIImage imageNamed:@"pic_xing"];
+            self.xingxing_5.image = [UIImage imageNamed:@"pic_xing"];
             break;
         default:
             break;

@@ -81,6 +81,9 @@
                             <constraint firstAttribute="height" constant="12" id="6hI-n8-NEf"/>
                         </constraints>
                         <state key="normal" backgroundImage="ic_dianzan"/>
+                        <connections>
+                            <action selector="zanBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="zqV-mh-DtG"/>
+                        </connections>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.3w" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7e4-xK-iHy">
                         <rect key="frame" x="309" y="105" width="26" height="15"/>
@@ -130,7 +133,7 @@
                 <outlet property="zixunImageView" destination="cFh-Nm-mAX" id="FUw-66-9OG"/>
                 <outlet property="zixunbrowserCount" destination="ODl-We-pcd" id="Dbd-4E-v1j"/>
             </connections>
-            <point key="canvasLocation" x="-415" y="111"/>
+            <point key="canvasLocation" x="-617" y="110"/>
         </tableViewCell>
     </objects>
     <resources>

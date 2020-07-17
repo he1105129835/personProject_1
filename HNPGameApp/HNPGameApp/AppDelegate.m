@@ -14,6 +14,7 @@
 #import "HNPPaiMingVC.h"
 #import "HNPMyPersonVC.h"
 #import "HNPMineVCViewController.h"
+#import "HNPTabBar.h"
 
 @interface AppDelegate ()
 
@@ -30,6 +31,7 @@
 //    tabC.tabBar.backgroundImage = [UIImage imageNamed:@"tab"];
 //    tabC.tabBar.barTintColor = [UIColor clearColor];
     tabC.tabBar.backgroundColor = [UIColor blackColor];
+//    [tabC setValue:[HNPTabBar new] forKeyPath:@"tabBar"];
     
     self.window.rootViewController = tabC;
     
@@ -71,6 +73,7 @@
     [tabC addChildViewController:nav5];
     
     [self.window makeKeyAndVisible];
+    [self WhetherToLoginOrNot];
     return YES;
 }
 

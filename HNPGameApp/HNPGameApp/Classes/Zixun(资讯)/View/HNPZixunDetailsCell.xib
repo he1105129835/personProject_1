@@ -54,13 +54,10 @@
                             <constraint firstAttribute="height" constant="37.5" id="asa-e1-0FG"/>
                         </constraints>
                         <state key="normal" backgroundImage="btn_keguanzhu"/>
-                    </button>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pm1-TO-2Dm">
-                        <rect key="frame" x="213.5" y="19.5" width="67.5" height="37.5"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="67.5" id="4BH-gM-LNS"/>
-                        </constraints>
-                        <state key="normal" backgroundImage="btn_bukeguanzhu"/>
+                        <state key="selected" backgroundImage="btn_bukeguanzhu"/>
+                        <connections>
+                            <action selector="followBtnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="uVI-wK-1ev"/>
+                        </connections>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="文章内容标题" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VeV-Lb-Br5">
                         <rect key="frame" x="17.5" y="75" width="331" height="17.5"/>
@@ -142,10 +139,8 @@
                     <constraint firstItem="4PT-0f-gUh" firstAttribute="top" secondItem="heZ-PZ-AvD" secondAttribute="top" id="1Pi-5r-A1q"/>
                     <constraint firstItem="NQr-hk-GIW" firstAttribute="leading" secondItem="SFg-M0-Vne" secondAttribute="trailing" constant="2" id="1s6-Vl-MrL"/>
                     <constraint firstItem="SFg-M0-Vne" firstAttribute="top" secondItem="NQr-hk-GIW" secondAttribute="top" id="2Ax-fr-qP9"/>
-                    <constraint firstItem="pm1-TO-2Dm" firstAttribute="bottom" secondItem="BcA-Ag-Z0D" secondAttribute="bottom" id="9CE-Ht-at4"/>
                     <constraint firstItem="rwH-DI-gpU" firstAttribute="leading" secondItem="heZ-PZ-AvD" secondAttribute="trailing" constant="2" id="9zi-Zv-mun"/>
                     <constraint firstItem="Fzy-hC-bQm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="17.5" id="A4v-kT-Aed"/>
-                    <constraint firstItem="BcA-Ag-Z0D" firstAttribute="leading" secondItem="pm1-TO-2Dm" secondAttribute="trailing" id="BYb-CW-MeU"/>
                     <constraint firstItem="CSM-Uk-BW9" firstAttribute="trailing" secondItem="iNH-Ly-yDV" secondAttribute="trailing" id="FYw-V9-DY1"/>
                     <constraint firstItem="VeV-Lb-Br5" firstAttribute="trailing" secondItem="BcA-Ag-Z0D" secondAttribute="trailing" id="K0N-tz-Y65"/>
                     <constraint firstItem="MiU-6p-a7R" firstAttribute="top" secondItem="HdR-nc-DM9" secondAttribute="bottom" constant="6.5" id="KFT-yZ-YFY"/>
@@ -158,7 +153,6 @@
                     <constraint firstItem="Fzy-hC-bQm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="19" id="XCg-Y9-FgD"/>
                     <constraint firstItem="heZ-PZ-AvD" firstAttribute="top" secondItem="CSM-Uk-BW9" secondAttribute="bottom" constant="21" id="Yty-q8-hHW"/>
                     <constraint firstItem="CSM-Uk-BW9" firstAttribute="leading" secondItem="iNH-Ly-yDV" secondAttribute="leading" id="ZLX-PG-sRW"/>
-                    <constraint firstItem="pm1-TO-2Dm" firstAttribute="top" secondItem="BcA-Ag-Z0D" secondAttribute="top" id="ch7-9p-3iN"/>
                     <constraint firstItem="heZ-PZ-AvD" firstAttribute="leading" secondItem="NQr-hk-GIW" secondAttribute="trailing" constant="32.5" id="e7x-18-Z6i"/>
                     <constraint firstItem="heZ-PZ-AvD" firstAttribute="centerX" secondItem="CSM-Uk-BW9" secondAttribute="centerX" id="gJd-Dk-58q"/>
                     <constraint firstItem="MiU-6p-a7R" firstAttribute="leading" secondItem="HdR-nc-DM9" secondAttribute="leading" id="h3e-2B-rOX"/>
@@ -183,8 +177,9 @@
                 <outlet property="detailsNickName" destination="HdR-nc-DM9" id="Tz2-ls-PUI"/>
                 <outlet property="detailsPublishTime" destination="MiU-6p-a7R" id="4rG-74-o7N"/>
                 <outlet property="detailsTitleLable" destination="VeV-Lb-Br5" id="fFQ-aJ-NmB"/>
+                <outlet property="followBtn" destination="BcA-Ag-Z0D" id="JCH-4T-yAA"/>
             </connections>
-            <point key="canvasLocation" x="-624" y="14"/>
+            <point key="canvasLocation" x="-1367" y="-39"/>
         </tableViewCell>
     </objects>
     <resources>

@@ -19,5 +19,6 @@
 @interface HNPMyCollectionCell : UITableViewCell
 
 @property (nonatomic ,weak) id<HNPQXCollectionBtnDelegate> delegate;
+@property(nonatomic,strong)HNPDianJingModel *djModel;
 
 @end

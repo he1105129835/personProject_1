@@ -36,6 +36,7 @@
 - (IBAction)huoquYZMBtn:(id)sender {
     HNPSendCodeVC *sendCodeVC = [HNPSendCodeVC new];
     sendCodeVC.phone = self.count_F.text;
+    sendCodeVC.type = 0;
     [self presentViewController:sendCodeVC animated:YES completion:nil];
 }
 
@@ -76,9 +77,9 @@
     [par setObject:self.count_F.text forKey:@"phone"];
     [par setObject:self.setPasswordLable.text forKey:@"password"];
     [par setObject:self.setPasswordLable.text forKey:@"confirmPassword"];
-    [par setObject:self.codeLable forKey:@"code"];
+    [par setObject:self.codeLable.text forKey:@"code"];
     [par setObject:@"1" forKey:@"type"];
-    [par setObject:@"futures" forKey:@"project"];
+    [par setObject:@"game" forKey:@"project"];
     
     //获取网络请求
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];

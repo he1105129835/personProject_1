@@ -21,6 +21,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,strong)NSString *followCount;
 @property(nonatomic,strong)NSString *publishTime;
 @property(nonatomic,strong)NSString *talkId;
+@property(nonatomic,strong)NSString *id;
+@property (assign, nonatomic) BOOL isFollow;
 @property(nonatomic, strong)NSMutableArray *list;
 @property(nonatomic,strong)HNPZixunUserModel *user;
 
