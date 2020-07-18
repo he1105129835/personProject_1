@@ -84,9 +84,7 @@ static NSString *IDOne = @"myBattleCellID";
 #pragma mark - tableView协议
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-//    return self.mineUserInfoModel.fansCount.integerValue;
     return self.teamArray.modelArray.count;
-    
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{

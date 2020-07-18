@@ -107,7 +107,7 @@ BOOL flag = 0;
 }
 - (IBAction)saizhiBtn:(UIButton *)btn {
     self.preSelectBtn_1.selected = NO;
-    self.preSelectBtn_1.backgroundColor = UIColor.systemGray6Color;
+    self.preSelectBtn_1.backgroundColor = UIColor.grayColor;
     [btn setBackgroundColor:[UIColor systemBlueColor]];
     btn.selected = YES;
     self.preSelectBtn_1 = btn;
