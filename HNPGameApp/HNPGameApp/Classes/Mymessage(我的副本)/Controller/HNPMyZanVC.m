@@ -33,6 +33,7 @@ static NSString *IDOne = @"MyZanCellID";
     [self.view addGestureRecognizer:swipe];
 }
 
+#pragma mark - 解档
 -(HNPZanGdModelArray *)tempZanGdArray{
     if (_tempZanGdArray == nil) {
         NSString *filePath = [NSTemporaryDirectory() stringByAppendingPathComponent:@"myZan.data"];

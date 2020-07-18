@@ -86,6 +86,7 @@
             appDelegate.mineUserInfoModel = [HNPPersonModel HNPPersonModelWithDict:dict];
             dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             [MBProgressHUD hideHUD];
+                //判断登录类型
                 if (self.loginType == YES) {
                     NSString *path = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents/user.plist"];
                     NSDictionary *tempDict = [appDelegate.mineUserInfoModel mj_keyValues];

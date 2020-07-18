@@ -49,6 +49,8 @@
 //发送验证码
 - (IBAction)DoneBtnClick:(id)sender {
     //根据type值判断进行注册或者重置密码
+    
+    //进行注册
     if (self.type == 0) {
         NSMutableDictionary *par = [[NSMutableDictionary alloc]init];
         [par setObject:self.phone forKey:@"phone"];
@@ -78,6 +80,8 @@
                } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
                    NSLog(@"failure");
                }];
+        
+        //进行重置
     }else if(self.type == 1){
         NSMutableDictionary *par = [[NSMutableDictionary alloc]init];
         [par setObject:self.phone forKey:@"phone"];

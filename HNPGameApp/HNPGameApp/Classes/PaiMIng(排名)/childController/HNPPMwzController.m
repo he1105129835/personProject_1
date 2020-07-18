@@ -29,9 +29,9 @@ static NSString *IDTwo = @"paiMingCellID";
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self loadTableView];
-//    self.view.backgroundColor = UIColor.redColor;
 }
 
+#pragma mark - 加载tableView
 -(void)loadTableView{
     
     _tableview = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - ([UIApplication sharedApplication].statusBarFrame.size.height + 99)) style:UITableViewStylePlain];
@@ -42,8 +42,6 @@ static NSString *IDTwo = @"paiMingCellID";
        _tableview.bounces = NO;
     [_tableview registerNib:[UINib nibWithNibName:NSStringFromClass([HNPZhanDuiCell class]) bundle:nil] forCellReuseIdentifier:IDOne];
     [_tableview registerNib:[UINib nibWithNibName:NSStringFromClass([HNPPaiMingCell class]) bundle:nil] forCellReuseIdentifier:IDTwo];
-//    _tableview.estimatedRowHeight = 48.5;
-//        _tableview.rowHeight = UITableViewAutomaticDimension;
     
 }
 

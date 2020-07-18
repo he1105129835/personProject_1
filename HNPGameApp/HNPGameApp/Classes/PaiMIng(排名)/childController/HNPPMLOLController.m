@@ -31,6 +31,7 @@ static NSString *IDTwo = @"paiMingCellID";
     self.view.backgroundColor = UIColor.grayColor;
 }
 
+#pragma mark - 加载tableView
 -(void)loadTableView{
     
     _tableview = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - ([UIApplication sharedApplication].statusBarFrame.size.height + 99)) style:UITableViewStylePlain];

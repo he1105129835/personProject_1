@@ -39,6 +39,8 @@
     [self.HeaderImageView sd_setImageWithURL:[NSURL URLWithString:self.personMdoel.head] placeholderImage:[UIImage imageNamed:@"jiazaishibai"]];
 }
 
+
+#pragma mark - 跳转4个不同的控制器
 - (IBAction)collectionBtn:(id)sender {
     if ([self.delegate respondsToSelector:@selector(collectionBtnDidClick:)]) {
         [self.delegate collectionBtnDidClick:self];

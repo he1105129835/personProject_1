@@ -76,7 +76,7 @@
     return timeStr;
 }
 
-//关注按钮点击
+#pragma mark - 点击关注进行归档
 - (IBAction)followBtnClick:(id)sender {
     [MBProgressHUD showMessage:@"关注成功"];
                dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{

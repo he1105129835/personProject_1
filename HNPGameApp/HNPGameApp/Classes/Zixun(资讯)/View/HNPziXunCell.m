@@ -46,6 +46,7 @@
     self.zixunFollowCount.text = self.zixunMdoel.user.fansCount;
 }
 
+#pragma mark - 点赞进行归档
 - (IBAction)zanBtn:(id)sender {
     [MBProgressHUD showMessage:@"点赞成功"];
                dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{

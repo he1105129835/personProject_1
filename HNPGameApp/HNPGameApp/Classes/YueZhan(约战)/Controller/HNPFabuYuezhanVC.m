@@ -105,6 +105,8 @@ BOOL flag = 0;
         TeamTag = 3;
     }
 }
+
+//赛制按钮状态切换
 - (IBAction)saizhiBtn:(UIButton *)btn {
     self.preSelectBtn_1.selected = NO;
     self.preSelectBtn_1.backgroundColor = UIColor.grayColor;
@@ -113,15 +115,12 @@ BOOL flag = 0;
     self.preSelectBtn_1 = btn;
 }
 
-
-#pragma mark - 方法
-
 //点击屏幕其它地方关闭键盘
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     [self.view endEditing:YES];
 }
 
-//点击添加战队按钮进行控件的显示与隐藏
+#pragma mark - 点击添加战队按钮进行控件的显示与隐藏
 - (IBAction)addTeamBtn:(id)sender {
     if (flag == 0) {
         self.imageViewHeight.constant = 130;
@@ -176,7 +175,7 @@ BOOL flag = 0;
     }
 }
 
-//战队头像按钮
+#pragma mark - 战队头像按钮
 - (IBAction)yuezhan_1Btn:(id)sender {
     HNPTeamOneVC *teamOne = [HNPTeamOneVC new];
     teamOne.TeamTag = TeamTag;
@@ -190,7 +189,7 @@ BOOL flag = 0;
     [self presentViewController:teamTwo animated:YES completion:nil];
 }
 
-//切换战队代理
+#pragma mark - 切换战队代理，拿到数据
 - (void)returnDataOneWhenClick:(HNPTeamOneVC *)OneVC returnClick:(HNPPaimingListModel *)Model{
     self.touxiang_1.image = [UIImage imageNamed:Model.iconName];
     self.modelName_1 = Model.iconName;
@@ -202,6 +201,7 @@ BOOL flag = 0;
     self.teamLable_3.text = Model.teamName;
 }
 
+#pragma mark - 点击发布进行归档
 - (IBAction)fabuBtnClick:(UIButton *)sender {
     [self WhetherToLoginOrNot];
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];

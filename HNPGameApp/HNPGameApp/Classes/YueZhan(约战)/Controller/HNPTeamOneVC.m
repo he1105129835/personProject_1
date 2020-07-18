@@ -114,6 +114,7 @@ static NSString *IDOne = @"TeamCellID";
     
 }
 
+//点击不同的组模型返回不同的数据
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [_tableview deselectRowAtIndexPath:indexPath animated:NO];
     if (self.TeamTag == 0) {

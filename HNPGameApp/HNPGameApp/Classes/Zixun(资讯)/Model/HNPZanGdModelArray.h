@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface HNPZanGdModelArray : NSObject
+@interface HNPZanGdModelArray : NSObject<NSCoding>
 
 @property (strong, nonatomic) NSMutableArray *zanGdArray;
 

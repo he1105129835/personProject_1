@@ -31,7 +31,6 @@
 - (void)viewWillAppear:(BOOL)animated{
     [self WhetherToLoginOrNot];
     [self setNavigation];
-//    [self mineUserInfoModel];
     [self.headPicture sd_setImageWithURL:[NSURL URLWithString:self.mineUserInfoModel.head] placeholderImage:[UIImage imageNamed:@"jiazaishibai"]];
     self.nickNameLbale.text = self.mineUserInfoModel.nickName;
     self.xingbieLable.text = self.mineUserInfoModel.sex;

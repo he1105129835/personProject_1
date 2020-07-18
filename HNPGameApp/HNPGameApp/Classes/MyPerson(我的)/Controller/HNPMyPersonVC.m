@@ -54,6 +54,7 @@ static NSString *IDTwo = @"cellID";
     return _mineUserInfoModel;
 }
 
+#pragma mark - 设置tableView
 -(void)loadTableView{
     _tableview = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - ([UIApplication sharedApplication].statusBarFrame.size.height)) style:UITableViewStylePlain];
           [self.view addSubview:_tableview];
