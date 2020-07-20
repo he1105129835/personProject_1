@@ -33,6 +33,10 @@
 		1147C9FE24B06F7800E7434B /* teamList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1147C9FD24B06F7800E7434B /* teamList.plist */; };
 		1147CA0024B06F7D00E7434B /* DJClub.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1147C9FF24B06F7D00E7434B /* DJClub.plist */; };
 		1147CA0324B0755700E7434B /* HNPDianJingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1147CA0224B0755700E7434B /* HNPDianJingModel.m */; };
+		114AB2F224C52BC000F58886 /* HNPMyZanVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 114AB2F124C52BC000F58886 /* HNPMyZanVC.xib */; };
+		114AB2F424C52BC900F58886 /* HNPMyFollowVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 114AB2F324C52BC900F58886 /* HNPMyFollowVC.xib */; };
+		114AB2F624C52BD300F58886 /* HNPMyBattleVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 114AB2F524C52BD300F58886 /* HNPMyBattleVC.xib */; };
+		114AB2FA24C52ECB00F58886 /* HNPMyCollectionVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 114AB2F924C52ECB00F58886 /* HNPMyCollectionVC.xib */; };
 		114AF4A024AC2E910047B724 /* HNPmoreCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 114AF49E24AC2E910047B724 /* HNPmoreCell.m */; };
 		114AF4A124AC2E910047B724 /* HNPmoreCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 114AF49F24AC2E910047B724 /* HNPmoreCell.xib */; };
 		114AF4A624AC35B80047B724 /* HNPWZController.m in Sources */ = {isa = PBXBuildFile; fileRef = 114AF4A424AC35B80047B724 /* HNPWZController.m */; };
@@ -170,6 +174,10 @@
 		1147C9FF24B06F7D00E7434B /* DJClub.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DJClub.plist; sourceTree = "<group>"; };
 		1147CA0124B0755700E7434B /* HNPDianJingModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPDianJingModel.h; sourceTree = "<group>"; };
 		1147CA0224B0755700E7434B /* HNPDianJingModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPDianJingModel.m; sourceTree = "<group>"; };
+		114AB2F124C52BC000F58886 /* HNPMyZanVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HNPMyZanVC.xib; sourceTree = "<group>"; };
+		114AB2F324C52BC900F58886 /* HNPMyFollowVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HNPMyFollowVC.xib; sourceTree = "<group>"; };
+		114AB2F524C52BD300F58886 /* HNPMyBattleVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HNPMyBattleVC.xib; sourceTree = "<group>"; };
+		114AB2F924C52ECB00F58886 /* HNPMyCollectionVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HNPMyCollectionVC.xib; sourceTree = "<group>"; };
 		114AF49D24AC2E910047B724 /* HNPmoreCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPmoreCell.h; sourceTree = "<group>"; };
 		114AF49E24AC2E910047B724 /* HNPmoreCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPmoreCell.m; sourceTree = "<group>"; };
 		114AF49F24AC2E910047B724 /* HNPmoreCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HNPmoreCell.xib; sourceTree = "<group>"; };
@@ -505,12 +513,16 @@
 			children = (
 				1158479724AF0E1000E471BF /* HNPMyCollectionVC.h */,
 				1158479824AF0E1000E471BF /* HNPMyCollectionVC.m */,
+				114AB2F924C52ECB00F58886 /* HNPMyCollectionVC.xib */,
 				1158479A24AF0E2E00E471BF /* HNPMyZanVC.h */,
 				1158479B24AF0E2E00E471BF /* HNPMyZanVC.m */,
+				114AB2F124C52BC000F58886 /* HNPMyZanVC.xib */,
 				1158479D24AF0E3F00E471BF /* HNPMyFollowVC.h */,
 				1158479E24AF0E3F00E471BF /* HNPMyFollowVC.m */,
+				114AB2F324C52BC900F58886 /* HNPMyFollowVC.xib */,
 				115847A024AF0E5100E471BF /* HNPMyBattleVC.h */,
 				115847A124AF0E5100E471BF /* HNPMyBattleVC.m */,
+				114AB2F524C52BD300F58886 /* HNPMyBattleVC.xib */,
 				1187561824B6E35200D769BA /* HNPEditVC.h */,
 				1187561924B6E35200D769BA /* HNPEditVC.m */,
 				1187561A24B6E35200D769BA /* HNPEditVC.xib */,
@@ -980,8 +992,10 @@
 				114189FE24BDA8E6004FEE39 /* HNPTeamOneVC.xib in Resources */,
 				1158477124AED59900E471BF /* HNPZixunDetailsVC.xib in Resources */,
 				11418A0824BDAA7F004FEE39 /* HNPTeamCell.xib in Resources */,
+				114AB2F424C52BC900F58886 /* HNPMyFollowVC.xib in Resources */,
 				1142DDF724C143D40051E8AB /* HNPResetPasswordVC.xib in Resources */,
 				115A141224A9CC84003AB70F /* LaunchScreen.storyboard in Resources */,
+				114AB2FA24C52ECB00F58886 /* HNPMyCollectionVC.xib in Resources */,
 				1152B8BD24A9EAA5002A888E /* HNPGameIconCell.xib in Resources */,
 				114BEF7824AD75F2004E077E /* HNPMyPersonDetailsCell.xib in Resources */,
 				1155F96F24B41D5900F15882 /* MBProgressHUD.bundle in Resources */,
@@ -999,6 +1013,7 @@
 				1152B8C724A9EADC002A888E /* HNPBottomCell.xib in Resources */,
 				114AF4C524AC79F40047B724 /* HNPZhanDuiCell.xib in Resources */,
 				114BEF7324AD75D3004E077E /* HNPMyPersonheaderCell.xib in Resources */,
+				114AB2F224C52BC000F58886 /* HNPMyZanVC.xib in Resources */,
 				1152B8CC24A9F42F002A888E /* HNPXuanzePlaceCell.xib in Resources */,
 				1146E85124B807A700EE8DEC /* HNPEditNickNameView.xib in Resources */,
 				114AF4A124AC2E910047B724 /* HNPmoreCell.xib in Resources */,
@@ -1008,6 +1023,7 @@
 				115847B124AF189F00E471BF /* HNPMyFollowCell.xib in Resources */,
 				115847AC24AF189000E471BF /* HNPMyZanCell.xib in Resources */,
 				115A140D24A9CC82003AB70F /* Main.storyboard in Resources */,
+				114AB2F624C52BD300F58886 /* HNPMyBattleVC.xib in Resources */,
 				11F61E6E24ADA6C500FD6F50 /* HNPYZCreatCell.xib in Resources */,
 				11F61E7824ADC55B00FD6F50 /* HNPJubaoVC.xib in Resources */,
 				1146E85624B835C100EE8DEC /* HNPNickNameVC.xib in Resources */,
@@ -1277,7 +1293,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = HNPGameApp/PrefixHeader.pch;
 				INFOPLIST_FILE = HNPGameApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1304,7 +1320,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = HNPGameApp/PrefixHeader.pch;
 				INFOPLIST_FILE = HNPGameApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

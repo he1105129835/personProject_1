@@ -24,6 +24,11 @@ static NSString *IDOne = @"MyZanCellID";
 
 - (void)viewWillAppear:(BOOL)animated{
     [self setNavigation];
+    if (self.tempZanGdArray.zanGdArray.count == 0) {
+        self.tableview.backgroundColor = UIColor.clearColor;
+    }else{
+        self.tableview.backgroundColor = UIColor.whiteColor;
+    }
 }
 
 - (void)viewDidLoad {

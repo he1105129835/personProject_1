@@ -24,6 +24,11 @@ static NSString *IDOne = @"myBattleCellID";
 
 - (void)viewWillAppear:(BOOL)animated{
     [self setNavigation];
+    if (self.teamArray.modelArray.count == 0) {
+        self.tableview.backgroundColor = UIColor.clearColor;
+    }else{
+        self.tableview.backgroundColor = UIColor.whiteColor;
+    }
 }
 
 - (void)viewDidLoad {
@@ -114,6 +119,11 @@ static NSString *IDOne = @"myBattleCellID";
         
         NSString *filePath = [NSTemporaryDirectory() stringByAppendingPathComponent:@"battleTeam.data"];
         [NSKeyedArchiver archiveRootObject:self.teamArray toFile:filePath];
+        if (self.teamArray.modelArray.count == 0) {
+            self.tableview.backgroundColor = UIColor.clearColor;
+        }else{
+            self.tableview.backgroundColor = UIColor.whiteColor;
+        }
         
     }]];
     UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];

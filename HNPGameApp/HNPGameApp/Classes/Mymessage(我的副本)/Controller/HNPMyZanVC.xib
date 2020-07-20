@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HNPMyZanVC">
+            <connections>
+                <outlet property="view" destination="UwG-kH-VKu" id="r65-np-xCN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="UwG-kH-VKu">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pic_quesheng" translatesAutoresizingMaskIntoConstraints="NO" id="V2r-LF-7Ne">
+                    <rect key="frame" x="60" y="244" width="294" height="418"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="空空如也~~~" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oQF-ZD-2KK">
+                    <rect key="frame" x="133" y="687" width="148" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="V2r-LF-7Ne" firstAttribute="leading" secondItem="c6x-Ct-fcl" secondAttribute="leading" constant="60" id="47e-4m-qUc"/>
+                <constraint firstItem="oQF-ZD-2KK" firstAttribute="top" secondItem="V2r-LF-7Ne" secondAttribute="bottom" constant="25" id="UPI-M0-QkO"/>
+                <constraint firstItem="c6x-Ct-fcl" firstAttribute="trailing" secondItem="V2r-LF-7Ne" secondAttribute="trailing" constant="60" id="VoV-w3-C1e"/>
+                <constraint firstItem="oQF-ZD-2KK" firstAttribute="centerX" secondItem="V2r-LF-7Ne" secondAttribute="centerX" id="YFR-P4-qV4"/>
+                <constraint firstItem="c6x-Ct-fcl" firstAttribute="bottom" secondItem="V2r-LF-7Ne" secondAttribute="bottom" constant="200" id="k6i-Ar-xCl"/>
+                <constraint firstItem="V2r-LF-7Ne" firstAttribute="top" secondItem="c6x-Ct-fcl" secondAttribute="top" constant="200" id="sOk-X3-S3N"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="c6x-Ct-fcl"/>
+            <point key="canvasLocation" x="-271.01449275362319" y="28.794642857142854"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="pic_quesheng" width="152.5" height="165.5"/>
+    </resources>
+</document>

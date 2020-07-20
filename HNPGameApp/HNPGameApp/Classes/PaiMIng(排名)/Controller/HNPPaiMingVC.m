@@ -30,6 +30,7 @@
     self.navigationController.navigationBar.hidden = YES;
     self.tabBarController.tabBar.hidden = NO;
     self.title = @"排名";
+    self.view.backgroundColor = UIColor.clearColor;
 }
 
 - (void)viewDidLoad {

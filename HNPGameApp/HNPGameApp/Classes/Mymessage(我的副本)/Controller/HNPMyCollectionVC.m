@@ -23,6 +23,11 @@ static NSString *IDOne = @"myCollectionCellID";
 
 - (void)viewWillAppear:(BOOL)animated{
     [self setNavigation];
+    if (self.DJArray.count == 0) {
+        self.tableview.backgroundColor = UIColor.clearColor;
+    }else{
+        self.tableview.backgroundColor = UIColor.whiteColor;
+    }
 }
 
 - (void)viewDidLoad {
@@ -34,7 +39,7 @@ static NSString *IDOne = @"myCollectionCellID";
 
 -(NSArray *)DJArray{
     
-        if (!_DJArray) {
+//        if (!_DJArray) {
             _DJArray = [HNPDianJingModel mj_objectArrayWithFilename:@"DJClub.plist"];
             
             NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
@@ -52,7 +57,7 @@ static NSString *IDOne = @"myCollectionCellID";
             }
             _DJArray = temp;
             
-        }
+//        }
         return _DJArray;
 }
 
@@ -114,6 +119,56 @@ static NSString *IDOne = @"myCollectionCellID";
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"确定要取消收藏吗？" message:nil preferredStyle:UIAlertControllerStyleActionSheet];
     [alertController addAction: [UIAlertAction actionWithTitle: @"确定" style: UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
         NSLog(@"点击了确定");
+        
+        // 获取当前点击行数
+        NSIndexPath *indexPath = [self.tableview indexPathForCell:myCollectionCell];
+        // 收藏状态更新
+        myCollectionCell.djModel.isCollect = !myCollectionCell.djModel.isCollect;
+        [self.tableview reloadRowsAtIndexPaths:[NSArray arrayWithObjects:indexPath, nil] withRowAnimation:UITableViewRowAnimationAutomatic];
+        // 取出本地收藏数据
+        NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
+        NSMutableDictionary *dataList = [[NSMutableDictionary alloc] init];
+        NSArray *temp =[userDefault objectForKey:@"userCollectArray"];
+        NSMutableArray *dataArray = [NSMutableArray array];
+        for (int i = 0; i < temp.count; i++)
+        {
+            [dataArray addObject:temp[i]];
+        }
+        // 收藏
+        if (myCollectionCell.djModel.isCollect == YES) {
+            // 添加id值和收藏状态
+            [dataList setObject:myCollectionCell.djModel.userid forKey:@"userid"];
+            [dataList setObject:[NSNumber numberWithBool:myCollectionCell.djModel.isCollect] forKey:@"isCollect"];
+            [dataArray addObject:dataList];
+            // 保存
+            [userDefault setObject:dataArray forKey:@"userCollectArray"];
+            [userDefault synchronize];
+            
+        }
+        // 取消收藏
+        else {
+            // 判断id值删除对应的收藏
+            for (int i = 0; i < dataArray.count; i++) {
+                NSDictionary *ID = dataArray[i];
+                if ([ID[@"userid"] isEqualToString:myCollectionCell.djModel.userid]) {
+                    NSLog(@"%d",i);
+                    [dataArray removeObjectAtIndex:i];
+                }
+            }
+            // 保存
+            [userDefault setObject:dataArray forKey:@"userCollectArray"];
+            [userDefault synchronize];
+        }
+        [self DJArray];
+        if (self.DJArray.count == 0) {
+            self.tableview.backgroundColor = UIColor.clearColor;
+        }else{
+            self.tableview.backgroundColor = UIColor.whiteColor;
+        }
+        [self.tableview reloadData];
+        
+        
+        
     }]];
     UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
     [alertController addAction:cancelAction];

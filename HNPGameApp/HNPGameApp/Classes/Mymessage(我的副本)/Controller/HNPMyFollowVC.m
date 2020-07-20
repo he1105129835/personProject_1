@@ -25,6 +25,11 @@ static NSString *IDOne = @"myFollowCellID";
 
 - (void)viewWillAppear:(BOOL)animated{
     [self setNavigation];
+    if (self.tempGdArray.followGdArray.count == 0) {
+        self.tableview.backgroundColor = UIColor.clearColor;
+    }else{
+        self.tableview.backgroundColor = UIColor.whiteColor;
+    }
 }
 
 - (void)viewDidLoad {
@@ -107,6 +112,12 @@ static NSString *IDOne = @"myFollowCellID";
         
         NSString *filePath = [NSTemporaryDirectory() stringByAppendingPathComponent:@"myFollow.data"];
         [NSKeyedArchiver archiveRootObject:self.tempGdArray toFile:filePath];
+        if (self.tempGdArray.followGdArray.count == 0) {
+            self.tableview.backgroundColor = UIColor.clearColor;
+        }else{
+            self.tableview.backgroundColor = UIColor.whiteColor;
+        }
+        
         
         
     }]];
