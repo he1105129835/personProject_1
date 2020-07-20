@@ -93,6 +93,8 @@ static NSString *IDOne = @"myCollectionCellID";
     _tableview.dataSource = self;
     _tableview.delegate = self;
     [_tableview registerNib:[UINib nibWithNibName:NSStringFromClass([HNPMyCollectionCell class]) bundle:nil] forCellReuseIdentifier:IDOne];
+    _tableview.estimatedRowHeight = 100;
+    _tableview.rowHeight = UITableViewAutomaticDimension;
 }
 
 

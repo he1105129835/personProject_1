@@ -64,6 +64,8 @@ static NSString *IDTwo = @"cellID";
           _tableview.delegate = self;
     _tableview.contentInset = UIEdgeInsetsMake(-[UIApplication sharedApplication].statusBarFrame.size.height, 0, 0, 0);
        [_tableview registerNib:[UINib nibWithNibName:NSStringFromClass([HNPMyPersonheaderCell class]) bundle:nil] forCellReuseIdentifier:IDOne];
+    _tableview.estimatedRowHeight = 100;
+    _tableview.rowHeight = UITableViewAutomaticDimension;
 }
 
 

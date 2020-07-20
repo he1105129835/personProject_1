@@ -74,6 +74,8 @@ static NSString *IDOne = @"myFollowCellID";
     _tableview.dataSource = self;
     _tableview.delegate = self;
     [_tableview registerNib:[UINib nibWithNibName:NSStringFromClass([HNPMyFollowCell class]) bundle:nil] forCellReuseIdentifier:IDOne];
+    _tableview.estimatedRowHeight = 100;
+    _tableview.rowHeight = UITableViewAutomaticDimension;
 }
 
 

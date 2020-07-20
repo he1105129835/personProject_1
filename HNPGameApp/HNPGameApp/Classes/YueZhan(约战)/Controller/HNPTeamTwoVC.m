@@ -70,6 +70,8 @@ static NSString *IDOne = @"TeamCellID";
     _tableview.dataSource = self;
     _tableview.delegate = self;
     [_tableview registerNib:[UINib nibWithNibName:NSStringFromClass([HNPTeamCell class]) bundle:nil] forCellReuseIdentifier:IDOne];
+    _tableview.estimatedRowHeight = 100;
+    _tableview.rowHeight = UITableViewAutomaticDimension;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
