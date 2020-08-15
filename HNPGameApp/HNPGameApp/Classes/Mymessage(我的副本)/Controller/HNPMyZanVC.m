@@ -67,7 +67,17 @@ static NSString *IDOne = @"MyZanCellID";
     [self.navigationController popViewControllerAnimated:YES];
 }
 
+-(void)back{
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
 -(void)setNavigation{
+    UIButton *backButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 10, 15)];
+    [backButton setBackgroundImage:[[UIImage imageNamed:@"btn_fanhui"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] forState:UIControlStateNormal];
+    [backButton addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithCustomView:backButton];
+    self.navigationItem.leftBarButtonItem = item;
+    
     self.navigationController.navigationBar.hidden = NO;
     self.navigationItem.title = @"我的点赞";
     [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"dingbu"] forBarMetrics:UIBarMetricsDefault];

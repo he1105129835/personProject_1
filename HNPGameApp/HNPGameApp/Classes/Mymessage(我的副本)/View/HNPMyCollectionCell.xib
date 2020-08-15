@@ -128,7 +128,7 @@
                 <outlet property="xingxing_4" destination="Q87-EI-HWQ" id="pax-qo-ikM"/>
                 <outlet property="xingxing_5" destination="G3w-vp-JDy" id="R24-WQ-pNG"/>
             </connections>
-            <point key="canvasLocation" x="53" y="29"/>
+            <point key="canvasLocation" x="202" y="28"/>
         </tableViewCell>
     </objects>
     <resources>

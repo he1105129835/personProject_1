@@ -122,5 +122,11 @@
     [self presentViewController:resetVC animated:YES completion:nil];
 }
 
+- (IBAction)guanbi:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+
+
 
 @end

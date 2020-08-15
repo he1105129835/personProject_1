@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface HNPYueZhanVC : UIViewController
+@interface HNPYueZhanVC : BaseViewController
 
 @end
 

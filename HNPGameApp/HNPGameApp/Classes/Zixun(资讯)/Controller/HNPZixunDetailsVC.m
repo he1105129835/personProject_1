@@ -37,12 +37,8 @@ static NSString *IDTwo = @"zixunCommentCellID";
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self loadTableView];
-    //轻扫返回手势
-    UISwipeGestureRecognizer *swipe = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(swipeView)];
-    [self.view addGestureRecognizer:swipe];
     [self setNotificationCenter];
     [self PLJson];
-    
 }
 
 #pragma mark - 评论说说
@@ -95,18 +91,26 @@ static NSString *IDTwo = @"zixunCommentCellID";
     
 }
 
--(void)swipeView{
-    [self.navigationController popViewControllerAnimated:YES];
-}
+
 
 //设置导航条
 -(void)setNavigation{
+    UIButton *backButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 10, 15)];
+       [backButton setBackgroundImage:[[UIImage imageNamed:@"btn_fanhui"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] forState:UIControlStateNormal];
+       [backButton addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
+       UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithCustomView:backButton];
+       self.navigationItem.leftBarButtonItem = item;
+       
     self.navigationController.navigationBar.hidden = NO;
     self.tabBarController.tabBar.hidden = YES;
     self.navigationItem.title = @"评论";
     [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"dingbu"] forBarMetrics:UIBarMetricsDefault];
     [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+}
+
+-(void)back{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 #pragma mark - 加载tableView
@@ -133,11 +137,6 @@ static NSString *IDTwo = @"zixunCommentCellID";
     if (indexPath.section == 0) {
         HNPZixunDetailsCell *detailsCell = [tableView dequeueReusableCellWithIdentifier:IDOne];
         detailsCell.DetailsModle = self.zixunDetailsM;
-        if (self.zixunDetailsM.isFollow == NO) {
-            detailsCell.followBtn.selected = NO;
-        }else if(self.zixunDetailsM.isFollow == YES){
-            detailsCell.followBtn.selected = YES;
-        }
         return detailsCell;
     }else{
         HNPZixunCommentCell *commentCell = [tableView dequeueReusableCellWithIdentifier:IDTwo];

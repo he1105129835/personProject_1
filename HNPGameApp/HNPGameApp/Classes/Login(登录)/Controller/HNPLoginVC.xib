@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -23,9 +24,24 @@
             <subviews>
                 <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W1Z-2F-h9Q">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rZF-PY-HTV">
+                            <rect key="frame" x="369" y="40" width="20" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="GNn-bl-vIm"/>
+                                <constraint firstAttribute="width" constant="20" id="n1B-bN-mrb"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="icon_guanbi"/>
+                            <connections>
+                                <action selector="guanbi:" destination="-1" eventType="touchUpInside" id="Hk5-9L-UjJ"/>
+                            </connections>
+                        </button>
+                    </subviews>
                     <color key="backgroundColor" red="0.0" green="0.38823529411764707" blue="0.77647058823529413" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
+                        <constraint firstAttribute="trailing" secondItem="rZF-PY-HTV" secondAttribute="trailing" constant="25" id="48V-uu-Asg"/>
                         <constraint firstAttribute="height" constant="120" id="8gx-6k-hmG"/>
+                        <constraint firstItem="rZF-PY-HTV" firstAttribute="top" secondItem="W1Z-2F-h9Q" secondAttribute="top" constant="40" id="gel-4s-n1m"/>
                     </constraints>
                 </view>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_login" translatesAutoresizingMaskIntoConstraints="NO" id="7z8-cZ-wcB">
@@ -79,17 +95,6 @@
                         <action selector="resetPasswordBtnClick:" destination="-1" eventType="touchUpInside" id="fuK-1e-WrX"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2oj-9j-oil">
-                    <rect key="frame" x="44" y="370.5" width="340" height="60"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="60" id="yZv-bU-PGU"/>
-                    </constraints>
-                    <state key="normal" backgroundImage="btn_kedenglu"/>
-                    <state key="disabled" backgroundImage="btn_bukedenglu"/>
-                    <connections>
-                        <action selector="loginBtnClick:" destination="-1" eventType="touchUpInside" id="anw-pc-5WR"/>
-                    </connections>
-                </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XKM-bJ-Lkg">
                     <rect key="frame" x="107" y="460.5" width="200" height="30"/>
                     <constraints>
@@ -107,6 +112,17 @@
                     <color key="textColor" red="0.99979764223098755" green="0.16928154230117798" blue="0.002975864103063941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2oj-9j-oil">
+                    <rect key="frame" x="44" y="370.5" width="340" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="yZv-bU-PGU"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="btn_kedenglu"/>
+                    <state key="disabled" backgroundImage="btn_bukedenglu"/>
+                    <connections>
+                        <action selector="loginBtnClick:" destination="-1" eventType="touchUpInside" id="anw-pc-5WR"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
@@ -137,12 +153,13 @@
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
-            <point key="canvasLocation" x="-165" y="-5"/>
+            <point key="canvasLocation" x="-1048" y="-165"/>
         </view>
     </objects>
     <resources>
         <image name="bg_login" width="265.5" height="265.5"/>
         <image name="btn_bukedenglu" width="318" height="62"/>
         <image name="btn_kedenglu" width="318" height="62"/>
+        <image name="icon_guanbi" width="15" height="15"/>
     </resources>
 </document>

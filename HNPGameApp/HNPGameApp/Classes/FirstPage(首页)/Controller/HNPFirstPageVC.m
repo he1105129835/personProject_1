@@ -25,6 +25,7 @@
 @property(nonatomic,assign)NSInteger cellCount;
 @property(nonatomic,assign)Boolean flag;
 
+
 @end
 
 @implementation HNPFirstPageVC
@@ -37,6 +38,7 @@ static NSString *IDFive = @"BottomCellID";
 
 /**判断当前为附近馆还是热门馆*/
 BOOL flag_1 = 0;
+
 
 - (void)viewWillAppear:(BOOL)animated{
     self.navigationController.navigationBar.hidden = YES;
@@ -175,13 +177,16 @@ BOOL flag_1 = 0;
             [self.navigationController pushViewController:DjDetailsVC animated:YES];
         }
     }else if(indexPath.section == 2){
+        HNPmoreCell *moreCell = [tableView cellForRowAtIndexPath:indexPath];
         //电竞馆行数的展开
         self.flag =! self.flag;
         if (self.flag == 0) {
             self.cellCount = 0;
+            moreCell.moreLable.text = @"查看更多>";
             [self.tableview reloadData];
         }else{
             self.cellCount = self.DJArray.count - 2;
+            moreCell.moreLable.text = @"点击收起>";
                  [self.tableview reloadData];
         }
     }else{

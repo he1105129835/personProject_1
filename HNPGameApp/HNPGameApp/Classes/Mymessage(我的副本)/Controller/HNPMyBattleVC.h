@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface HNPMyBattleVC : UIViewController
+@interface HNPMyBattleVC : BaseViewController
 
 @end
 

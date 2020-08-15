@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface HNPDianJingDetailsVC : UIViewController
+@interface HNPDianJingDetailsVC : BaseViewController
 
 @property(nonatomic,strong)HNPDianJingModel *DJDetailsModel;
 

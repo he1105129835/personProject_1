@@ -14,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic,strong) NSString *userHead;
 @property (nonatomic,strong) NSString *userNickname;
+@property (nonatomic,assign) BOOL isFollow;
 
 @end
 

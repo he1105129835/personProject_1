@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface HNPJubaoVC : UIViewController
+@interface HNPJubaoVC : BaseViewController
 
 @end
 

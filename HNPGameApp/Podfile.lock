@@ -20,6 +20,7 @@ PODS:
     - Mantle/extobjc (= 2.1.1)
   - Mantle/extobjc (2.1.1)
   - MJExtension (3.2.1)
+  - MJRefresh (3.4.3)
   - SDWebImage (5.8.1):
     - SDWebImage/Core (= 5.8.1)
   - SDWebImage/Core (5.8.1)
@@ -30,6 +31,7 @@ DEPENDENCIES:
   - FSScrollContentView
   - Mantle
   - MJExtension
+  - MJRefresh
   - SDWebImage
 
 SPEC REPOS:
@@ -39,6 +41,7 @@ SPEC REPOS:
     - FSScrollContentView
     - Mantle
     - MJExtension
+    - MJRefresh
     - SDWebImage
 
 SPEC CHECKSUMS:
@@ -47,8 +50,9 @@ SPEC CHECKSUMS:
   FSScrollContentView: 2fdda268eb8f1a1d4aefd470bf70702dbc346d50
   Mantle: 35238ae6f2e2b2d474fa7b67fee82a59fea71915
   MJExtension: 635f2c663dcb1bf76fa4b715b2570a5710aec545
+  MJRefresh: 53e3e3219f204425ee6d3e62e8733d3295944cd6
   SDWebImage: e3eae2eda88578db0685a0c88597fdadd9433f05
 
-PODFILE CHECKSUM: 09667d25e2167b43e4a9e0eeca9d922744fc4c64
+PODFILE CHECKSUM: 70793e6bdd29f93a0ecec372910a25bf0084ef1a
 
 COCOAPODS: 1.9.3

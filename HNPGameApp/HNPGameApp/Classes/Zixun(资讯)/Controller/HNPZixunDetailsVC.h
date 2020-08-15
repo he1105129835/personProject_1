@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface HNPZixunDetailsVC : UIViewController
+@interface HNPZixunDetailsVC : BaseViewController
 
 @property(nonatomic,strong)HNPZixunModel *zixunDetailsM;
 @property(nonatomic,assign)Boolean login;

@@ -26,6 +26,7 @@
 
 @property(nonatomic,strong)HNPFollowGdModel *myFollowM;
 @property(nonatomic,strong)NSString *followHead;
+@property (strong, nonatomic)HNPFollowGdModelArray *tempGdArray;
 
 
 @end
@@ -34,7 +35,7 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    // Initialization code
+    
     }
 
 //数据赋值
@@ -78,27 +79,30 @@
 
 #pragma mark - 点击关注进行归档
 - (IBAction)followBtnClick:(id)sender {
-    [MBProgressHUD showMessage:@"关注成功"];
-               dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-                   [MBProgressHUD hideHUD];
-                   HNPFollowGdModel *myFollowM = [HNPFollowGdModel new];
-                   myFollowM.userHead = self.followHead;
-                   myFollowM.userNickname = self.detailsNickName.text;
-                   NSString *filePath1 = [NSTemporaryDirectory() stringByAppendingPathComponent:@"myFollow.data"];
-                   NSLog(@"%@",NSTemporaryDirectory());
-                   //解档
-                   HNPFollowGdModelArray *tempFollowArray = [NSKeyedUnarchiver unarchiveObjectWithFile:filePath1];
-                   if (tempFollowArray.followGdArray == nil) {
-                       tempFollowArray = [HNPFollowGdModelArray new];
-                       tempFollowArray.followGdArray = [NSMutableArray new];
-                   }
-                   [tempFollowArray.followGdArray addObject:myFollowM];
-                   NSString *temp = NSTemporaryDirectory();
-                   NSString *filePath = [temp stringByAppendingPathComponent:@"myFollow.data"];
-                   //归档
-                   [NSKeyedArchiver archiveRootObject:tempFollowArray toFile:filePath];
-               });
+    self.followBtn.selected = !self.followBtn.isSelected;
+    if (self.followBtn.selected == YES) {
+        HNPFollowGdModel *myFollowM = [HNPFollowGdModel new];
+        myFollowM.userHead = self.followHead;
+        myFollowM.userNickname = self.detailsNickName.text;
+        myFollowM.isFollow = self.followBtn.selected;
+        NSString *filePath1 = [NSTemporaryDirectory() stringByAppendingPathComponent:@"myFollow.data"];
+        //解档
+        HNPFollowGdModelArray *tempFollowArray = [NSKeyedUnarchiver unarchiveObjectWithFile:filePath1];
+        if (tempFollowArray.followGdArray == nil) {
+            tempFollowArray = [HNPFollowGdModelArray new];
+            tempFollowArray.followGdArray = [NSMutableArray new];
+        }
+        [tempFollowArray.followGdArray addObject:myFollowM];
+        NSString *temp = NSTemporaryDirectory();
+        NSString *filePath = [temp stringByAppendingPathComponent:@"myFollow.data"];
+        //归档
+        [NSKeyedArchiver archiveRootObject:tempFollowArray toFile:filePath];
+         NSLog(@"%@",NSTemporaryDirectory());
+    }
+                   
 }
+
+
 
 
 @end

@@ -23,6 +23,7 @@
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(imagerefresh)];
     self.YZMImageView.userInteractionEnabled = YES;
     [self.YZMImageView addGestureRecognizer:tap];
+    self.view.backgroundColor = UIColor.clearColor;
 }
 
 
@@ -30,6 +31,9 @@
 
 #pragma mark - 方法调用
 
+- (IBAction)gaunbi:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 
 //刷新验证码
 -(void)imagerefresh{

@@ -40,8 +40,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setphotoImage];
-    UISwipeGestureRecognizer *swipe = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(swipeView)];
-    [self.view addGestureRecognizer:swipe];
     self.MyInfoText_F.enabled = NO;
     self.shengriText_F.enabled = NO;
 }
@@ -93,17 +91,23 @@
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
     }];
 }
-//轻扫返回
--(void)swipeView{
-    [self.navigationController popViewControllerAnimated:YES];
-}
 //设置导航栏
 -(void)setNavigation{
+    UIButton *backButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 10, 15)];
+    [backButton setBackgroundImage:[[UIImage imageNamed:@"btn_fanhui"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] forState:UIControlStateNormal];
+    [backButton addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithCustomView:backButton];
+    self.navigationItem.leftBarButtonItem = item;
+    
     self.navigationController.navigationBar.hidden = NO;
     self.navigationItem.title = @"编辑资料";
     [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"dingbu"] forBarMetrics:UIBarMetricsDefault];
     [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+}
+
+-(void)back{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 //添加相机的点击手势

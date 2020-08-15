@@ -14,6 +14,7 @@
     //归档属性
     [coder encodeObject:self.userHead forKey:@"userHead"];
     [coder encodeObject:self.userNickname forKey:@"userNickname"];
+    [coder encodeBool:self.isFollow forKey:@"isFollow"];
 }
 
 - (instancetype)initWithCoder:(NSCoder *)coder
@@ -22,6 +23,7 @@
     if (self) {
         self.userHead = [coder decodeObjectForKey:@"userHead"];
         self.userNickname = [coder decodeObjectForKey:@"userNickname"];
+        self.userNickname = [coder decodeObjectForKey:@"isFollow"];
     }
     return self;
 }

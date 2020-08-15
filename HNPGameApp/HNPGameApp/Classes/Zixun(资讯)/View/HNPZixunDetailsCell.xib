@@ -48,7 +48,7 @@
                         <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BcA-Ag-Z0D">
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BcA-Ag-Z0D">
                         <rect key="frame" x="281" y="19.5" width="67.5" height="37.5"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="67.5" id="Maz-np-7N0"/>
@@ -180,7 +180,7 @@
                 <outlet property="detailsTitleLable" destination="VeV-Lb-Br5" id="fFQ-aJ-NmB"/>
                 <outlet property="followBtn" destination="BcA-Ag-Z0D" id="JCH-4T-yAA"/>
             </connections>
-            <point key="canvasLocation" x="-1367" y="-39"/>
+            <point key="canvasLocation" x="-1796" y="-38"/>
         </tableViewCell>
     </objects>
     <resources>

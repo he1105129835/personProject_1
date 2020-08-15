@@ -27,12 +27,14 @@
     
     //相册的调用
     [self setphotoImage];
+    UIButton *backButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 10, 15)];
+    [backButton setBackgroundImage:[[UIImage imageNamed:@"btn_fanhui"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] forState:UIControlStateNormal];
+    [backButton addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithCustomView:backButton];
+    self.navigationItem.leftBarButtonItem = item;
     self.navigationItem.title = @"举报";
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
     
-    //轻扫返回上个界面手势
-    UISwipeGestureRecognizer *swipe = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(swipeView)];
-    [self.view addGestureRecognizer:swipe];
     //轻扫删除图片
     _addImageView.userInteractionEnabled = YES;
     UISwipeGestureRecognizer *deleteImageView = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(swipeDeleteView)];
@@ -45,9 +47,7 @@
     
     
 }
-
--(void)swipeView{
-    self.tabBarController.tabBar.hidden = NO;
+-(void)back{
     [self.navigationController popViewControllerAnimated:YES];
 }
 

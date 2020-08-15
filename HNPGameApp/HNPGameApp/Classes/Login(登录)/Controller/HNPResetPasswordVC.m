@@ -92,6 +92,9 @@
     
 }
 
+- (IBAction)guanbi:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 
 
 

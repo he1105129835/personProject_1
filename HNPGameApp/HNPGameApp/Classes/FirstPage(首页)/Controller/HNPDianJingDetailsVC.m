@@ -75,8 +75,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    UISwipeGestureRecognizer *swipe = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(swipeView)];
-    [self.view addGestureRecognizer:swipe];
 }
 
 
@@ -125,12 +123,15 @@
            [userDefault synchronize];
        }
 }
-//轻扫返回
--(void)swipeView{
-    [self.navigationController popViewControllerAnimated:YES];
-}
+
 //设置导航栏状态
 -(void)setNavigation{
+    UIButton *backButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 10, 15)];
+    [backButton setBackgroundImage:[[UIImage imageNamed:@"btn_fanhui"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] forState:UIControlStateNormal];
+    [backButton addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithCustomView:backButton];
+    self.navigationItem.leftBarButtonItem = item;
+    
     self.navigationController.navigationBar.hidden = NO;
     self.navigationItem.title = @"电竞馆";
     [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"dingbu"] forBarMetrics:UIBarMetricsDefault];
@@ -138,6 +139,9 @@
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
 }
 
+-(void)back{
+    [self.navigationController popViewControllerAnimated:YES];
+}
 
 
 

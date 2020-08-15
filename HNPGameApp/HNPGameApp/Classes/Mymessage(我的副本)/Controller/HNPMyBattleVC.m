@@ -34,8 +34,6 @@ static NSString *IDOne = @"myBattleCellID";
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self loadTableView];
-    UISwipeGestureRecognizer *swipe = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(swipeView)];
-    [self.view addGestureRecognizer:swipe];
     
 }
 
@@ -67,12 +65,22 @@ static NSString *IDOne = @"myBattleCellID";
 }
 
 -(void)setNavigation{
+    UIButton *backButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 10, 15)];
+    [backButton setBackgroundImage:[[UIImage imageNamed:@"btn_fanhui"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] forState:UIControlStateNormal];
+    [backButton addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithCustomView:backButton];
+    self.navigationItem.leftBarButtonItem = item;
+    
     self.view.backgroundColor = UIColor.whiteColor;
     self.navigationController.navigationBar.hidden = NO;
     self.navigationItem.title = @"我的约战";
     [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"dingbu"] forBarMetrics:UIBarMetricsDefault];
     [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+}
+
+-(void)back{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 -(void)loadTableView{
@@ -119,8 +127,7 @@ static NSString *IDOne = @"myBattleCellID";
         [self.tableview reloadSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationNone];
         //归档
         
-        NSString *filePath = [NSTemporaryDirectory() stringByAppendingPathComponent:@"battleTeam.data"];
-        [NSKeyedArchiver archiveRootObject:self.teamArray toFile:filePath];
+         
         if (self.teamArray.modelArray.count == 0) {
             self.tableview.backgroundColor = UIColor.clearColor;
         }else{

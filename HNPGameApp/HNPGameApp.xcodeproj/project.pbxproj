@@ -57,6 +57,7 @@
 		114BEF7324AD75D3004E077E /* HNPMyPersonheaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 114BEF7124AD75D3004E077E /* HNPMyPersonheaderCell.xib */; };
 		114BEF7724AD75F2004E077E /* HNPMyPersonDetailsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 114BEF7524AD75F2004E077E /* HNPMyPersonDetailsCell.m */; };
 		114BEF7824AD75F2004E077E /* HNPMyPersonDetailsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 114BEF7624AD75F2004E077E /* HNPMyPersonDetailsCell.xib */; };
+		114D5D0024C6E4CD004FF9B4 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 114D5CFF24C6E4CD004FF9B4 /* BaseViewController.m */; };
 		1152B8BC24A9EAA5002A888E /* HNPGameIconCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1152B8BA24A9EAA5002A888E /* HNPGameIconCell.m */; };
 		1152B8BD24A9EAA5002A888E /* HNPGameIconCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1152B8BB24A9EAA5002A888E /* HNPGameIconCell.xib */; };
 		1152B8C124A9EAC3002A888E /* HNPWangBaCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1152B8BF24A9EAC3002A888E /* HNPWangBaCell.m */; };
@@ -212,6 +213,8 @@
 		114BEF7424AD75F2004E077E /* HNPMyPersonDetailsCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPMyPersonDetailsCell.h; sourceTree = "<group>"; };
 		114BEF7524AD75F2004E077E /* HNPMyPersonDetailsCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPMyPersonDetailsCell.m; sourceTree = "<group>"; };
 		114BEF7624AD75F2004E077E /* HNPMyPersonDetailsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HNPMyPersonDetailsCell.xib; sourceTree = "<group>"; };
+		114D5CFE24C6E4CD004FF9B4 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		114D5CFF24C6E4CD004FF9B4 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		1152B8B924A9EAA5002A888E /* HNPGameIconCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPGameIconCell.h; sourceTree = "<group>"; };
 		1152B8BA24A9EAA5002A888E /* HNPGameIconCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNPGameIconCell.m; sourceTree = "<group>"; };
 		1152B8BB24A9EAA5002A888E /* HNPGameIconCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HNPGameIconCell.xib; sourceTree = "<group>"; };
@@ -642,6 +645,8 @@
 				1158478424AF0D5C00E471BF /* Myset(我的设置) */,
 				115A143024A9D509003AB70F /* Other */,
 				115A142824A9D499003AB70F /* Main(主控制器) */,
+				114D5CFE24C6E4CD004FF9B4 /* BaseViewController.h */,
+				114D5CFF24C6E4CD004FF9B4 /* BaseViewController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -939,6 +944,7 @@
 				115A13FB24A9CC82003AB70F /* Sources */,
 				115A13FC24A9CC82003AB70F /* Frameworks */,
 				115A13FD24A9CC82003AB70F /* Resources */,
+				8CBB07D27E7B88AE5672666E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1064,6 +1070,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		8CBB07D27E7B88AE5672666E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HNPGameApp/Pods-HNPGameApp-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HNPGameApp/Pods-HNPGameApp-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HNPGameApp/Pods-HNPGameApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -1128,6 +1151,7 @@
 				114189FD24BDA8E6004FEE39 /* HNPTeamOneVC.m in Sources */,
 				1152B8CB24A9F42F002A888E /* HNPXuanzePlaceCell.m in Sources */,
 				11F61E7F24ADE70000FD6F50 /* HNPDianJingDetailsVC.m in Sources */,
+				114D5D0024C6E4CD004FF9B4 /* BaseViewController.m in Sources */,
 				115847B024AF189F00E471BF /* HNPMyFollowCell.m in Sources */,
 				114AF4B524AC35F20047B724 /* HNPPUBGController.m in Sources */,
 				1187561B24B6E35200D769BA /* HNPEditVC.m in Sources */,

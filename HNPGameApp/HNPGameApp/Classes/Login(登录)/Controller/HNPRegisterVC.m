@@ -110,6 +110,9 @@
         }];
     
 };
+- (IBAction)gaunbi:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 
 
 @end
